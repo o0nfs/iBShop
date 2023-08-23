@@ -1,0 +1,99 @@
+﻿@model IBshopDemo.Models.Kpifinancial
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Kpifinancial</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="KpifinCode" class="control-label"></label>
+                <input asp-for="KpifinCode" class="form-control" />
+                <span asp-validation-for="KpifinCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtdecLegRe" class="control-label"></label>
+                <input asp-for="OtdecLegRe" class="form-control" />
+                <span asp-validation-for="OtdecLegRe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RvwAccConflicts" class="control-label"></label>
+                <input asp-for="RvwAccConflicts" class="form-control" />
+                <span asp-validation-for="RvwAccConflicts" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RvwInvConflicts" class="control-label"></label>
+                <input asp-for="RvwInvConflicts" class="form-control" />
+                <span asp-validation-for="RvwInvConflicts" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DevPlnBudPer" class="control-label"></label>
+                <input asp-for="DevPlnBudPer" class="form-control" />
+                <span asp-validation-for="DevPlnBudPer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IncBudMeetPer" class="control-label"></label>
+                <input asp-for="IncBudMeetPer" class="form-control" />
+                <span asp-validation-for="IncBudMeetPer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DemistakeFin" class="control-label"></label>
+                <input asp-for="DemistakeFin" class="form-control" />
+                <span asp-validation-for="DemistakeFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcrFinRepPer" class="control-label"></label>
+                <input asp-for="AcrFinRepPer" class="form-control" />
+                <span asp-validation-for="AcrFinRepPer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cnt" class="control-label"></label>
+                <input asp-for="Cnt" class="form-control" />
+                <span asp-validation-for="Cnt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CtrTimeDuration" class="control-label"></label>
+                <input asp-for="CtrTimeDuration" class="form-control" />
+                <span asp-validation-for="CtrTimeDuration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FixedAssetConflict" class="control-label"></label>
+                <input asp-for="FixedAssetConflict" class="form-control" />
+                <span asp-validation-for="FixedAssetConflict" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BillIssueAvgTime" class="control-label"></label>
+                <input asp-for="BillIssueAvgTime" class="form-control" />
+                <span asp-validation-for="BillIssueAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CnrctrInvoicesMatch" class="control-label"></label>
+                <input asp-for="CnrctrInvoicesMatch" class="form-control" />
+                <span asp-validation-for="CnrctrInvoicesMatch" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OdrecintotalRec" class="control-label"></label>
+                <input asp-for="OdrecintotalRec" class="form-control" />
+                <span asp-validation-for="OdrecintotalRec" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

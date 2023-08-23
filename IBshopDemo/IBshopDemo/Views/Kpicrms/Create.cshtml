@@ -1,0 +1,197 @@
+﻿@model IBshopDemo.Models.Kpicrm
+
+@{
+    ViewData["Title"] = "Create";
+}
+<style>
+    div.card {
+        border-bottom: 3px solid green;
+        border-top: 3px solid green;
+        border-radius: 1.25rem !important;
+    }
+
+    .btn-create {
+        font-size: 15px;
+    }
+
+</style>
+<div class="row  p-3">
+    <div class="row p-3">
+        <h1>Create</h1>
+        <h4>Kpicrm</h4>
+    </div>
+    <hr />
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="card px-4 mt-3 shadow bg-white " style="direction:rtl">
+            <div class="card-body  pt-5">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="Kpicrmcode" class="form-label mt-3"></label>
+                            <input asp-for="Kpicrmcode" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="Kpicrmcode" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="NegFb" class="form-label mt-3"></label>
+                            <input asp-for="NegFb" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="NegFb" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="HocallQty" class="form-label mt-3"></label>
+                            <input asp-for="HocallQty" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="HocallQty" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="Fcsp" class="form-label mt-3"></label>
+                            <input asp-for="Fcsp" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="Fcsp" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="CusReqMetPer" class="form-label mt-3"></label>
+                            <input asp-for="CusReqMetPer" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="CusReqMetPer" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="CusSat" class="form-label mt-3"></label>
+                            <input asp-for="CusSat" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="CusSat" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="MissedCallPercent" class="form-label mt-3"></label>
+                            <input asp-for="MissedCallPercent" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="MissedCallPercent" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="AutAnsPercent" class="form-label mt-3"></label>
+                            <input asp-for="AutAnsPercent" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="AutAnsPercent" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="LeftCallPercent" class="form-label mt-3"></label>
+                            <input asp-for="LeftCallPercent" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="LeftCallPercent" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="SrvPrdSatPer" class="form-label mt-3"></label>
+                            <input asp-for="SrvPrdSatPer" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="SrvPrdSatPer" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="DelAvr" class="form-label mt-3"></label>
+                            <input asp-for="DelAvr" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="DelAvr" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="CallAnsSpd" class="form-label mt-3"></label>
+                            <input asp-for="CallAnsSpd" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="CallAnsSpd" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="Wtunder3" class="form-label mt-3"></label>
+                            <input asp-for="Wtunder3" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="Wtunder3" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="CallDuration" class="form-label mt-3"></label>
+                            <input asp-for="CallDuration" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="CallDuration" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="OutcallCostAvg" class="form-label mt-3"></label>
+                            <input asp-for="OutcallCostAvg" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="OutcallCostAvg" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="CallAnsSat" class="form-label mt-3"></label>
+                            <input asp-for="CallAnsSat" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="CallAnsSat" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="UsersComImpSer" class="form-label mt-3"></label>
+                            <input asp-for="UsersComImpSer" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="UsersComImpSer" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="TicQty" class="form-label mt-3"></label>
+                            <input asp-for="TicQty" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="TicQty" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="IdeCusNeed" class="form-label mt-3"></label>
+                            <input asp-for="IdeCusNeed" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="IdeCusNeed" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="PrdAwaPer" class="form-label mt-3"></label>
+                            <input asp-for="PrdAwaPer" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="PrdAwaPer" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="PerImpPrdSur" class="form-label mt-3"></label>
+                            <input asp-for="PerImpPrdSur" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="PerImpPrdSur" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="NewtooldSat" class="form-label mt-3"></label>
+                            <input asp-for="NewtooldSat" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="NewtooldSat" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="Csat" class="form-label mt-3"></label>
+                            <input asp-for="Csat" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="Csat" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="MrkOutcall" class="form-label mt-3"></label>
+                            <input asp-for="MrkOutcall" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="MrkOutcall" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-1">
+                            <label asp-for="Crmiss" class="form-label mt-3"></label>
+                            <input asp-for="Crmiss" class="form-control mt-1 shadow-sm" />
+                            <span asp-validation-for="Crmiss" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row m-5 pb-5">
+                        <div class="form-group">
+                            <a asp-action="Index" class="mt-4 me-3 float-end ">بازگشت به لیست</a>
+                            <input type="submit" value="ثبت" class=" py-3 px-5 float-start btn btn-outline-success me-3 btn-create" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+    
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

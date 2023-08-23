@@ -1,0 +1,89 @@
+﻿@model IBshopDemo.Models.Kpidevelopment
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Kpidevelopment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="KpidevelomentCode" />
+            <div class="form-group">
+                <label asp-for="RdinPrdImp" class="control-label"></label>
+                <input asp-for="RdinPrdImp" class="form-control" />
+                <span asp-validation-for="RdinPrdImp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdeCusNeed" class="control-label"></label>
+                <input asp-for="IdeCusNeed" class="form-control" />
+                <span asp-validation-for="IdeCusNeed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewTooldsat" class="control-label"></label>
+                <input asp-for="NewTooldsat" class="form-control" />
+                <span asp-validation-for="NewTooldsat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerImpPrdSur" class="control-label"></label>
+                <input asp-for="PerImpPrdSur" class="form-control" />
+                <span asp-validation-for="PerImpPrdSur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrdAwaPer" class="control-label"></label>
+                <input asp-for="PrdAwaPer" class="form-control" />
+                <span asp-validation-for="PrdAwaPer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewCusinSrvPrd" class="control-label"></label>
+                <input asp-for="NewCusinSrvPrd" class="form-control" />
+                <span asp-validation-for="NewCusinSrvPrd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SugCap" class="control-label"></label>
+                <input asp-for="SugCap" class="form-control" />
+                <span asp-validation-for="SugCap" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SugInc" class="control-label"></label>
+                <input asp-for="SugInc" class="form-control" />
+                <span asp-validation-for="SugInc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InvSugAvgTime" class="control-label"></label>
+                <input asp-for="InvSugAvgTime" class="form-control" />
+                <span asp-validation-for="InvSugAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SolutionAvgTime" class="control-label"></label>
+                <input asp-for="SolutionAvgTime" class="form-control" />
+                <span asp-validation-for="SolutionAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ColRate" class="control-label"></label>
+                <input asp-for="ColRate" class="form-control" />
+                <span asp-validation-for="ColRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccsugRate" class="control-label"></label>
+                <input asp-for="AccsugRate" class="form-control" />
+                <span asp-validation-for="AccsugRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

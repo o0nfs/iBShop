@@ -1,0 +1,66 @@
+﻿@model IBshopDemo.Models.Kpimarket
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Kpimarket</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KpimarketingCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KpimarketingCode)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NewUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NewUser)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RegistertoIssue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RegistertoIssue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NewCusAsset)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NewCusAsset)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LegMrk)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LegMrk)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BrcMrkRti)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BrcMrkRti)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalePlanDsg)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalePlanDsg)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MrkStgDsg)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MrkStgDsg)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

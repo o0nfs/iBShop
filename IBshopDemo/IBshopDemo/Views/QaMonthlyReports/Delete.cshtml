@@ -1,0 +1,321 @@
+﻿@model IBshopDemo.Models.QaMonthlyReport
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>QaMonthlyReport</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Month)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Month)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MonthNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MonthNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalPersonnelIncCallQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalPersonnelIncCallQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalChcIncCallQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalChcIncCallQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WelFailPerIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WelFailPerIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WelFailIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WelFailIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SurFailPerIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SurFailPerIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SurFailIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SurFailIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KnwFailPerIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KnwFailPerIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KnwFailIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KnwFailIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProFailPerIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProFailPerIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProFailIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProFailIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TicFailPerIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TicFailPerIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TicFailIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TicFailIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CalMgtPerIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CalMgtPerIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CalMgtIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CalMgtIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SysFailPerIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SysFailPerIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SysFailIncQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SysFailIncQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalPersonnelOutCallQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalPersonnelOutCallQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalChcOutCallQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalChcOutCallQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SurFailPerOutQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SurFailPerOutQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SurFailOutQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SurFailOutQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProFailPerOutQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProFailPerOutQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProFailOutQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProFailOutQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TicFailPerOutQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TicFailPerOutQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TicFailOutQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TicFailOutQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CalMgtPerOutQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CalMgtPerOutQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CalMgtOutQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CalMgtOutQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ToalOnlineChat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ToalOnlineChat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalCheckedOnlineChat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalCheckedOnlineChat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SurFailPerChatQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SurFailPerChatQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SurFailChatQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SurFailChatQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProFailPerChatQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProFailPerChatQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProFailChatQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProFailChatQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TicFailPerChatQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TicFailPerChatQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TicFailChatQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TicFailChatQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TimFailPerChatQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TimFailPerChatQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TimFailChatQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TimFailChatQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SurveyChatOnline)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SurveyChatOnline)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HgradeQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HgradeQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GgradeQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GgradeQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FgradeQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FgradeQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EgradeQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EgradeQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DgradeQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DgradeQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CgradeQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CgradeQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BgradeQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BgradeQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AgradeQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AgradeQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ApgradeQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ApgradeQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RepFail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RepFail)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Qamrid" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,177 @@
+﻿@model IBshopDemo.Models.ProcessDesignMonthlyReport
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ProcessDesignMonthlyReport</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Month)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Month)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MonthNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MonthNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrcdQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrcdQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RelPrcdQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RelPrcdQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InsQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InsQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RelInsQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RelInsQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RegQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RegQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RelReqQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RelReqQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FormQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FormQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrcDesign)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrcDesign)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ReviewPrc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReviewPrc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AsmPrc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AsmPrc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DlgQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DlgQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IndexQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IndexQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ReviwIndxQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReviwIndxQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KpimonitoringQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KpimonitoringQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MrkcommHold)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MrkcommHold)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MrkDoneCmm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MrkDoneCmm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MrkFailCmm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MrkFailCmm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DevCommHold)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DevCommHold)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DevDoneCmm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DevDoneCmm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DevFailCmm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DevFailCmm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CrmcommHold)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CrmcommHold)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CrmdoneCmm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CrmdoneCmm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CrmfailCmm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CrmfailCmm)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ProcessDesignMrid" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

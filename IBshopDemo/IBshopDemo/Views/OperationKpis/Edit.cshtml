@@ -1,0 +1,84 @@
+﻿@model IBshopDemo.Models.OperationKpi
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>OperationKpi</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="OperationKpicode" class="control-label"></label>
+                <input asp-for="OperationKpicode" class="form-control" />
+                <span asp-validation-for="OperationKpicode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Piapp" class="control-label"></label>
+                <input asp-for="Piapp" class="form-control" />
+                <span asp-validation-for="Piapp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ErrApp" class="control-label"></label>
+                <input asp-for="ErrApp" class="form-control" />
+                <span asp-validation-for="ErrApp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppDev" class="control-label"></label>
+                <input asp-for="AppDev" class="form-control" />
+                <span asp-validation-for="AppDev" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Answeringspeed" class="control-label"></label>
+                <input asp-for="Answeringspeed" class="form-control" />
+                <span asp-validation-for="Answeringspeed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbCardAutAvgTime" class="control-label"></label>
+                <input asp-for="IbCardAutAvgTime" class="form-control" />
+                <span asp-validation-for="IbCardAutAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SejAutAvgTime" class="control-label"></label>
+                <input asp-for="SejAutAvgTime" class="form-control" />
+                <span asp-validation-for="SejAutAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PayToCusAvgTime" class="control-label"></label>
+                <input asp-for="PayToCusAvgTime" class="form-control" />
+                <span asp-validation-for="PayToCusAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CusAutAsset" class="control-label"></label>
+                <input asp-for="CusAutAsset" class="form-control" />
+                <span asp-validation-for="CusAutAsset" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cus" class="control-label"></label>
+                <input asp-for="Cus" class="form-control" />
+                <span asp-validation-for="Cus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SucOprRate" class="control-label"></label>
+                <input asp-for="SucOprRate" class="form-control" />
+                <span asp-validation-for="SucOprRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

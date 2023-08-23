@@ -1,0 +1,99 @@
+﻿@model IBshopDemo.Models.ProductDevelopmentMontylyReport
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ProductDevelopmentMontylyReport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DevMrid" />
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Month" class="control-label"></label>
+                <input asp-for="Month" class="form-control" />
+                <span asp-validation-for="Month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MonthNumber" class="control-label"></label>
+                <input asp-for="MonthNumber" class="form-control" />
+                <span asp-validation-for="MonthNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CheckedSuggestQty" class="control-label"></label>
+                <input asp-for="CheckedSuggestQty" class="form-control" />
+                <span asp-validation-for="CheckedSuggestQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcceptedSuggestQty" class="control-label"></label>
+                <input asp-for="AcceptedSuggestQty" class="form-control" />
+                <span asp-validation-for="AcceptedSuggestQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SuggestPersonnelQty" class="control-label"></label>
+                <input asp-for="SuggestPersonnelQty" class="form-control" />
+                <span asp-validation-for="SuggestPersonnelQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EconomicalSuggestQty" class="control-label"></label>
+                <input asp-for="EconomicalSuggestQty" class="form-control" />
+                <span asp-validation-for="EconomicalSuggestQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbcCreaditCardCustQty" class="control-label"></label>
+                <input asp-for="IbcCreaditCardCustQty" class="form-control" />
+                <span asp-validation-for="IbcCreaditCardCustQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbcComplQty" class="control-label"></label>
+                <input asp-for="IbcComplQty" class="form-control" />
+                <span asp-validation-for="IbcComplQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbcCreadiCardReqQty" class="control-label"></label>
+                <input asp-for="IbcCreadiCardReqQty" class="form-control" />
+                <span asp-validation-for="IbcCreadiCardReqQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbcCreaditCardProcessAvgTime" class="control-label"></label>
+                <input asp-for="IbcCreaditCardProcessAvgTime" class="form-control" />
+                <span asp-validation-for="IbcCreaditCardProcessAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbwDesignQty" class="control-label"></label>
+                <input asp-for="IbwDesignQty" class="form-control" />
+                <span asp-validation-for="IbwDesignQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbwDesignVol" class="control-label"></label>
+                <input asp-for="IbwDesignVol" class="form-control" />
+                <span asp-validation-for="IbwDesignVol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbwDesignTime" class="control-label"></label>
+                <input asp-for="IbwDesignTime" class="form-control" />
+                <span asp-validation-for="IbwDesignTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

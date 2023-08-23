@@ -1,0 +1,124 @@
+﻿@model IBshopDemo.Models.FinancialMonthlyReport
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>FinancialMonthlyReport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FinancialMrid" />
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Month" class="control-label"></label>
+                <input asp-for="Month" class="form-control" />
+                <span asp-validation-for="Month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MonthNumber" class="control-label"></label>
+                <input asp-for="MonthNumber" class="form-control" />
+                <span asp-validation-for="MonthNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonnelSetQty" class="control-label"></label>
+                <input asp-for="PersonnelSetQty" class="form-control" />
+                <span asp-validation-for="PersonnelSetQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CheckedfundQty" class="control-label"></label>
+                <input asp-for="CheckedfundQty" class="form-control" />
+                <span asp-validation-for="CheckedfundQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContQty" class="control-label"></label>
+                <input asp-for="ContQty" class="form-control" />
+                <span asp-validation-for="ContQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TreasuryBillsQty" class="control-label"></label>
+                <input asp-for="TreasuryBillsQty" class="form-control" />
+                <span asp-validation-for="TreasuryBillsQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Recivedgaurantee" class="control-label"></label>
+                <input asp-for="Recivedgaurantee" class="form-control" />
+                <span asp-validation-for="Recivedgaurantee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RestaxinstallmentQty" class="control-label"></label>
+                <input asp-for="RestaxinstallmentQty" class="form-control" />
+                <span asp-validation-for="RestaxinstallmentQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResFundInstallmenQty" class="control-label"></label>
+                <input asp-for="ResFundInstallmenQty" class="form-control" />
+                <span asp-validation-for="ResFundInstallmenQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaminInstallmentQty" class="control-label"></label>
+                <input asp-for="TaminInstallmentQty" class="form-control" />
+                <span asp-validation-for="TaminInstallmentQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaminPenaltyVol" class="control-label"></label>
+                <input asp-for="TaminPenaltyVol" class="form-control" />
+                <span asp-validation-for="TaminPenaltyVol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TranCommissionQty" class="control-label"></label>
+                <input asp-for="TranCommissionQty" class="form-control" />
+                <span asp-validation-for="TranCommissionQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaminInstallmentDelay" class="control-label"></label>
+                <input asp-for="TaminInstallmentDelay" class="form-control" />
+                <span asp-validation-for="TaminInstallmentDelay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaxInstallmentDelay" class="control-label"></label>
+                <input asp-for="TaxInstallmentDelay" class="form-control" />
+                <span asp-validation-for="TaxInstallmentDelay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrpReqQty" class="control-label"></label>
+                <input asp-for="PrpReqQty" class="form-control" />
+                <span asp-validation-for="PrpReqQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MtnprpQty" class="control-label"></label>
+                <input asp-for="MtnprpQty" class="form-control" />
+                <span asp-validation-for="MtnprpQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ColPrpQty" class="control-label"></label>
+                <input asp-for="ColPrpQty" class="form-control" />
+                <span asp-validation-for="ColPrpQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LblPrpQty" class="control-label"></label>
+                <input asp-for="LblPrpQty" class="form-control" />
+                <span asp-validation-for="LblPrpQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

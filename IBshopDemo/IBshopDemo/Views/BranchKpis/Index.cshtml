@@ -1,0 +1,107 @@
+﻿@model IEnumerable<IBshopDemo.Models.BranchKpi>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.WrsupReq)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WrongIssue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BrcCnf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WrongQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BrnReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchCap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchaseAvgTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kllevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConIntMonPercentage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClienttoIssue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BrcClient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MrkSpv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewUser)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.WrsupReq)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WrongIssue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrcCnf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WrongQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrnReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchCap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseAvgTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kllevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConIntMonPercentage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClienttoIssue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrcClient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MrkSpv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewUser)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.KpibranchCode">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.KpibranchCode">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.KpibranchCode">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

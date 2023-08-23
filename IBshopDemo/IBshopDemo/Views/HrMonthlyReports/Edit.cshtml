@@ -1,0 +1,199 @@
+﻿@model IBshopDemo.Models.HrMonthlyReport
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>HrMonthlyReport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="HrmonthlyreportId" />
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Month" class="control-label"></label>
+                <input asp-for="Month" class="form-control" />
+                <span asp-validation-for="Month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MonthNumber" class="control-label"></label>
+                <input asp-for="MonthNumber" class="form-control" />
+                <span asp-validation-for="MonthNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HrpersonnelQty" class="control-label"></label>
+                <input asp-for="HrpersonnelQty" class="form-control" />
+                <span asp-validation-for="HrpersonnelQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeftQty" class="control-label"></label>
+                <input asp-for="LeftQty" class="form-control" />
+                <span asp-validation-for="LeftQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HrmhiredQty" class="control-label"></label>
+                <input asp-for="HrmhiredQty" class="form-control" />
+                <span asp-validation-for="HrmhiredQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Obqty" class="control-label"></label>
+                <input asp-for="Obqty" class="form-control" />
+                <span asp-validation-for="Obqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reqqty" class="control-label"></label>
+                <input asp-for="Reqqty" class="form-control" />
+                <span asp-validation-for="Reqqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SentCvtoDep" class="control-label"></label>
+                <input asp-for="SentCvtoDep" class="form-control" />
+                <span asp-validation-for="SentCvtoDep" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoursQty" class="control-label"></label>
+                <input asp-for="CoursQty" class="form-control" />
+                <span asp-validation-for="CoursQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IntQty" class="control-label"></label>
+                <input asp-for="IntQty" class="form-control" />
+                <span asp-validation-for="IntQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RsgReq" class="control-label"></label>
+                <input asp-for="RsgReq" class="form-control" />
+                <span asp-validation-for="RsgReq" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsedImp" class="control-label"></label>
+                <input asp-for="UsedImp" class="form-control" />
+                <span asp-validation-for="UsedImp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gcissu" class="control-label"></label>
+                <input asp-for="Gcissu" class="form-control" />
+                <span asp-validation-for="Gcissu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SrvAsgNewPer" class="control-label"></label>
+                <input asp-for="SrvAsgNewPer" class="form-control" />
+                <span asp-validation-for="SrvAsgNewPer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AsuAsgNewPer" class="control-label"></label>
+                <input asp-for="AsuAsgNewPer" class="form-control" />
+                <span asp-validation-for="AsuAsgNewPer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GurReqFun" class="control-label"></label>
+                <input asp-for="GurReqFun" class="form-control" />
+                <span asp-validation-for="GurReqFun" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GurReqLtt" class="control-label"></label>
+                <input asp-for="GurReqLtt" class="form-control" />
+                <span asp-validation-for="GurReqLtt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PyrDedReqLtt" class="control-label"></label>
+                <input asp-for="PyrDedReqLtt" class="form-control" />
+                <span asp-validation-for="PyrDedReqLtt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SendOutLtt" class="control-label"></label>
+                <input asp-for="SendOutLtt" class="form-control" />
+                <span asp-validation-for="SendOutLtt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SendIntLtt" class="control-label"></label>
+                <input asp-for="SendIntLtt" class="form-control" />
+                <span asp-validation-for="SendIntLtt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecLtt" class="control-label"></label>
+                <input asp-for="RecLtt" class="form-control" />
+                <span asp-validation-for="RecLtt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerEntCnfQty" class="control-label"></label>
+                <input asp-for="PerEntCnfQty" class="form-control" />
+                <span asp-validation-for="PerEntCnfQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreFailQty" class="control-label"></label>
+                <input asp-for="PreFailQty" class="form-control" />
+                <span asp-validation-for="PreFailQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReplacemntQty" class="control-label"></label>
+                <input asp-for="ReplacemntQty" class="form-control" />
+                <span asp-validation-for="ReplacemntQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rrfail" class="control-label"></label>
+                <input asp-for="Rrfail" class="form-control" />
+                <span asp-validation-for="Rrfail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RrfacFail" class="control-label"></label>
+                <input asp-for="RrfacFail" class="form-control" />
+                <span asp-validation-for="RrfacFail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LobFailQty" class="control-label"></label>
+                <input asp-for="LobFailQty" class="form-control" />
+                <span asp-validation-for="LobFailQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FloFailQty" class="control-label"></label>
+                <input asp-for="FloFailQty" class="form-control" />
+                <span asp-validation-for="FloFailQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TblFailQty" class="control-label"></label>
+                <input asp-for="TblFailQty" class="form-control" />
+                <span asp-validation-for="TblFailQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StrFailQty" class="control-label"></label>
+                <input asp-for="StrFailQty" class="form-control" />
+                <span asp-validation-for="StrFailQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MngRfailQty" class="control-label"></label>
+                <input asp-for="MngRfailQty" class="form-control" />
+                <span asp-validation-for="MngRfailQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BrkFailQty" class="control-label"></label>
+                <input asp-for="BrkFailQty" class="form-control" />
+                <span asp-validation-for="BrkFailQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PntFailQty" class="control-label"></label>
+                <input asp-for="PntFailQty" class="form-control" />
+                <span asp-validation-for="PntFailQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

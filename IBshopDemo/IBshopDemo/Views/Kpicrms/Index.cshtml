@@ -1,0 +1,173 @@
+﻿@model IEnumerable<IBshopDemo.Models.Kpicrm>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NegFb)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HocallQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fcsp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CusReqMetPer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CusSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MissedCallPercent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutAnsPercent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeftCallPercent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SrvPrdSatPer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DelAvr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CallAnsSpd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wtunder3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CallDuration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutcallCostAvg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CallAnsSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsersComImpSer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdeCusNeed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrdAwaPer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PerImpPrdSur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewtooldSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Csat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MrkOutcall)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Crmiss)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NegFb)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HocallQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fcsp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CusReqMetPer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CusSat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MissedCallPercent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutAnsPercent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeftCallPercent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SrvPrdSatPer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DelAvr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CallAnsSpd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Wtunder3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CallDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutcallCostAvg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CallAnsSat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsersComImpSer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdeCusNeed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrdAwaPer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PerImpPrdSur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewtooldSat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Csat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MrkOutcall)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Crmiss)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Kpicrmcode">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Kpicrmcode">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Kpicrmcode">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

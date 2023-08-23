@@ -1,0 +1,155 @@
+﻿@model IEnumerable<IBshopDemo.Models.Kpihr>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Kpihrcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RecEff)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EduEfc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SurveyFeedback)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrnColeagPer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MistakeinPersonalInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalMistakePerc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ColLoyPer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EduCap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProEduCap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MgmEduCap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GenEduCap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PapConCap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IntColCam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReqToNeed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IctsrvSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ColSat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutcallCostAvg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RecDelRat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HrRecDelRat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sal)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kpihrcode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecEff)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EduEfc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SurveyFeedback)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrnColeagPer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MistakeinPersonalInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalMistakePerc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ColLoyPer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EduCap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProEduCap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MgmEduCap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenEduCap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PapConCap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IntColCam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReqToNeed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IctsrvSat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ColSat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutcallCostAvg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecDelRat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HrRecDelRat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sal)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

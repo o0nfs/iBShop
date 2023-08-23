@@ -1,0 +1,154 @@
+﻿@model IBshopDemo.Models.ArtMonthlyReport
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ArtMonthlyReport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ArtMonthlyReportId" />
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Month" class="control-label"></label>
+                <input asp-for="Month" class="form-control" />
+                <span asp-validation-for="Month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MonthNumber" class="control-label"></label>
+                <input asp-for="MonthNumber" class="form-control" />
+                <span asp-validation-for="MonthNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MrkReq" class="control-label"></label>
+                <input asp-for="MrkReq" class="form-control" />
+                <span asp-validation-for="MrkReq" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompStudy" class="control-label"></label>
+                <input asp-for="CompStudy" class="form-control" />
+                <span asp-validation-for="CompStudy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArchiveDesignQty" class="control-label"></label>
+                <input asp-for="ArchiveDesignQty" class="form-control" />
+                <span asp-validation-for="ArchiveDesignQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MediaFailureQty" class="control-label"></label>
+                <input asp-for="MediaFailureQty" class="form-control" />
+                <span asp-validation-for="MediaFailureQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SiteBannerAvgTime" class="control-label"></label>
+                <input asp-for="SiteBannerAvgTime" class="form-control" />
+                <span asp-validation-for="SiteBannerAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BrochureDesignAvgTime" class="control-label"></label>
+                <input asp-for="BrochureDesignAvgTime" class="form-control" />
+                <span asp-validation-for="BrochureDesignAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryDesignAvgTime" class="control-label"></label>
+                <input asp-for="StoryDesignAvgTime" class="form-control" />
+                <span asp-validation-for="StoryDesignAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GifDesignAvgTime" class="control-label"></label>
+                <input asp-for="GifDesignAvgTime" class="form-control" />
+                <span asp-validation-for="GifDesignAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StandDesignAvgTime" class="control-label"></label>
+                <input asp-for="StandDesignAvgTime" class="form-control" />
+                <span asp-validation-for="StandDesignAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BannerDesignQty" class="control-label"></label>
+                <input asp-for="BannerDesignQty" class="form-control" />
+                <span asp-validation-for="BannerDesignQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BrochureDesignQty" class="control-label"></label>
+                <input asp-for="BrochureDesignQty" class="form-control" />
+                <span asp-validation-for="BrochureDesignQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StoryDesignQty" class="control-label"></label>
+                <input asp-for="StoryDesignQty" class="form-control" />
+                <span asp-validation-for="StoryDesignQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GifDesignQty" class="control-label"></label>
+                <input asp-for="GifDesignQty" class="form-control" />
+                <span asp-validation-for="GifDesignQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StandDesigQty" class="control-label"></label>
+                <input asp-for="StandDesigQty" class="form-control" />
+                <span asp-validation-for="StandDesigQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotionQty" class="control-label"></label>
+                <input asp-for="MotionQty" class="form-control" />
+                <span asp-validation-for="MotionQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArchivedmotionQty" class="control-label"></label>
+                <input asp-for="ArchivedmotionQty" class="form-control" />
+                <span asp-validation-for="ArchivedmotionQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppliedMotionAvgTime" class="control-label"></label>
+                <input asp-for="AppliedMotionAvgTime" class="form-control" />
+                <span asp-validation-for="AppliedMotionAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecordedvideoQty" class="control-label"></label>
+                <input asp-for="RecordedvideoQty" class="form-control" />
+                <span asp-validation-for="RecordedvideoQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecordedQty" class="control-label"></label>
+                <input asp-for="RecordedQty" class="form-control" />
+                <span asp-validation-for="RecordedQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NarrationEditQty" class="control-label"></label>
+                <input asp-for="NarrationEditQty" class="form-control" />
+                <span asp-validation-for="NarrationEditQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VideoArchiveQty" class="control-label"></label>
+                <input asp-for="VideoArchiveQty" class="form-control" />
+                <span asp-validation-for="VideoArchiveQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VideoProduceAvgTime" class="control-label"></label>
+                <input asp-for="VideoProduceAvgTime" class="form-control" />
+                <span asp-validation-for="VideoProduceAvgTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

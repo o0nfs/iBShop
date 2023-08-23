@@ -1,0 +1,66 @@
+﻿@model IBshopDemo.Models.Kpiplanning
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Kpiplanning</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KpiplanCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KpiplanCode)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DelonPrConf)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DelonPrConf)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EffImpAct)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EffImpAct)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OtimpPercentage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OtimpPercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrImPercent)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrImPercent)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KmsavePercent)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KmsavePercent)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ArchivePer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ArchivePer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nps)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nps)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

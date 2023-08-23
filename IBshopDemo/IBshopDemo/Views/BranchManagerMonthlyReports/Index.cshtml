@@ -1,0 +1,149 @@
+﻿@model IEnumerable<IBshopDemo.Models.BranchManagerMonthlyReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IBcardMrkmtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IBcardSuccessMtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IBcrowdMrkmtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IBcrowdSuccessMtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AssuranceMrkmtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AssuranceSuccessMtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DebtSharesMrkmtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DebtSharesSuccessMtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvestmentMrkmtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvesmentSuccessMtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CoursesReq)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CoursesMrkmtgqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CoursesMrkmtgfirstAgreementQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ComplainantQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Conciliation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Month)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IBcardMrkmtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IBcardSuccessMtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IBcrowdMrkmtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IBcrowdSuccessMtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssuranceMrkmtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssuranceSuccessMtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DebtSharesMrkmtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DebtSharesSuccessMtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvestmentMrkmtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvesmentSuccessMtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CoursesReq)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CoursesMrkmtgqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CoursesMrkmtgfirstAgreementQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ComplainantQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Conciliation)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BranchManagerMonthlyReportIdBranchManagerMonthlyReportId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BranchManagerMonthlyReportIdBranchManagerMonthlyReportId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BranchManagerMonthlyReportIdBranchManagerMonthlyReportId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

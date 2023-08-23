@@ -1,0 +1,93 @@
+﻿@model IBshopDemo.Models.BranchRanking
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>BranchRanking</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BranchRankingId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BranchRankingId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BranchId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BranchId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GanjinehRank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GanjinehRank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Andokhtehrank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Andokhtehrank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ServatRank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ServatRank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Bimehrank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Bimehrank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IBcrowdrank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IBcrowdrank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Productrank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Productrank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sandoghrank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sandoghrank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SatisfactionRank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SatisfactionRank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Servicerank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Servicerank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalRank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalRank)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

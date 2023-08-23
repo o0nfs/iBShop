@@ -1,0 +1,227 @@
+﻿@model IEnumerable<IBshopDemo.Models.FinancialSuperMarketMonthlyReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomersReplyQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbshoppRegisterQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AuthenticationQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActivationQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportForCustomerC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportForCustomerF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehIssueReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehIssuesVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AndookhtehIssueReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AndookhtehIssuesVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoharandServatIssueReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GohrandServatIssuesVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehRevokeReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehRevokeVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AndookhtehRevokeReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AndookhtehRevokeVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoharandServatRevokeReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GohrandServatRevokeVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotIsuuVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotRevVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EditQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LegalServQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CardIssuanceQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalIbcardVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvestorsQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalIbcrowdVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsuranceIssued)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreaditQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreaditVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OnlineCodeQty)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Month)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomersReplyQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbshoppRegisterQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthenticationQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActivationQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReportForCustomerC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReportForCustomerF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehIssueReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehIssuesVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AndookhtehIssueReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AndookhtehIssuesVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GoharandServatIssueReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GohrandServatIssuesVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehRevokeReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehRevokeVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AndookhtehRevokeReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AndookhtehRevokeVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GoharandServatRevokeReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GohrandServatRevokeVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotIsuuVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotRevVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EditQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LegalServQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardIssuanceQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalIbcardVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvestorsQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalIbcrowdVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsuranceIssued)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreaditQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreaditVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OnlineCodeQty)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SuperMrid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SuperMrid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SuperMrid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

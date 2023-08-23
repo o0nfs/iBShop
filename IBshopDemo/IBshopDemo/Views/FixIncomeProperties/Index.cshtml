@@ -1,0 +1,107 @@
+﻿@model IEnumerable<IBshopDemo.Models.FixIncomeProperty>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehIssue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehRev)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AndookhtehIssue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AndookhtehRev)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VirIssueBillQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VirIssueBillVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalIssue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalRev)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BrancheCodeNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InComeCenter)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehIssue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehRev)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AndookhtehIssue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AndookhtehRev)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VirIssueBillQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VirIssueBillVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalIssue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalRev)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrancheCodeNavigation.BranchCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InComeCenter.IncomecenterId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FixIncomeId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FixIncomeId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FixIncomeId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

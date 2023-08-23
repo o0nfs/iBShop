@@ -1,0 +1,152 @@
+﻿@using IBshopDemo.ViewModels.Home
+@model InputSignupVM
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - حساب کاربری آی‌بی‌شاپ</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/IBshopDemo.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--fonts-->
+    <link rel="stylesheet" href="~/fonts/Sans.ttf" />
+    <link rel="stylesheet" href="~/fonts/Sans.eot" />
+    <link rel="stylesheet" href="~/fonts/Sans.woff" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css" integrity="sha512-tpsEzNMLQS7w9imFSjbEOHdZav3/aObSESAL1y5jyJDoICFF2YwEdAHOPdOr1t+h8hTzar0flphxR76pd0V1zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        a {
+            color: #592bca;
+            text-decoration: none;
+        }
+
+        .btn-outline-secondary:hover {
+            color: #fff;
+            background-color: #592bca;
+            border-color: #6c757d;
+        }
+
+        .btn-outline-secondary {
+            color: #592bca;
+            border-color: #ced4da;
+        }
+       
+    </style>
+
+
+</head>
+<body>
+    <section class="vh-100">
+        <div class="container-fluid">
+            <div class="row vh-100">
+
+
+                <div class="col-sm-8 px-0 d-none d-sm-block " style="background-color:#592bca; direction:rtl">
+                    <div class="row h-100">
+                        <div class="col-2"></div>
+                        <div class="col-8 text-white d-grid align-content-center pb-5">
+
+                            <ul>
+                                <h5 class="mb-4 mt-lg-5">نکات امنیتی</h5>
+                                <li class="mb-4"> این سامانه با استفاده از پروتوکل امن SSL به آدرس <span _ngcontent-hvm-c62="">https://panel.ibshop.ir</span> به مشتریان خود ارائه خدمت می نماید. </li>
+                                <li class="mb-4"> لطفا پیش از ورود هرگونه اطلاعات، آدرس موجود در بخش مرورگر وب خود را با آدرس فوق مقایسه نمایید و در صورت مشاهده هر نوع مغایرت احتمالی، از ادامه کار منصرف شده و موضوع را با ما درمیان بگذارید. </li>
+                                <li class="mb-4"> برای حفاظت از اطلاعات حساب کاربری خود، حتی المقدور از صفحه کلید مجازی استفاده نمایید. </li>
+                                <li class="mb-4"> هرگز اطلاعات حساب کاربری (نام کاربری و رمز عبور) خود را در اختیار دیگران قرار ندهید. </li>
+                                <li class="mb-4"> پس از اتمام کار با سامانه، حتما بر روی دکمه خروج از سامانه کلیک نمایید. </li>
+                                <li> جهت بالا بردن ضریب امنیتی و آسودگی خاطر مشتريان محترم، این سامانه بر روی پروتکل امن (https) ارائه می شود. </li>
+                            </ul>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-sm-4 text-black align-self-center pb-5">
+                    <div class="row">
+                        <div class="col-md-11 col-xl-9 col-xxl-8 mx-auto">
+                            <div class=" ms-xl-4 text-center">
+                                <i class="fas fa-crow fa-2x me-3 mt-xl-4" style="color: #709085;"></i>
+
+                                <img _ngcontent-pjn-c62="" src="~/images/logo.webp" width="120" alt="logo-shr" class="my-3 mx-auto d-block">
+                                <h2 class="h4 text-center mb-4 pt-4">ثبت نام</h2>
+                            </div>
+
+                            <div class="d-flex align-items-center h-custom-2  ms-xl-4  pt-xl-0 mt-xl-n5 ">
+
+                                <form method="post" class="text-end mx-auto w-100">
+                                    <div class="form-outline mb-4">
+                                        <input type="text" asp-for="FirstName" class="form-control form-control-lg text-end mb-1" placeholder="نام" />
+                                        <span asp-validation-for="FirstName" class="text-danger small"></span>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <input type="text" asp-for="LastName" class="form-control form-control-lg text-end mb-1" placeholder="نام خانوادگی" />
+                                        <span asp-validation-for="LastName" class="text-danger small"></span>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <input type="text" asp-for="NationalCode" class="form-control form-control-lg text-end mb-1" placeholder="کد ملی / شناسنامه" />
+                                        <span asp-validation-for="NationalCode" class="text-danger small"></span>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input asp-for="PhoneNumber" class="form-control form-control-lg text-end mb-1" placeholder="شماره موبایل" />
+                                        <span asp-validation-for="PhoneNumber" class="text-danger small"></span>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        @*<button class="btn btn-outline-secondary h1" type="button"><svg _ngcontent-ljn-c58="" xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 22.7 16" class=""><g _ngcontent-ljn-c58="" id="ico_visibility" transform="translate(0.75 0.75)"><path _ngcontent-ljn-c58="" id="ico_visibility-2" data-name="ico_visibility" d="M12,4.8A11.483,11.483,0,0,0,1.4,11.9v.3a11.463,11.463,0,0,0,21.2,0V12A11.322,11.322,0,0,0,12,4.8Zm0,4.4A2.8,2.8,0,0,0,9.2,12,2.734,2.734,0,0,0,12,14.8,2.734,2.734,0,0,0,14.8,12,2.8,2.8,0,0,0,12,9.2Z" transform="translate(-1.4 -4.8)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></g></svg></button>*@
+                                        <input type="password" asp-for="Password" class="form-control form-control-lg text-end mb-1" placeholder="کلمه عبور" />
+                                        <span asp-validation-for="Password" class="text-danger small"></span>
+               
+                                    </div>
+                                    
+                                  @*  <div class="form-outline text-end ">
+                                        <p class="px-2 mb-3 mt-1 pb-lg-2  fs-6 text-muted" font-size:7em"><a href="#" class="forgotpwd text-muted">رمز عبور باید حداقل 8 کاراکتر و شامل حروف کوچک و بزرگ، اعداد و نماد باشد</a></p>
+                                    </div>
+*@
+
+                                    <div class="form-outline mb-4">
+                                        @*<button class="btn btn-outline-secondary h1" type="button"><svg _ngcontent-ljn-c58="" xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 22.7 16" class=""><g _ngcontent-ljn-c58="" id="ico_visibility" transform="translate(0.75 0.75)"><path _ngcontent-ljn-c58="" id="ico_visibility-2" data-name="ico_visibility" d="M12,4.8A11.483,11.483,0,0,0,1.4,11.9v.3a11.463,11.463,0,0,0,21.2,0V12A11.322,11.322,0,0,0,12,4.8Zm0,4.4A2.8,2.8,0,0,0,9.2,12,2.734,2.734,0,0,0,12,14.8,2.734,2.734,0,0,0,14.8,12,2.8,2.8,0,0,0,12,9.2Z" transform="translate(-1.4 -4.8)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></g></svg></button>*@
+                                        <input type="password" asp-for="rePassword" class="form-control form-control-lg text-end mb-1" placeholder="تکرار کلمه عبور" />
+                                        <span asp-validation-for="rePassword" class="text-danger small"></span>
+                                    </div>
+
+                                   @* <div class="input-group mb-5">
+                                        <button class="btn btn-outline-secondary h1" type="button" id="button-addon1">
+                                            capcha
+                                        </button>
+                                        <input type="password"  class="form-control form-control-lg text-end mb-2" placeholder="کلمه عبور" />
+                                    </div>*@
+
+
+                                    <div class="d-grid pt-1 mb-4">
+
+                                        <button class="btn btn-primary btn-lg btn-block w-100" type="submit" style="background-color:#592bca" >تایید و ادامه</button>
+                                      
+                                    </div>
+
+
+                                    <p>
+                                        <span class="text-muted fs-6"> قبلا حساب کاربری ایجاد کرده اید؟</span>
+                                        <a asp-controller="Home" asp-action="Login"  class="text-center mb-3 fw-semibold fw-bold fs-5" style="color:#592bca; font-size:1.3em">ورود</a>
+                                    </p>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

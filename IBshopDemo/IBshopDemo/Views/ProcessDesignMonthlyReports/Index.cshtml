@@ -1,0 +1,185 @@
+﻿@model IEnumerable<IBshopDemo.Models.ProcessDesignMonthlyReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrcdQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RelPrcdQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RelInsQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RelReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrcDesign)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReviewPrc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AsmPrc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DlgQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IndexQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReviwIndxQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KpimonitoringQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MrkcommHold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MrkDoneCmm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MrkFailCmm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DevCommHold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DevDoneCmm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DevFailCmm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrmcommHold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrmdoneCmm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrmfailCmm)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Month)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrcdQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RelPrcdQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RelInsQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RelReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrcDesign)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewPrc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsmPrc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DlgQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IndexQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviwIndxQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KpimonitoringQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MrkcommHold)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MrkDoneCmm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MrkFailCmm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DevCommHold)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DevDoneCmm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DevFailCmm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CrmcommHold)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CrmdoneCmm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CrmfailCmm)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProcessDesignMrid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ProcessDesignMrid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProcessDesignMrid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

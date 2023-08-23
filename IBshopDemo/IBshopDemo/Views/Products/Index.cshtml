@@ -1,0 +1,89 @@
+﻿@model IEnumerable<IBshopDemo.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbcrowdVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbcardIssueQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CardQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KargozariBoursCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DealValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Income)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BrancheCodeNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IncomeCenter)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbcrowdVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbcardIssueQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KargozariBoursCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DealValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Income)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrancheCodeNavigation.BranchCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IncomeCenter.IncomecenterId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProductsId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ProductsId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProductsId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

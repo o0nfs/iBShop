@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\IBshopDemo",
+    "\\IBshopDemo\\IBshopDemo",
+    "\\IBshopDemo\\IBshopDemo\\Views",
+    "\\IBshopDemo\\IBshopDemo\\Views\\BranchRankings",
+    "\\IBshopDemo\\IBshopDemo\\Views\\Home",
+    "\\IBshopDemo\\IBshopDemo\\Views\\Kpicrms",
+    "\\IBshopDemo\\IBshopDemo\\Views\\Shared",
+    "\\IBshopDemo\\IBshopDemo\\wwwroot",
+    "\\IBshopDemo\\IBshopDemo\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\IBshopDemo\\IBshopDemo\\Views\\BranchRankings\\Details.cshtml",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,90 @@
+﻿@model IBshopDemo.Models.Kpidevelopment
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Kpidevelopment</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RdinPrdImp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RdinPrdImp)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdeCusNeed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdeCusNeed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NewTooldsat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NewTooldsat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PerImpPrdSur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PerImpPrdSur)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrdAwaPer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrdAwaPer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NewCusinSrvPrd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NewCusinSrvPrd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SugCap)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SugCap)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SugInc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SugInc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InvSugAvgTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InvSugAvgTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SolutionAvgTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SolutionAvgTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ColRate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ColRate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AccsugRate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AccsugRate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.KpidevelomentCode">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

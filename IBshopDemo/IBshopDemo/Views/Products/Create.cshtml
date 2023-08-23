@@ -1,0 +1,113 @@
+﻿@model IBshopDemo.Models.Product
+
+@{
+    ViewData["Title"] = "Create";
+}
+<style>
+    div.card {
+        border-bottom: 3px solid green;
+        border-top: 3px solid green;
+        border-radius: 1.25rem !important;
+    }
+
+    .btn-create {
+        font-size: 15px;
+    }
+
+</style>
+<div class="row  p-3">
+    <div class="row p-3">
+        <h1>Create</h1>
+        <h4>Product</h4>
+    </div>
+    <hr />
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="card px-4 mt-3 shadow bg-white " style="direction:rtl">
+            <div class="card-body  pt-5">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
+					<div class="row">
+						<div class="form-group col-6 mt-1">
+							<label asp-for="ProductsId" class="form-label mt-3"></label>
+							<input asp-for="ProductsId" class="form-control mt-1 shadow-sm" />
+							<span asp-validation-for="ProductsId" class="text-danger"></span>
+						</div>
+						<div class="form-group col-6 mt-1">
+							<label asp-for="BrancheCode" class="form-label mt-3"></label>
+							<select asp-for="BrancheCode" class="form-control mt-1 shadow-sm" asp-items="ViewBag.BrancheCode"></select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-6 mt-1">
+							<label asp-for="IncomeCenterId" class="form-label mt-3"></label>
+							<select asp-for="IncomeCenterId" class="form-control mt-1 shadow-sm" asp-items="ViewBag.IncomeCenterId"></select>
+						</div>
+						<div class="form-group col-6 mt-1">
+							<label asp-for="MonthNumber" class="form-label mt-3"></label>
+							<input asp-for="MonthNumber" class="form-control mt-1 shadow-sm" />
+							<span asp-validation-for="MonthNumber" class="text-danger"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-6 mt-1">
+							<label asp-for="MonthName" class="form-label mt-3"></label>
+							<input asp-for="MonthName" class="form-control mt-1 shadow-sm" />
+							<span asp-validation-for="MonthName" class="text-danger"></span>
+						</div>
+						<div class="form-group col-6 mt-1">
+							<label asp-for="IbcrowdVol" class="form-label mt-3"></label>
+							<input asp-for="IbcrowdVol" class="form-control mt-1 shadow-sm" />
+							<span asp-validation-for="IbcrowdVol" class="text-danger"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-6 mt-1">
+							<label asp-for="IbcardIssueQty" class="form-label mt-3"></label>
+							<input asp-for="IbcardIssueQty" class="form-control mt-1 shadow-sm" />
+							<span asp-validation-for="IbcardIssueQty" class="text-danger"></span>
+						</div>
+						<div class="form-group col-6 mt-1">
+							<label asp-for="CardQty" class="form-label mt-3"></label>
+							<input asp-for="CardQty" class="form-control mt-1 shadow-sm" />
+							<span asp-validation-for="CardQty" class="text-danger"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-6 mt-1">
+							<label asp-for="KargozariBoursCode" class="form-label mt-3"></label>
+							<input asp-for="KargozariBoursCode" class="form-control mt-1 shadow-sm" />
+							<span asp-validation-for="KargozariBoursCode" class="text-danger"></span>
+						</div>
+						<div class="form-group col-6 mt-1">
+							<label asp-for="DealValue" class="form-label mt-3"></label>
+							<input asp-for="DealValue" class="form-control mt-1 shadow-sm" />
+							<span asp-validation-for="DealValue" class="text-danger"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-6 mt-1">
+							<label asp-for="Income" class="form-label mt-3"></label>
+							<input asp-for="Income" class="form-control mt-1 shadow-sm" />
+							<span asp-validation-for="Income" class="text-danger"></span>
+						</div>
+					</div>
+					<div class="row m-5 pb-5">
+						<div class="form-group">
+							<a asp-action="Index" class="mt-4 me-3 float-end ">بازگشت به لیست</a>
+							<input type="submit" value="ثبت" class=" py-3 px-5 float-start btn btn-outline-success me-3 btn-create" />
+						</div>
+					</div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-1"></div>
+</div>
+
+      
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

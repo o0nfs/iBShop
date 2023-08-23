@@ -1,0 +1,69 @@
+﻿@model IBshopDemo.Models.Kpiplanning
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Kpiplanning</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="KpiplanCode" class="control-label"></label>
+                <input asp-for="KpiplanCode" class="form-control" />
+                <span asp-validation-for="KpiplanCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DelonPrConf" class="control-label"></label>
+                <input asp-for="DelonPrConf" class="form-control" />
+                <span asp-validation-for="DelonPrConf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EffImpAct" class="control-label"></label>
+                <input asp-for="EffImpAct" class="form-control" />
+                <span asp-validation-for="EffImpAct" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtimpPercentage" class="control-label"></label>
+                <input asp-for="OtimpPercentage" class="form-control" />
+                <span asp-validation-for="OtimpPercentage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrImPercent" class="control-label"></label>
+                <input asp-for="PrImPercent" class="form-control" />
+                <span asp-validation-for="PrImPercent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KmsavePercent" class="control-label"></label>
+                <input asp-for="KmsavePercent" class="form-control" />
+                <span asp-validation-for="KmsavePercent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArchivePer" class="control-label"></label>
+                <input asp-for="ArchivePer" class="form-control" />
+                <span asp-validation-for="ArchivePer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nps" class="control-label"></label>
+                <input asp-for="Nps" class="form-control" />
+                <span asp-validation-for="Nps" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

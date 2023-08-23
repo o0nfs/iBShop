@@ -1,0 +1,95 @@
+﻿@model IEnumerable<IBshopDemo.Models.OperationKpi>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OperationKpicode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Piapp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrApp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppDev)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Answeringspeed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbCardAutAvgTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SejAutAvgTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PayToCusAvgTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CusAutAsset)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SucOprRate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OperationKpicode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Piapp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ErrApp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppDev)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answeringspeed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbCardAutAvgTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SejAutAvgTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PayToCusAvgTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CusAutAsset)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SucOprRate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

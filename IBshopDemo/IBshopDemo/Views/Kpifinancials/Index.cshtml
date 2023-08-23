@@ -1,0 +1,113 @@
+﻿@model IEnumerable<IBshopDemo.Models.Kpifinancial>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KpifinCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtdecLegRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RvwAccConflicts)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RvwInvConflicts)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DevPlnBudPer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IncBudMeetPer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DemistakeFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcrFinRepPer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cnt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CtrTimeDuration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FixedAssetConflict)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillIssueAvgTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CnrctrInvoicesMatch)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OdrecintotalRec)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KpifinCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OtdecLegRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RvwAccConflicts)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RvwInvConflicts)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DevPlnBudPer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IncBudMeetPer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DemistakeFin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AcrFinRepPer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cnt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CtrTimeDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FixedAssetConflict)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillIssueAvgTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CnrctrInvoicesMatch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OdrecintotalRec)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

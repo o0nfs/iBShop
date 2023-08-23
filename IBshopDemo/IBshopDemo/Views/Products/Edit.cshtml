@@ -1,0 +1,79 @@
+﻿@model IBshopDemo.Models.Product
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProductsId" />
+            <div class="form-group">
+                <label asp-for="BrancheCode" class="control-label"></label>
+                <select asp-for="BrancheCode" class="form-control" asp-items="ViewBag.BrancheCode"></select>
+                <span asp-validation-for="BrancheCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IncomeCenterId" class="control-label"></label>
+                <select asp-for="IncomeCenterId" class="form-control" asp-items="ViewBag.IncomeCenterId"></select>
+                <span asp-validation-for="IncomeCenterId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MonthNumber" class="control-label"></label>
+                <input asp-for="MonthNumber" class="form-control" />
+                <span asp-validation-for="MonthNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MonthName" class="control-label"></label>
+                <input asp-for="MonthName" class="form-control" />
+                <span asp-validation-for="MonthName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbcrowdVol" class="control-label"></label>
+                <input asp-for="IbcrowdVol" class="form-control" />
+                <span asp-validation-for="IbcrowdVol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IbcardIssueQty" class="control-label"></label>
+                <input asp-for="IbcardIssueQty" class="form-control" />
+                <span asp-validation-for="IbcardIssueQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CardQty" class="control-label"></label>
+                <input asp-for="CardQty" class="form-control" />
+                <span asp-validation-for="CardQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KargozariBoursCode" class="control-label"></label>
+                <input asp-for="KargozariBoursCode" class="form-control" />
+                <span asp-validation-for="KargozariBoursCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DealValue" class="control-label"></label>
+                <input asp-for="DealValue" class="form-control" />
+                <span asp-validation-for="DealValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Income" class="control-label"></label>
+                <input asp-for="Income" class="form-control" />
+                <span asp-validation-for="Income" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

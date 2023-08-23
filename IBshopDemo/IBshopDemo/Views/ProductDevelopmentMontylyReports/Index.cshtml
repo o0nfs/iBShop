@@ -1,0 +1,113 @@
+﻿@model IEnumerable<IBshopDemo.Models.ProductDevelopmentMontylyReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CheckedSuggestQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcceptedSuggestQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SuggestPersonnelQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EconomicalSuggestQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbcCreaditCardCustQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbcComplQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbcCreadiCardReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbcCreaditCardProcessAvgTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbwDesignQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbwDesignVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbwDesignTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Month)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckedSuggestQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AcceptedSuggestQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SuggestPersonnelQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EconomicalSuggestQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbcCreaditCardCustQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbcComplQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbcCreadiCardReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbcCreaditCardProcessAvgTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbwDesignQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbwDesignVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbwDesignTime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DevMrid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DevMrid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DevMrid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

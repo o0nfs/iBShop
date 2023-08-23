@@ -1,0 +1,257 @@
+﻿@model IEnumerable<IBshopDemo.Models.CrmMonthlyReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InChatQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InCompCallQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InVmQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InCallQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutAccNumEditQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutsurveyQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutComTrtQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutVmQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SejamQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvgCallDuration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvgCallWaitingDuration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToalCallDuration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehIssuesQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehIssuesVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AndookhtehIssuesQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AndookhtehIssuesVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoharandServatIssuesQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoharandServatIssuesVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalIssuesQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalIssuesVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrmcoursesQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketOnlineQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Inticket)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ComplaintTicketQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SurveyTicketQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InSurveyCallQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutSurveyCallQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OnlineChatsurveyQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehTicketQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AndookhtehicketQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServatafarinanTicketQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoharTicketQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbCardTicketQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbCrowdTicketQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchComplTicketQty)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Month)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InChatQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InCompCallQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InVmQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InCallQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutAccNumEditQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutsurveyQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutComTrtQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutVmQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SejamQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AvgCallDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AvgCallWaitingDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToalCallDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehIssuesQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehIssuesVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AndookhtehIssuesQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AndookhtehIssuesVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GoharandServatIssuesQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GoharandServatIssuesVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalIssuesQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalIssuesVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CrmcoursesQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketOnlineQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inticket)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ComplaintTicketQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SurveyTicketQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InSurveyCallQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutSurveyCallQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OnlineChatsurveyQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehTicketQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AndookhtehicketQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServatafarinanTicketQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GoharTicketQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbCardTicketQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbCrowdTicketQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchComplTicketQty)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Crmmrid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Crmmrid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Crmmrid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

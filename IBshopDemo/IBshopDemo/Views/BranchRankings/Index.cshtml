@@ -1,0 +1,101 @@
+﻿@model IEnumerable<IBshopDemo.Models.BranchRanking>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchRankingId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanjinehRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Andokhtehrank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServatRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bimehrank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IBcrowdrank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Productrank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sandoghrank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SatisfactionRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Servicerank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalRank)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchRankingId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanjinehRank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Andokhtehrank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServatRank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bimehrank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IBcrowdrank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Productrank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sandoghrank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SatisfactionRank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Servicerank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalRank)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

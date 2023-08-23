@@ -1,0 +1,239 @@
+﻿@model IEnumerable<IBshopDemo.Models.MarketingMonthlyReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SentSmsQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportAdvQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NotifPushQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostMediaQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StateMedAdvQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BilboardQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SrchEntQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RefEntQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SmedEntQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SiteEntMonthlyAvg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InstFlwQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EngQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TlgPostContentQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LinkdinContentQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesignQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VideoQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HoldQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HoldComptQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RecVidPostQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrainPostQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsFlwQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrainingCntrctQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IbcrowdCalllegalCusQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrdSrvAdvCallQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SucCallQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToalInvestVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConversationRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BounceRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KeywordsRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoogleEntTerRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LinkEntTerRate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Month)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SentSmsQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReportAdvQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NotifPushQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostMediaQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StateMedAdvQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BilboardQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SrchEntQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RefEntQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SmedEntQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SiteEntMonthlyAvg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InstFlwQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EngQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TlgPostContentQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LinkdinContentQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesignQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VideoQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoldQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoldComptQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecVidPostQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainPostQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsFlwQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewsQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainingCntrctQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IbcrowdCalllegalCusQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrdSrvAdvCallQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SucCallQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToalInvestVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConversationRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BounceRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KeywordsRank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GoogleEntTerRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LinkEntTerRate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Mrkmrid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Mrkmrid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Mrkmrid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

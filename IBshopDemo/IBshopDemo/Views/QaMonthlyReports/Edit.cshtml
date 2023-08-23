@@ -1,0 +1,279 @@
+﻿@model IBshopDemo.Models.QaMonthlyReport
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>QaMonthlyReport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Qamrid" />
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Month" class="control-label"></label>
+                <input asp-for="Month" class="form-control" />
+                <span asp-validation-for="Month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MonthNumber" class="control-label"></label>
+                <input asp-for="MonthNumber" class="form-control" />
+                <span asp-validation-for="MonthNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalPersonnelIncCallQty" class="control-label"></label>
+                <input asp-for="TotalPersonnelIncCallQty" class="form-control" />
+                <span asp-validation-for="TotalPersonnelIncCallQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalChcIncCallQty" class="control-label"></label>
+                <input asp-for="TotalChcIncCallQty" class="form-control" />
+                <span asp-validation-for="TotalChcIncCallQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WelFailPerIncQty" class="control-label"></label>
+                <input asp-for="WelFailPerIncQty" class="form-control" />
+                <span asp-validation-for="WelFailPerIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WelFailIncQty" class="control-label"></label>
+                <input asp-for="WelFailIncQty" class="form-control" />
+                <span asp-validation-for="WelFailIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SurFailPerIncQty" class="control-label"></label>
+                <input asp-for="SurFailPerIncQty" class="form-control" />
+                <span asp-validation-for="SurFailPerIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SurFailIncQty" class="control-label"></label>
+                <input asp-for="SurFailIncQty" class="form-control" />
+                <span asp-validation-for="SurFailIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KnwFailPerIncQty" class="control-label"></label>
+                <input asp-for="KnwFailPerIncQty" class="form-control" />
+                <span asp-validation-for="KnwFailPerIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KnwFailIncQty" class="control-label"></label>
+                <input asp-for="KnwFailIncQty" class="form-control" />
+                <span asp-validation-for="KnwFailIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProFailPerIncQty" class="control-label"></label>
+                <input asp-for="ProFailPerIncQty" class="form-control" />
+                <span asp-validation-for="ProFailPerIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProFailIncQty" class="control-label"></label>
+                <input asp-for="ProFailIncQty" class="form-control" />
+                <span asp-validation-for="ProFailIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TicFailPerIncQty" class="control-label"></label>
+                <input asp-for="TicFailPerIncQty" class="form-control" />
+                <span asp-validation-for="TicFailPerIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TicFailIncQty" class="control-label"></label>
+                <input asp-for="TicFailIncQty" class="form-control" />
+                <span asp-validation-for="TicFailIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CalMgtPerIncQty" class="control-label"></label>
+                <input asp-for="CalMgtPerIncQty" class="form-control" />
+                <span asp-validation-for="CalMgtPerIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CalMgtIncQty" class="control-label"></label>
+                <input asp-for="CalMgtIncQty" class="form-control" />
+                <span asp-validation-for="CalMgtIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysFailPerIncQty" class="control-label"></label>
+                <input asp-for="SysFailPerIncQty" class="form-control" />
+                <span asp-validation-for="SysFailPerIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysFailIncQty" class="control-label"></label>
+                <input asp-for="SysFailIncQty" class="form-control" />
+                <span asp-validation-for="SysFailIncQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalPersonnelOutCallQty" class="control-label"></label>
+                <input asp-for="TotalPersonnelOutCallQty" class="form-control" />
+                <span asp-validation-for="TotalPersonnelOutCallQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalChcOutCallQty" class="control-label"></label>
+                <input asp-for="TotalChcOutCallQty" class="form-control" />
+                <span asp-validation-for="TotalChcOutCallQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SurFailPerOutQty" class="control-label"></label>
+                <input asp-for="SurFailPerOutQty" class="form-control" />
+                <span asp-validation-for="SurFailPerOutQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SurFailOutQty" class="control-label"></label>
+                <input asp-for="SurFailOutQty" class="form-control" />
+                <span asp-validation-for="SurFailOutQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProFailPerOutQty" class="control-label"></label>
+                <input asp-for="ProFailPerOutQty" class="form-control" />
+                <span asp-validation-for="ProFailPerOutQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProFailOutQty" class="control-label"></label>
+                <input asp-for="ProFailOutQty" class="form-control" />
+                <span asp-validation-for="ProFailOutQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TicFailPerOutQty" class="control-label"></label>
+                <input asp-for="TicFailPerOutQty" class="form-control" />
+                <span asp-validation-for="TicFailPerOutQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TicFailOutQty" class="control-label"></label>
+                <input asp-for="TicFailOutQty" class="form-control" />
+                <span asp-validation-for="TicFailOutQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CalMgtPerOutQty" class="control-label"></label>
+                <input asp-for="CalMgtPerOutQty" class="form-control" />
+                <span asp-validation-for="CalMgtPerOutQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CalMgtOutQty" class="control-label"></label>
+                <input asp-for="CalMgtOutQty" class="form-control" />
+                <span asp-validation-for="CalMgtOutQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ToalOnlineChat" class="control-label"></label>
+                <input asp-for="ToalOnlineChat" class="form-control" />
+                <span asp-validation-for="ToalOnlineChat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalCheckedOnlineChat" class="control-label"></label>
+                <input asp-for="TotalCheckedOnlineChat" class="form-control" />
+                <span asp-validation-for="TotalCheckedOnlineChat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SurFailPerChatQty" class="control-label"></label>
+                <input asp-for="SurFailPerChatQty" class="form-control" />
+                <span asp-validation-for="SurFailPerChatQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SurFailChatQty" class="control-label"></label>
+                <input asp-for="SurFailChatQty" class="form-control" />
+                <span asp-validation-for="SurFailChatQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProFailPerChatQty" class="control-label"></label>
+                <input asp-for="ProFailPerChatQty" class="form-control" />
+                <span asp-validation-for="ProFailPerChatQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProFailChatQty" class="control-label"></label>
+                <input asp-for="ProFailChatQty" class="form-control" />
+                <span asp-validation-for="ProFailChatQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TicFailPerChatQty" class="control-label"></label>
+                <input asp-for="TicFailPerChatQty" class="form-control" />
+                <span asp-validation-for="TicFailPerChatQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TicFailChatQty" class="control-label"></label>
+                <input asp-for="TicFailChatQty" class="form-control" />
+                <span asp-validation-for="TicFailChatQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TimFailPerChatQty" class="control-label"></label>
+                <input asp-for="TimFailPerChatQty" class="form-control" />
+                <span asp-validation-for="TimFailPerChatQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TimFailChatQty" class="control-label"></label>
+                <input asp-for="TimFailChatQty" class="form-control" />
+                <span asp-validation-for="TimFailChatQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SurveyChatOnline" class="control-label"></label>
+                <input asp-for="SurveyChatOnline" class="form-control" />
+                <span asp-validation-for="SurveyChatOnline" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HgradeQty" class="control-label"></label>
+                <input asp-for="HgradeQty" class="form-control" />
+                <span asp-validation-for="HgradeQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GgradeQty" class="control-label"></label>
+                <input asp-for="GgradeQty" class="form-control" />
+                <span asp-validation-for="GgradeQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FgradeQty" class="control-label"></label>
+                <input asp-for="FgradeQty" class="form-control" />
+                <span asp-validation-for="FgradeQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EgradeQty" class="control-label"></label>
+                <input asp-for="EgradeQty" class="form-control" />
+                <span asp-validation-for="EgradeQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DgradeQty" class="control-label"></label>
+                <input asp-for="DgradeQty" class="form-control" />
+                <span asp-validation-for="DgradeQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CgradeQty" class="control-label"></label>
+                <input asp-for="CgradeQty" class="form-control" />
+                <span asp-validation-for="CgradeQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BgradeQty" class="control-label"></label>
+                <input asp-for="BgradeQty" class="form-control" />
+                <span asp-validation-for="BgradeQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgradeQty" class="control-label"></label>
+                <input asp-for="AgradeQty" class="form-control" />
+                <span asp-validation-for="AgradeQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ApgradeQty" class="control-label"></label>
+                <input asp-for="ApgradeQty" class="form-control" />
+                <span asp-validation-for="ApgradeQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RepFail" class="control-label"></label>
+                <input asp-for="RepFail" class="form-control" />
+                <span asp-validation-for="RepFail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

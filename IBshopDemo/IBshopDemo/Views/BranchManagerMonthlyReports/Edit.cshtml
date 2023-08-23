@@ -1,0 +1,129 @@
+﻿@model IBshopDemo.Models.BranchManagerMonthlyReport
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>BranchManagerMonthlyReport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="BranchManagerMonthlyReportIdBranchManagerMonthlyReportId" />
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Month" class="control-label"></label>
+                <input asp-for="Month" class="form-control" />
+                <span asp-validation-for="Month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MonthNumber" class="control-label"></label>
+                <input asp-for="MonthNumber" class="form-control" />
+                <span asp-validation-for="MonthNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BranchCode" class="control-label"></label>
+                <input asp-for="BranchCode" class="form-control" />
+                <span asp-validation-for="BranchCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BranchLocation" class="control-label"></label>
+                <input asp-for="BranchLocation" class="form-control" />
+                <span asp-validation-for="BranchLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IBcardMrkmtgqty" class="control-label"></label>
+                <input asp-for="IBcardMrkmtgqty" class="form-control" />
+                <span asp-validation-for="IBcardMrkmtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IBcardSuccessMtgqty" class="control-label"></label>
+                <input asp-for="IBcardSuccessMtgqty" class="form-control" />
+                <span asp-validation-for="IBcardSuccessMtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IBcrowdMrkmtgqty" class="control-label"></label>
+                <input asp-for="IBcrowdMrkmtgqty" class="form-control" />
+                <span asp-validation-for="IBcrowdMrkmtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IBcrowdSuccessMtgqty" class="control-label"></label>
+                <input asp-for="IBcrowdSuccessMtgqty" class="form-control" />
+                <span asp-validation-for="IBcrowdSuccessMtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AssuranceMrkmtgqty" class="control-label"></label>
+                <input asp-for="AssuranceMrkmtgqty" class="form-control" />
+                <span asp-validation-for="AssuranceMrkmtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AssuranceSuccessMtgqty" class="control-label"></label>
+                <input asp-for="AssuranceSuccessMtgqty" class="form-control" />
+                <span asp-validation-for="AssuranceSuccessMtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DebtSharesMrkmtgqty" class="control-label"></label>
+                <input asp-for="DebtSharesMrkmtgqty" class="form-control" />
+                <span asp-validation-for="DebtSharesMrkmtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DebtSharesSuccessMtgqty" class="control-label"></label>
+                <input asp-for="DebtSharesSuccessMtgqty" class="form-control" />
+                <span asp-validation-for="DebtSharesSuccessMtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InvestmentMrkmtgqty" class="control-label"></label>
+                <input asp-for="InvestmentMrkmtgqty" class="form-control" />
+                <span asp-validation-for="InvestmentMrkmtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InvesmentSuccessMtgqty" class="control-label"></label>
+                <input asp-for="InvesmentSuccessMtgqty" class="form-control" />
+                <span asp-validation-for="InvesmentSuccessMtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoursesReq" class="control-label"></label>
+                <input asp-for="CoursesReq" class="form-control" />
+                <span asp-validation-for="CoursesReq" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoursesMrkmtgqty" class="control-label"></label>
+                <input asp-for="CoursesMrkmtgqty" class="form-control" />
+                <span asp-validation-for="CoursesMrkmtgqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoursesMrkmtgfirstAgreementQty" class="control-label"></label>
+                <input asp-for="CoursesMrkmtgfirstAgreementQty" class="form-control" />
+                <span asp-validation-for="CoursesMrkmtgfirstAgreementQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComplainantQty" class="control-label"></label>
+                <input asp-for="ComplainantQty" class="form-control" />
+                <span asp-validation-for="ComplainantQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Conciliation" class="control-label"></label>
+                <input asp-for="Conciliation" class="form-control" />
+                <span asp-validation-for="Conciliation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

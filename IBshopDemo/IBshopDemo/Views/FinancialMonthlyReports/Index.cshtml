@@ -1,0 +1,143 @@
+﻿@model IEnumerable<IBshopDemo.Models.FinancialMonthlyReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonnelSetQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CheckedfundQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreasuryBillsQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Recivedgaurantee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RestaxinstallmentQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResFundInstallmenQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaminInstallmentQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaminPenaltyVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TranCommissionQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaminInstallmentDelay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaxInstallmentDelay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrpReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MtnprpQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ColPrpQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LblPrpQty)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Month)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonnelSetQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckedfundQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TreasuryBillsQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Recivedgaurantee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RestaxinstallmentQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResFundInstallmenQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaminInstallmentQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaminPenaltyVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TranCommissionQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaminInstallmentDelay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaxInstallmentDelay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrpReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MtnprpQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ColPrpQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LblPrpQty)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FinancialMrid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FinancialMrid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FinancialMrid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

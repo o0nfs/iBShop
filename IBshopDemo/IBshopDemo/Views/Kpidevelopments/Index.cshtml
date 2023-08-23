@@ -1,0 +1,101 @@
+﻿@model IEnumerable<IBshopDemo.Models.Kpidevelopment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RdinPrdImp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdeCusNeed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewTooldsat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PerImpPrdSur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrdAwaPer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewCusinSrvPrd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SugCap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SugInc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvSugAvgTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SolutionAvgTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ColRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccsugRate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RdinPrdImp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdeCusNeed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewTooldsat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PerImpPrdSur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrdAwaPer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewCusinSrvPrd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SugCap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SugInc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvSugAvgTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SolutionAvgTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ColRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccsugRate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.KpidevelomentCode">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.KpidevelomentCode">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.KpidevelomentCode">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

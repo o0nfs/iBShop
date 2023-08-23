@@ -1,0 +1,479 @@
+﻿@model IEnumerable<IBshopDemo.Models.OperationMonthlyReport>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Oprmrid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillConflictReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PoseConflictReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SmsinternetConflictReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchInternetConflictReqQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IntternetEntranceConflictReq)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FixedConflictQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalConflictsProcess)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BkgNewCustomer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BkgReqCnfqty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BkgCrdVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BkgCrdQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalIbcardIssuesVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalIbcardIssuesQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalTransferVol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalmsgQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RemotChcAut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalEditAcc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalIdeEdit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalLegAut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalChcSejam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalIssuCrt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehTamaddon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehTamaddonRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehShahr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehShahrRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehSandogh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehSandoghRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehSamaneh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehSamanehRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehBranches)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehBranchesRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehShahrnet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehShahrnetRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCganjinehTotalRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehTamaddon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehTamaddonRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehShahr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehShahrRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehOtherBanks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehOtherBanksRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehSandogh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehSandoghRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehSamaneh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehSamanehRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehBranch)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehBranchRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehShahrnet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehShahrnetRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCandookhtehTotalRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatTamaddon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatTamaddonRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatSamaneh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatSamanehRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatBranch)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatBranchRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatSandogh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatSandoghRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCservatTotalRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharTamaddon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharTamaddonRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharSamaneh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharSamanehRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharBranch)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharBranchRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharSandogh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharSandoghRe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbCgoharTotalRe)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Oprmrid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Month)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillConflictReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PoseConflictReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SmsinternetConflictReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchInternetConflictReqQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IntternetEntranceConflictReq)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FixedConflictQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalConflictsProcess)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BkgNewCustomer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BkgReqCnfqty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BkgCrdVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BkgCrdQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalIbcardIssuesVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalIbcardIssuesQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalTransferVol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalmsgQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RemotChcAut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalEditAcc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalIdeEdit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalLegAut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalChcSejam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalIssuCrt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehTamaddon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehTamaddonRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehShahr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehShahrRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehSandogh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehSandoghRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehSamaneh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehSamanehRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehBranches)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehBranchesRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehShahrnet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehShahrnetRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCganjinehTotalRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehTamaddon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehTamaddonRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehShahr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehShahrRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehOtherBanks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehOtherBanksRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehSandogh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehSandoghRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehSamaneh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehSamanehRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehBranch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehBranchRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehShahrnet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehShahrnetRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCandookhtehTotalRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatTamaddon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatTamaddonRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatSamaneh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatSamanehRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatBranch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatBranchRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatSandogh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatSandoghRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCservatTotalRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharTamaddon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharTamaddonRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharSamaneh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharSamanehRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharBranch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharBranchRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharSandogh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharSandoghRe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbCgoharTotalRe)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
