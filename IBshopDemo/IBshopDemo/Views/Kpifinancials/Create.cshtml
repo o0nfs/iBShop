@@ -4,131 +4,137 @@
     ViewData["Title"] = "Create";
 }
 
-<style>
-    div.card {
-        border-bottom: 3px solid green;
-        border-top: 3px solid green;
-        border-radius: 1.25rem !important;
-    }
+<div class="content-wrapper">
+	<!-- Content -->
 
-    .btn-create {
-        font-size: 15px;
-    }
+	<div class="container-xxl flex-grow-1 container-p-y">
+		<h4 class="py-3 mb-4">
+			<span class="text-muted fw-light">Forms/</span>
+			Sticky Actions
+		</h4>
+		<div class="row">
+			<div class="col-12">
+				<div class="card">
+					<div id="sticky-wrapper" class="sticky-wrapper" style="height: 86.9375px;">
+						<div class="card-header sticky-element bg-label-secondary d-flex justify-content-sm-between align-items-sm-center flex-column flex-sm-row" style="">
+							<h5 class="card-title mb-sm-0 me-2">Sticky Action Bar</h5>
+							<div class="action-btns">
+								<a asp-action="Index">
+									<button class="btn btn-label-primary me-3">
+										<span class="align-middle">بازگشت به لیست</span>
+									</button>
+								</a>
 
-</style>
-<div class="row  p-3">
-    <div class="row p-3">
-        <h1>Create</h1>
-        <h4>IncomeCenter</h4>
-    </div>
-    <hr />
-    <div class="col-1"></div>
-    <div class="col-10">
-        <div class="card px-4 mt-3 shadow bg-white " style="direction:rtl">
-            <div class="card-body  pt-5">
-                <form asp-action="Create">
-                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
-					<div class="row">
-						<div class="form-group col-6 mt-1">
-							<label asp-for="KpifinCode" class="form-label mt-3"></label>
-							<input asp-for="KpifinCode" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="KpifinCode" class="text-danger"></span>
-						</div>
-						<div class="form-group col-6 mt-1">
-							<label asp-for="OtdecLegRe" class="form-label mt-3"></label>
-							<input asp-for="OtdecLegRe" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="OtdecLegRe" class="text-danger"></span>
+								<button type="submit" class="btn btn-primary">
+									ثبت
+								</button>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="form-group col-6 mt-1">
-							<label asp-for="RvwAccConflicts" class="form-label mt-3"></label>
-							<input asp-for="RvwAccConflicts" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="RvwAccConflicts" class="text-danger"></span>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-lg-8 mx-auto">
+								<form asp-action="Create">
+									<div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="KpifinCode" class="form-label mt-3"></label>
+											<input asp-for="KpifinCode" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="KpifinCode" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="OtdecLegRe" class="form-label mt-3"></label>
+											<input asp-for="OtdecLegRe" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="OtdecLegRe" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="RvwAccConflicts" class="form-label mt-3"></label>
+											<input asp-for="RvwAccConflicts" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="RvwAccConflicts" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="RvwInvConflicts" class="form-label mt-3"></label>
+											<input asp-for="RvwInvConflicts" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="RvwInvConflicts" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="DevPlnBudPer" class="form-label mt-3"></label>
+											<input asp-for="DevPlnBudPer" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="DevPlnBudPer" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="IncBudMeetPer" class="form-label mt-3"></label>
+											<input asp-for="IncBudMeetPer" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="IncBudMeetPer" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="DemistakeFin" class="form-label mt-3"></label>
+											<input asp-for="DemistakeFin" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="DemistakeFin" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="AcrFinRepPer" class="form-label mt-3"></label>
+											<input asp-for="AcrFinRepPer" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="AcrFinRepPer" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="Cnt" class="form-label mt-3"></label>
+											<input asp-for="Cnt" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="Cnt" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="CtrTimeDuration" class="form-label mt-3"></label>
+											<input asp-for="CtrTimeDuration" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="CtrTimeDuration" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="FixedAssetConflict" class="form-label mt-3"></label>
+											<input asp-for="FixedAssetConflict" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="FixedAssetConflict" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="BillIssueAvgTime" class="form-label mt-3"></label>
+											<input asp-for="BillIssueAvgTime" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="BillIssueAvgTime" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="CnrctrInvoicesMatch" class="form-label mt-3"></label>
+											<input asp-for="CnrctrInvoicesMatch" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="CnrctrInvoicesMatch" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="OdrecintotalRec" class="form-label mt-3"></label>
+											<input asp-for="OdrecintotalRec" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="OdrecintotalRec" class="text-danger"></span>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
-						<div class="form-group col-6 mt-1">
-							<label asp-for="RvwInvConflicts" class="form-label mt-3"></label>
-							<input asp-for="RvwInvConflicts" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="RvwInvConflicts" class="text-danger"></span>
-						</div>
+
 					</div>
-					<div class="row">
-						<div class="form-group col-6 mt-1">
-							<label asp-for="DevPlnBudPer" class="form-label mt-3"></label>
-							<input asp-for="DevPlnBudPer" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="DevPlnBudPer" class="text-danger"></span>
-						</div>
-						<div class="form-group col-6 mt-1">
-							<label asp-for="IncBudMeetPer" class="form-label mt-3"></label>
-							<input asp-for="IncBudMeetPer" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="IncBudMeetPer" class="text-danger"></span>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-6 mt-1">
-							<label asp-for="DemistakeFin" class="form-label mt-3"></label>
-							<input asp-for="DemistakeFin" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="DemistakeFin" class="text-danger"></span>
-						</div>
-						<div class="form-group col-6 mt-1">
-							<label asp-for="AcrFinRepPer" class="form-label mt-3"></label>
-							<input asp-for="AcrFinRepPer" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="AcrFinRepPer" class="text-danger"></span>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-6 mt-1">
-							<label asp-for="Cnt" class="form-label mt-3"></label>
-							<input asp-for="Cnt" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="Cnt" class="text-danger"></span>
-						</div>
-						<div class="form-group col-6 mt-1">
-							<label asp-for="CtrTimeDuration" class="form-label mt-3"></label>
-							<input asp-for="CtrTimeDuration" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="CtrTimeDuration" class="text-danger"></span>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-6 mt-1">
-							<label asp-for="FixedAssetConflict" class="form-label mt-3"></label>
-							<input asp-for="FixedAssetConflict" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="FixedAssetConflict" class="text-danger"></span>
-						</div>
-						<div class="form-group col-6 mt-1">
-							<label asp-for="BillIssueAvgTime" class="form-label mt-3"></label>
-							<input asp-for="BillIssueAvgTime" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="BillIssueAvgTime" class="text-danger"></span>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-6 mt-1">
-							<label asp-for="CnrctrInvoicesMatch" class="form-label mt-3"></label>
-							<input asp-for="CnrctrInvoicesMatch" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="CnrctrInvoicesMatch" class="text-danger"></span>
-						</div>
-						<div class="form-group col-6 mt-1">
-							<label asp-for="OdrecintotalRec" class="form-label mt-3"></label>
-							<input asp-for="OdrecintotalRec" class="form-control mt-1 shadow-sm" />
-							<span asp-validation-for="OdrecintotalRec" class="text-danger"></span>
-						</div>
-					</div>
-                
-                    <div class="row m-5 pb-5">
-                        <div class="form-group">
-                            <a asp-action="Index" class="mt-4 me-3 float-end ">بازگشت به لیست</a>
-                            <input type="submit" value="ثبت" class=" py-3 px-5 float-start btn btn-outline-success me-3 btn-create" />
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-            
-    </div>
-    <div class="col-1"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
 
-
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+	<script src="~/theme/assets/vendor/libs/jquery-sticky/jquery-sticky.js"></script>
+	<script src="~/theme/assets/js/form-layouts.js"></script>
+
 }
+

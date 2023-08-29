@@ -224,12 +224,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Home/Signup - Copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWdudXAgLSBDb3B5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Home/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Home/Signup2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWdudXAyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Create.cshtml]

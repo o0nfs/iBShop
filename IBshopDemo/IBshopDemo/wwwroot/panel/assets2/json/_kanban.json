@@ -1,0 +1,127 @@
+[
+  {
+    "id": "board-in-progress",
+    "item": [
+      {
+        "assigned": [
+          "12.png",
+          "5.png"
+        ],
+        "attachments": "4",
+        "badge": "success",
+        "badge-text": "UX",
+        "comments": "12",
+        "due-date": "5 April",
+        "id": "in-progress-1",
+        "members": [
+          "Bruce",
+          "Clark"
+        ],
+        "title": "Research FAQ page UX"
+      },
+      {
+        "assigned": [
+          "3.png",
+          "8.png"
+        ],
+        "attachments": "2",
+        "badge": "danger",
+        "badge-text": "Code Review",
+        "comments": "8",
+        "due-date": "10 April",
+        "id": "in-progress-2",
+        "members": [
+          "Helena",
+          "Iris"
+        ],
+        "title": "Review Javascript code"
+      }
+    ],
+    "title": "Company Type 1"
+  },
+  {
+    "id": "board-in-review",
+    "item": [
+      {
+        "assigned": [
+          "11.png",
+          "6.png"
+        ],
+        "attachments": "8",
+        "badge": "info",
+        "badge-text": "Info",
+        "comments": "17",
+        "due-date": "8 April",
+        "id": "in-review-1",
+        "members": [
+          "Laurel",
+          "Harley"
+        ],
+        "title": "Review completed Apps"
+      },
+      {
+        "assigned": [
+          "9.png",
+          "2.png",
+          "3.png",
+          "12.png"
+        ],
+        "attachments": "10",
+        "badge": "warning",
+        "badge-text": "Images",
+        "comments": "18",
+        "due-date": "2 April",
+        "id": "in-review-2",
+        "image": "/companies/photo/1",        
+        "members": [
+          "Dianna",
+          "Jordan",
+          "Vinnie",
+          "Lasa"
+        ],
+        "title": "Find new images for pages"
+      }
+    ],
+    "title": "Company Type 2"
+  },
+  {
+    "id": "board-done",
+    "item": [
+      {
+        "assigned": [
+          "2.png",
+          "9.png",
+          "10.png"
+        ],
+        "attachments": "1",
+        "badge": "secondary",
+        "badge-text": "App",
+        "comments": "4",
+        "due-date": "7 April",
+        "id": "done-1",
+        "members": [
+          "Kara",
+          "Nyssa",
+          "Darcey"
+        ],
+        "title": "Forms & Tables section"
+      },
+      {
+        "assigned": [
+          "1.png"
+        ],
+        "attachments": "6",
+        "badge": "primary",
+        "badge-text": "Charts & Maps",
+        "comments": "21",
+        "due-date": "7 April",
+        "id": "done-2",
+        "members": [
+          "Sarah"
+        ],
+        "title": "Completed Charts & Maps"
+      }
+    ],
+    "title": "Company Type 3"
+  }
+]

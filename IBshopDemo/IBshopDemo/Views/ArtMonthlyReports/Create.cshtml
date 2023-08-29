@@ -1,217 +1,215 @@
-﻿<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-@model IBshopDemo.Models.ArtMonthlyReport
+﻿@model IBshopDemo.Models.ArtMonthlyReport
 
 @{
     ViewData["Title"] = "Create";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div class="content-wrapper">
+    <!-- Content -->
 
-<style>
-    div.card {
-        border-bottom: 3px solid green;
-        border-top: 3px solid green;
-        border-radius: 1.25rem !important;
-    }
-    .btn-create {
-        font-size: 15px;
-    }
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">Forms/</span>
+            Sticky Actions
+        </h4>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div id="sticky-wrapper" class="sticky-wrapper" style="height: 86.9375px;">
+                        <div class="card-header sticky-element bg-label-secondary d-flex justify-content-sm-between align-items-sm-center flex-column flex-sm-row" style="">
+                            <h5 class="card-title mb-sm-0 me-2">Sticky Action Bar</h5>
+                            <div class="action-btns">
+                                <a asp-action="Index">
+                                    <button class="btn btn-label-primary me-3">
+                                        <span class="align-middle">بازگشت به لیست</span>
+                                    </button>
+                                </a>
 
-</style>
+                                <button type="submit" class="btn btn-primary">
+                                    ثبت
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <form asp-action="Create">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="ArtMonthlyReportId" class="form-label mt-3"></label>
+                                            <input asp-for="ArtMonthlyReportId" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="ArtMonthlyReportId" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="Year" class="form-label mt-3"></label>
+                                            <input asp-for="Year" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="Year" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="Month" class="form-label mt-3"></label>
+                                            <input asp-for="Month" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="Month" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="MonthNumber" class="form-label mt-3"></label>
+                                            <input asp-for="MonthNumber" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="MonthNumber" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="MrkReq" class="form-label mt-3"></label>
+                                            <input asp-for="MrkReq" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="MrkReq" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="CompStudy" class="form-label mt-3"></label>
+                                            <input asp-for="CompStudy" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="CompStudy" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="ArchiveDesignQty" class="form-label mt-3"></label>
+                                            <input asp-for="ArchiveDesignQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="ArchiveDesignQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="MediaFailureQty" class="form-label mt-3"></label>
+                                            <input asp-for="MediaFailureQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="MediaFailureQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="SiteBannerAvgTime" class="form-label mt-3"></label>
+                                            <input asp-for="SiteBannerAvgTime" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="SiteBannerAvgTime" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="BrochureDesignAvgTime" class="form-label mt-3"></label>
+                                            <input asp-for="BrochureDesignAvgTime" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="BrochureDesignAvgTime" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="StoryDesignAvgTime" class="form-label mt-3"></label>
+                                            <input asp-for="StoryDesignAvgTime" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="StoryDesignAvgTime" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GifDesignAvgTime" class="form-label mt-3"></label>
+                                            <input asp-for="GifDesignAvgTime" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GifDesignAvgTime" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="StandDesignAvgTime" class="form-label mt-3"></label>
+                                            <input asp-for="StandDesignAvgTime" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="StandDesignAvgTime" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="BannerDesignQty" class="form-label mt-3"></label>
+                                            <input asp-for="BannerDesignQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="BannerDesignQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="BrochureDesignQty" class="form-label mt-3"></label>
+                                            <input asp-for="BrochureDesignQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="BrochureDesignQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="StoryDesignQty" class="form-label mt-3"></label>
+                                            <input asp-for="StoryDesignQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="StoryDesignQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GifDesignQty" class="form-label mt-3"></label>
+                                            <input asp-for="GifDesignQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GifDesignQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="StandDesigQty" class="form-label mt-3"></label>
+                                            <input asp-for="StandDesigQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="StandDesigQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="MotionQty" class="form-label mt-3"></label>
+                                            <input asp-for="MotionQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="MotionQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="ArchivedmotionQty" class="form-label mt-3"></label>
+                                            <input asp-for="ArchivedmotionQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="ArchivedmotionQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="AppliedMotionAvgTime" class="form-label mt-3"></label>
+                                            <input asp-for="AppliedMotionAvgTime" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="AppliedMotionAvgTime" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="RecordedvideoQty" class="form-label mt-3"></label>
+                                            <input asp-for="RecordedvideoQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="RecordedvideoQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="RecordedQty" class="form-label mt-3"></label>
+                                            <input asp-for="RecordedQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="RecordedQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="NarrationEditQty" class="form-label mt-3"></label>
+                                            <input asp-for="NarrationEditQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="NarrationEditQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="VideoArchiveQty" class="form-label mt-3"></label>
+                                            <input asp-for="VideoArchiveQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="VideoArchiveQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="VideoProduceAvgTime" class="form-label mt-3"></label>
+                                            <input asp-for="VideoProduceAvgTime" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="VideoProduceAvgTime" class="text-danger"></span>
+                                        </div>
+                                    </div>
 
-<div class="row p-3">
-    <h1 class="mb-5 text-success" >ثبت گزارش</h1>
-
-    <h4 class="mb-5">گزارشات ماهانه‌ی واحد گرافیک</h4>
-    <hr />
-    <div class="col-1"></div>
-    <div class="col-10 ">
-        <div class="card px-4 mt-3 shadow bg-white  ">
-            <div class="card-body  pt-5">
-                <form asp-action="Create">
-                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
-
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="ArtMonthlyReportId" class="form-label mt-3"></label>
-                            <input asp-for="ArtMonthlyReportId" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="ArtMonthlyReportId" class="text-danger"></span>
+                                </form>
+                            </div>
                         </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="Year" class="form-label mt-3"></label>
-                            <input asp-for="Year" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="Year" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="Month" class="form-label mt-3"></label>
-                            <input asp-for="Month" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="Month" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="MonthNumber" class="form-label mt-3"></label>
-                            <input asp-for="MonthNumber" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="MonthNumber" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="MrkReq" class="form-label mt-3"></label>
-                            <input asp-for="MrkReq" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="MrkReq" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="CompStudy" class="form-label mt-3"></label>
-                            <input asp-for="CompStudy" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="CompStudy" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="ArchiveDesignQty" class="form-label mt-3"></label>
-                            <input asp-for="ArchiveDesignQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="ArchiveDesignQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="MediaFailureQty" class="form-label mt-3"></label>
-                            <input asp-for="MediaFailureQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="MediaFailureQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="SiteBannerAvgTime" class="form-label mt-3"></label>
-                            <input asp-for="SiteBannerAvgTime" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="SiteBannerAvgTime" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="BrochureDesignAvgTime" class="form-label mt-3"></label>
-                            <input asp-for="BrochureDesignAvgTime" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="BrochureDesignAvgTime" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="StoryDesignAvgTime" class="form-label mt-3"></label>
-                            <input asp-for="StoryDesignAvgTime" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="StoryDesignAvgTime" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GifDesignAvgTime" class="form-label mt-3"></label>
-                            <input asp-for="GifDesignAvgTime" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GifDesignAvgTime" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="StandDesignAvgTime" class="form-label mt-3"></label>
-                            <input asp-for="StandDesignAvgTime" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="StandDesignAvgTime" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="BannerDesignQty" class="form-label mt-3"></label>
-                            <input asp-for="BannerDesignQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="BannerDesignQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="BrochureDesignQty" class="form-label mt-3"></label>
-                            <input asp-for="BrochureDesignQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="BrochureDesignQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="StoryDesignQty" class="form-label mt-3"></label>
-                            <input asp-for="StoryDesignQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="StoryDesignQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GifDesignQty" class="form-label mt-3"></label>
-                            <input asp-for="GifDesignQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GifDesignQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="StandDesigQty" class="form-label mt-3"></label>
-                            <input asp-for="StandDesigQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="StandDesigQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="MotionQty" class="form-label mt-3"></label>
-                            <input asp-for="MotionQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="MotionQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="ArchivedmotionQty" class="form-label mt-3"></label>
-                            <input asp-for="ArchivedmotionQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="ArchivedmotionQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="AppliedMotionAvgTime" class="form-label mt-3"></label>
-                            <input asp-for="AppliedMotionAvgTime" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="AppliedMotionAvgTime" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="RecordedvideoQty" class="form-label mt-3"></label>
-                            <input asp-for="RecordedvideoQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="RecordedvideoQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="RecordedQty" class="form-label mt-3"></label>
-                            <input asp-for="RecordedQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="RecordedQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="NarrationEditQty" class="form-label mt-3"></label>
-                            <input asp-for="NarrationEditQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="NarrationEditQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="VideoArchiveQty" class="form-label mt-3"></label>
-                            <input asp-for="VideoArchiveQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="VideoArchiveQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="VideoProduceAvgTime" class="form-label mt-3"></label>
-                            <input asp-for="VideoProduceAvgTime" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="VideoProduceAvgTime" class="text-danger"></span>
-                        </div>
-                    </div>
-
-
-
-                    <div class="row m-5">
-                   
-                    <div class="form-group ">
-                            <a asp-action="Index" class="mt-4 me-3 float-end ">بازگشت به لیست</a>
-                            <input type="submit" value="ثبت" class=" py-3 px-5 float-start btn btn-outline-success me-3 btn-create" />
-                        </div>
-                    
                         
-                    
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-
+           
     </div>
-    <div class="col-1"></div>
-
-    
 </div>
 
-
-
+@*
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="theme/assets/vendor/libs/jquery-sticky/jquery-sticky.js"></script>
+    <script src="theme/assets/js/form-layouts.js"></script>
+   
 }
+*@

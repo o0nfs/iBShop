@@ -4,85 +4,126 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>BranchRanking</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="BranchRankingId" class="control-label"></label>
-                <input asp-for="BranchRankingId" class="form-control" />
-                <span asp-validation-for="BranchRankingId" class="text-danger"></span>
+<div class="content-wrapper">
+    <!-- Content -->
+
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">Forms/</span>
+            Sticky Actions
+        </h4>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div id="sticky-wrapper" class="sticky-wrapper" style="height: 86.9375px;">
+                        <div class="card-header sticky-element bg-label-secondary d-flex justify-content-sm-between align-items-sm-center flex-column flex-sm-row" style="">
+                            <h5 class="card-title mb-sm-0 me-2">Sticky Action Bar</h5>
+                            <div class="action-btns">
+                                <a asp-action="Index">
+                                    <button class="btn btn-label-primary me-3">
+                                        <span class="align-middle">بازگشت به لیست</span>
+                                    </button>
+                                </a>
+
+                                <button type="submit" class="btn btn-primary">
+                                    ثبت
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <form asp-action="Create">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <div class="form-group">
+                                        <label asp-for="BranchRankingId" class="control-label"></label>
+                                        <input asp-for="BranchRankingId" class="form-control" />
+                                        <span asp-validation-for="BranchRankingId" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="BranchId" class="control-label"></label>
+                                        <input asp-for="BranchId" class="form-control" />
+                                        <span asp-validation-for="BranchId" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="GanjinehRank" class="control-label"></label>
+                                        <input asp-for="GanjinehRank" class="form-control" />
+                                        <span asp-validation-for="GanjinehRank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Andokhtehrank" class="control-label"></label>
+                                        <input asp-for="Andokhtehrank" class="form-control" />
+                                        <span asp-validation-for="Andokhtehrank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="ServatRank" class="control-label"></label>
+                                        <input asp-for="ServatRank" class="form-control" />
+                                        <span asp-validation-for="ServatRank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Bimehrank" class="control-label"></label>
+                                        <input asp-for="Bimehrank" class="form-control" />
+                                        <span asp-validation-for="Bimehrank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="IBcrowdrank" class="control-label"></label>
+                                        <input asp-for="IBcrowdrank" class="form-control" />
+                                        <span asp-validation-for="IBcrowdrank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Productrank" class="control-label"></label>
+                                        <input asp-for="Productrank" class="form-control" />
+                                        <span asp-validation-for="Productrank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Sandoghrank" class="control-label"></label>
+                                        <input asp-for="Sandoghrank" class="form-control" />
+                                        <span asp-validation-for="Sandoghrank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="SatisfactionRank" class="control-label"></label>
+                                        <input asp-for="SatisfactionRank" class="form-control" />
+                                        <span asp-validation-for="SatisfactionRank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Servicerank" class="control-label"></label>
+                                        <input asp-for="Servicerank" class="form-control" />
+                                        <span asp-validation-for="Servicerank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="TotalRank" class="control-label"></label>
+                                        <input asp-for="TotalRank" class="form-control" />
+                                        <span asp-validation-for="TotalRank" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Create" class="btn btn-primary" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="BranchId" class="control-label"></label>
-                <input asp-for="BranchId" class="form-control" />
-                <span asp-validation-for="BranchId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="GanjinehRank" class="control-label"></label>
-                <input asp-for="GanjinehRank" class="form-control" />
-                <span asp-validation-for="GanjinehRank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Andokhtehrank" class="control-label"></label>
-                <input asp-for="Andokhtehrank" class="form-control" />
-                <span asp-validation-for="Andokhtehrank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ServatRank" class="control-label"></label>
-                <input asp-for="ServatRank" class="form-control" />
-                <span asp-validation-for="ServatRank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Bimehrank" class="control-label"></label>
-                <input asp-for="Bimehrank" class="form-control" />
-                <span asp-validation-for="Bimehrank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IBcrowdrank" class="control-label"></label>
-                <input asp-for="IBcrowdrank" class="form-control" />
-                <span asp-validation-for="IBcrowdrank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Productrank" class="control-label"></label>
-                <input asp-for="Productrank" class="form-control" />
-                <span asp-validation-for="Productrank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Sandoghrank" class="control-label"></label>
-                <input asp-for="Sandoghrank" class="form-control" />
-                <span asp-validation-for="Sandoghrank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="SatisfactionRank" class="control-label"></label>
-                <input asp-for="SatisfactionRank" class="form-control" />
-                <span asp-validation-for="SatisfactionRank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Servicerank" class="control-label"></label>
-                <input asp-for="Servicerank" class="form-control" />
-                <span asp-validation-for="Servicerank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TotalRank" class="control-label"></label>
-                <input asp-for="TotalRank" class="form-control" />
-                <span asp-validation-for="TotalRank" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
+
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/theme/assets/vendor/libs/jquery-sticky/jquery-sticky.js"></script>
+    <script src="~/theme/assets/js/form-layouts.js"></script>
+
 }
+
+
+
+
+
+
+
+
+
+

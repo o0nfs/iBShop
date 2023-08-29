@@ -3,113 +3,124 @@
 @{
     ViewData["Title"] = "Create";
 }
+<div class="content-wrapper">
+    <!-- Content -->
 
-<style>
-    div.card {
-        border-bottom: 3px solid green;
-        border-top: 3px solid green;
-        border-radius: 1.25rem !important;
-    }
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">Forms/</span>
+            Sticky Actions
+        </h4>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div id="sticky-wrapper" class="sticky-wrapper" style="height: 86.9375px;">
+                        <div class="card-header sticky-element bg-label-secondary d-flex justify-content-sm-between align-items-sm-center flex-column flex-sm-row" style="">
+                            <h5 class="card-title mb-sm-0 me-2">Sticky Action Bar</h5>
+                            <div class="action-btns">
+                                <a asp-action="Index">
+                                    <button class="btn btn-label-primary me-3">
+                                        <span class="align-middle">بازگشت به لیست</span>
+                                    </button>
+                                </a>
 
-    .btn-create {
-        font-size: 15px;
-    }
+                                <button type="submit" class="btn btn-primary">
+                                    ثبت
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <form asp-action="Create">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
 
-</style>
-<div class="row  p-3">
-    <div class="row p-3">
-        <h1>Create</h1>
-        <h4>MixProperty</h4>
-    </div>
-    <hr />
-    <div class="col-1"></div>
-    <div class="col-10">
-        <div class="card px-4 mt-3 shadow bg-white " style="direction:rtl">
-            <div class="card-body  pt-5">
-                <form asp-action="Create">
-                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="MixIncomeId" class="form-label mt-3"></label>
+                                            <input asp-for="MixIncomeId" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="MixIncomeId" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="BrancheCode" class="form-label mt-3"></label>
+                                            <select asp-for="BrancheCode" class="form-control mt-1 shadow-sm" asp-items="ViewBag.BrancheCode"></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="IncomeCenterId" class="form-label mt-3"></label>
+                                            <select asp-for="IncomeCenterId" class="form-control mt-1 shadow-sm" asp-items="ViewBag.IncomeCenterId"></select>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="MonthNumber" class="form-label mt-3"></label>
+                                            <input asp-for="MonthNumber" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="MonthNumber" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="MonthName" class="form-label mt-3"></label>
+                                            <input asp-for="MonthName" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="MonthName" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="ServatIssue" class="form-label mt-3"></label>
+                                            <input asp-for="ServatIssue" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="ServatIssue" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="ServatRev" class="form-label mt-3"></label>
+                                            <input asp-for="ServatRev" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="ServatRev" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GoharIssue" class="form-label mt-3"></label>
+                                            <input asp-for="GoharIssue" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GoharIssue" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GoharRev" class="form-label mt-3"></label>
+                                            <input asp-for="GoharRev" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GoharRev" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="TotalIssue" class="form-label mt-3"></label>
+                                            <input asp-for="TotalIssue" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="TotalIssue" class="text-danger"></span>
+                                        </div>
+                                    </div>
 
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="MixIncomeId" class="form-label mt-3"></label>
-                            <input asp-for="MixIncomeId" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="MixIncomeId" class="text-danger"></span>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="TotalRev" class="form-label mt-3"></label>
+                                            <input asp-for="TotalRev" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="TotalRev" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                  
+                                </form>
+                            </div>
                         </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="BrancheCode" class="form-label mt-3"></label>
-                            <select asp-for="BrancheCode" class="form-control mt-1 shadow-sm" asp-items="ViewBag.BrancheCode"></select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="IncomeCenterId" class="form-label mt-3"></label>
-                            <select asp-for="IncomeCenterId" class="form-control mt-1 shadow-sm" asp-items="ViewBag.IncomeCenterId"></select>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="MonthNumber" class="form-label mt-3"></label>
-                            <input asp-for="MonthNumber" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="MonthNumber" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="MonthName" class="form-label mt-3"></label>
-                            <input asp-for="MonthName" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="MonthName" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="ServatIssue" class="form-label mt-3"></label>
-                            <input asp-for="ServatIssue" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="ServatIssue" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="ServatRev" class="form-label mt-3"></label>
-                            <input asp-for="ServatRev" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="ServatRev" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GoharIssue" class="form-label mt-3"></label>
-                            <input asp-for="GoharIssue" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GoharIssue" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GoharRev" class="form-label mt-3"></label>
-                            <input asp-for="GoharRev" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GoharRev" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="TotalIssue" class="form-label mt-3"></label>
-                            <input asp-for="TotalIssue" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="TotalIssue" class="text-danger"></span>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="TotalRev" class="form-label mt-3"></label>
-                            <input asp-for="TotalRev" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="TotalRev" class="text-danger"></span>
-                        </div>
                     </div>
-                    <div class="row m-5 pb-5">
-                        <div class="form-group">
-                            <a asp-action="Index" class="mt-4 me-3 float-end ">بازگشت به لیست</a>
-                            <input type="submit" value="ثبت" class=" py-3 px-5 float-start btn btn-outline-success me-3 btn-create" />
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
 
     </div>
-    <div class="col-1"></div>
 </div>
 
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/theme/assets/vendor/libs/jquery-sticky/jquery-sticky.js"></script>
+    <script src="~/theme/assets/js/form-layouts.js"></script>
+
 }
+
+
+
+

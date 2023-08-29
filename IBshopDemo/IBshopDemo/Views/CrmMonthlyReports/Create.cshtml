@@ -5,290 +5,292 @@
 }
 
 
-<style>
-    div.card {
-        border-bottom: 3px solid green;
-        border-top: 3px solid green;
-        border-radius: 1.25rem !important;
-    }
 
-    .btn-create {
-        font-size: 15px;
-    }
+<div class="content-wrapper">
+    <!-- Content -->
 
-</style>
-<div class="row  p-3">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">Forms/</span>
+            Sticky Actions
+        </h4>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div id="sticky-wrapper" class="sticky-wrapper" style="height: 86.9375px;">
+                        <div class="card-header sticky-element bg-label-secondary d-flex justify-content-sm-between align-items-sm-center flex-column flex-sm-row" style="">
+                            <h5 class="card-title mb-sm-0 me-2">Sticky Action Bar</h5>
+                            <div class="action-btns">
+                                <a asp-action="Index">
+                                    <button class="btn btn-label-primary me-3">
+                                        <span class="align-middle">بازگشت به لیست</span>
+                                    </button>
+                                </a>
 
-    <div class="row p-3">
-        <h1 class="mb-5">ثبت گزارش</h1>
+                                <button type="submit" class="btn btn-primary">
+                                    ثبت
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <form asp-action="Create">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
 
-        <h4 class="mb-5 text-dark">CrmMonthlyReport</h4>
-    </div>
-    <hr />
-
-    <div class="col-1"></div>
-    <div class="col-10">
-        <div class="card px-4 mt-3 shadow bg-white " style="direction:rtl">
-            <div class="card-body  pt-5">
-              <form asp-action="Create">
-                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
-
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="Crmmrid" class="form-label mt-3"></label>
-                            <input asp-for="Crmmrid" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="Crmmrid" class="text-danger"></span>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="Crmmrid" class="form-label mt-3"></label>
+                                            <input asp-for="Crmmrid" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="Crmmrid" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="Year" class="form-label mt-3"></label>
+                                            <input asp-for="Year" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="Year" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="Month" class="form-label mt-3"></label>
+                                            <input asp-for="Month" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="Month" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="MonthNumber" class="form-label mt-3"></label>
+                                            <input asp-for="MonthNumber" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="MonthNumber" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="InChatQty" class="form-label mt-3"></label>
+                                            <input asp-for="InChatQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="InChatQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="InCompCallQty" class="form-label mt-3"></label>
+                                            <input asp-for="InCompCallQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="InCompCallQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="InVmQty" class="form-label mt-3"></label>
+                                            <input asp-for="InVmQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="InVmQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="InCallQty" class="form-label mt-3"></label>
+                                            <input asp-for="InCallQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="InCallQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="OutAccNumEditQty" class="form-label mt-3"></label>
+                                            <input asp-for="OutAccNumEditQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="OutAccNumEditQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="OutsurveyQty" class="form-label mt-3"></label>
+                                            <input asp-for="OutsurveyQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="OutsurveyQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="OutComTrtQty" class="form-label mt-3"></label>
+                                            <input asp-for="OutComTrtQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="OutComTrtQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="OutVmQty" class="form-label mt-3"></label>
+                                            <input asp-for="OutVmQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="OutVmQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="SejamQty" class="form-label mt-3"></label>
+                                            <input asp-for="SejamQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="SejamQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="AvgCallDuration" class="form-label mt-3"></label>
+                                            <input asp-for="AvgCallDuration" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="AvgCallDuration" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="AvgCallWaitingDuration" class="form-label mt-3"></label>
+                                            <input asp-for="AvgCallWaitingDuration" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="AvgCallWaitingDuration" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="ToalCallDuration" class="form-label mt-3"></label>
+                                            <input asp-for="ToalCallDuration" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="ToalCallDuration" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GanjinehIssuesQty" class="form-label mt-3"></label>
+                                            <input asp-for="GanjinehIssuesQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GanjinehIssuesQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GanjinehIssuesVol" class="form-label mt-3"></label>
+                                            <input asp-for="GanjinehIssuesVol" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GanjinehIssuesVol" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="AndookhtehIssuesQty" class="form-label mt-3"></label>
+                                            <input asp-for="AndookhtehIssuesQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="AndookhtehIssuesQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="AndookhtehIssuesVol" class="form-label mt-3"></label>
+                                            <input asp-for="AndookhtehIssuesVol" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="AndookhtehIssuesVol" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GoharandServatIssuesQty" class="form-label mt-3"></label>
+                                            <input asp-for="GoharandServatIssuesQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GoharandServatIssuesQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GoharandServatIssuesVol" class="form-label mt-3"></label>
+                                            <input asp-for="GoharandServatIssuesVol" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GoharandServatIssuesVol" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="TotalIssuesQty" class="form-label mt-3"></label>
+                                            <input asp-for="TotalIssuesQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="TotalIssuesQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="TotalIssuesVol" class="form-label mt-3"></label>
+                                            <input asp-for="TotalIssuesVol" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="TotalIssuesVol" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="CrmcoursesQty" class="form-label mt-3"></label>
+                                            <input asp-for="CrmcoursesQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="CrmcoursesQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="TicketOnlineQty" class="form-label mt-3"></label>
+                                            <input asp-for="TicketOnlineQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="TicketOnlineQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="Inticket" class="form-label mt-3"></label>
+                                            <input asp-for="Inticket" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="Inticket" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="ComplaintTicketQty" class="form-label mt-3"></label>
+                                            <input asp-for="ComplaintTicketQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="ComplaintTicketQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="SurveyTicketQty" class="form-label mt-3"></label>
+                                            <input asp-for="SurveyTicketQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="SurveyTicketQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="InSurveyCallQty" class="form-label mt-3"></label>
+                                            <input asp-for="InSurveyCallQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="InSurveyCallQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="OutSurveyCallQty" class="form-label mt-3"></label>
+                                            <input asp-for="OutSurveyCallQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="OutSurveyCallQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="OnlineChatsurveyQty" class="form-label mt-3"></label>
+                                            <input asp-for="OnlineChatsurveyQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="OnlineChatsurveyQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GanjinehTicketQty" class="form-label mt-3"></label>
+                                            <input asp-for="GanjinehTicketQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GanjinehTicketQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="AndookhtehicketQty" class="form-label mt-3"></label>
+                                            <input asp-for="AndookhtehicketQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="AndookhtehicketQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="ServatafarinanTicketQty" class="form-label mt-3"></label>
+                                            <input asp-for="ServatafarinanTicketQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="ServatafarinanTicketQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="GoharTicketQty" class="form-label mt-3"></label>
+                                            <input asp-for="GoharTicketQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="GoharTicketQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="IbCardTicketQty" class="form-label mt-3"></label>
+                                            <input asp-for="IbCardTicketQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="IbCardTicketQty" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="IbCrowdTicketQty" class="form-label mt-3"></label>
+                                            <input asp-for="IbCrowdTicketQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="IbCrowdTicketQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="BranchComplTicketQty" class="form-label mt-3"></label>
+                                            <input asp-for="BranchComplTicketQty" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="BranchComplTicketQty" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="Year" class="form-label mt-3"></label>
-                            <input asp-for="Year" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="Year" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="Month" class="form-label mt-3"></label>
-                            <input asp-for="Month" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="Month" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="MonthNumber" class="form-label mt-3"></label>
-                            <input asp-for="MonthNumber" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="MonthNumber" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="InChatQty" class="form-label mt-3"></label>
-                            <input asp-for="InChatQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="InChatQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="InCompCallQty" class="form-label mt-3"></label>
-                            <input asp-for="InCompCallQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="InCompCallQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="InVmQty" class="form-label mt-3"></label>
-                            <input asp-for="InVmQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="InVmQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="InCallQty" class="form-label mt-3"></label>
-                            <input asp-for="InCallQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="InCallQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="OutAccNumEditQty" class="form-label mt-3"></label>
-                            <input asp-for="OutAccNumEditQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="OutAccNumEditQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="OutsurveyQty" class="form-label mt-3"></label>
-                            <input asp-for="OutsurveyQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="OutsurveyQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="OutComTrtQty" class="form-label mt-3"></label>
-                            <input asp-for="OutComTrtQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="OutComTrtQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="OutVmQty" class="form-label mt-3"></label>
-                            <input asp-for="OutVmQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="OutVmQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="SejamQty" class="form-label mt-3"></label>
-                            <input asp-for="SejamQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="SejamQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="AvgCallDuration" class="form-label mt-3"></label>
-                            <input asp-for="AvgCallDuration" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="AvgCallDuration" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="AvgCallWaitingDuration" class="form-label mt-3"></label>
-                            <input asp-for="AvgCallWaitingDuration" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="AvgCallWaitingDuration" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="ToalCallDuration" class="form-label mt-3"></label>
-                            <input asp-for="ToalCallDuration" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="ToalCallDuration" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GanjinehIssuesQty" class="form-label mt-3"></label>
-                            <input asp-for="GanjinehIssuesQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GanjinehIssuesQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GanjinehIssuesVol" class="form-label mt-3"></label>
-                            <input asp-for="GanjinehIssuesVol" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GanjinehIssuesVol" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="AndookhtehIssuesQty" class="form-label mt-3"></label>
-                            <input asp-for="AndookhtehIssuesQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="AndookhtehIssuesQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="AndookhtehIssuesVol" class="form-label mt-3"></label>
-                            <input asp-for="AndookhtehIssuesVol" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="AndookhtehIssuesVol" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GoharandServatIssuesQty" class="form-label mt-3"></label>
-                            <input asp-for="GoharandServatIssuesQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GoharandServatIssuesQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GoharandServatIssuesVol" class="form-label mt-3"></label>
-                            <input asp-for="GoharandServatIssuesVol" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GoharandServatIssuesVol" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="TotalIssuesQty" class="form-label mt-3"></label>
-                            <input asp-for="TotalIssuesQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="TotalIssuesQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="TotalIssuesVol" class="form-label mt-3"></label>
-                            <input asp-for="TotalIssuesVol" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="TotalIssuesVol" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="CrmcoursesQty" class="form-label mt-3"></label>
-                            <input asp-for="CrmcoursesQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="CrmcoursesQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="TicketOnlineQty" class="form-label mt-3"></label>
-                            <input asp-for="TicketOnlineQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="TicketOnlineQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="Inticket" class="form-label mt-3"></label>
-                            <input asp-for="Inticket" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="Inticket" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="ComplaintTicketQty" class="form-label mt-3"></label>
-                            <input asp-for="ComplaintTicketQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="ComplaintTicketQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="SurveyTicketQty" class="form-label mt-3"></label>
-                            <input asp-for="SurveyTicketQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="SurveyTicketQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="InSurveyCallQty" class="form-label mt-3"></label>
-                            <input asp-for="InSurveyCallQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="InSurveyCallQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="OutSurveyCallQty" class="form-label mt-3"></label>
-                            <input asp-for="OutSurveyCallQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="OutSurveyCallQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="OnlineChatsurveyQty" class="form-label mt-3"></label>
-                            <input asp-for="OnlineChatsurveyQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="OnlineChatsurveyQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GanjinehTicketQty" class="form-label mt-3"></label>
-                            <input asp-for="GanjinehTicketQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GanjinehTicketQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="AndookhtehicketQty" class="form-label mt-3"></label>
-                            <input asp-for="AndookhtehicketQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="AndookhtehicketQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="ServatafarinanTicketQty" class="form-label mt-3"></label>
-                            <input asp-for="ServatafarinanTicketQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="ServatafarinanTicketQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="GoharTicketQty" class="form-label mt-3"></label>
-                            <input asp-for="GoharTicketQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="GoharTicketQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="IbCardTicketQty" class="form-label mt-3"></label>
-                            <input asp-for="IbCardTicketQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="IbCardTicketQty" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="IbCrowdTicketQty" class="form-label mt-3"></label>
-                            <input asp-for="IbCrowdTicketQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="IbCrowdTicketQty" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-6 mt-1">
-                            <label asp-for="BranchComplTicketQty" class="form-label mt-3"></label>
-                            <input asp-for="BranchComplTicketQty" class="form-control mt-1 shadow-sm" />
-                            <span asp-validation-for="BranchComplTicketQty" class="text-danger"></span>
-                        </div>
-                    </div>
-
-                    <div class="row m-5 pb-5">
-
-
-
-                        <div class="form-group">
-                            <a asp-action="Index" class="mt-4 me-3 float-end ">بازگشت به لیست</a>
-                            <input type="submit" value="ثبت" class=" py-3 px-5 float-start btn btn-outline-success me-3 btn-create" />
-                        </div>
-
-
-
 
                     </div>
-        </form>
+                </div>
             </div>
         </div>
+
     </div>
-    <div class="col-1"></div>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/theme/assets/vendor/libs/jquery-sticky/jquery-sticky.js"></script>
+    <script src="~/theme/assets/js/form-layouts.js"></script>
+
 }
+
+
+
