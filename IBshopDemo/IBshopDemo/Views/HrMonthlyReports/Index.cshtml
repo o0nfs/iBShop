@@ -4,230 +4,281 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="content-wrapper">
+    <!-- Content -->
+    <div class="container-xxl flex-grow-1 container-p-y table-responsive">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Year)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Month)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MonthNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.HrpersonnelQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LeftQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.HrmhiredQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Obqty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Reqqty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SentCvtoDep)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CoursQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IntQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RsgReq)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UsedImp)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Gcissu)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SrvAsgNewPer)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AsuAsgNewPer)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GurReqFun)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GurReqLtt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PyrDedReqLtt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SendOutLtt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SendIntLtt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RecLtt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PerEntCnfQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PreFailQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ReplacemntQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rrfail)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RrfacFail)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LobFailQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FloFailQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TblFailQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StrFailQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MngRfailQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BrkFailQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PntFailQty)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Month)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MonthNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HrpersonnelQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LeftQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HrmhiredQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Obqty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Reqqty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SentCvtoDep)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CoursQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IntQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RsgReq)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UsedImp)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gcissu)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SrvAsgNewPer)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AsuAsgNewPer)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GurReqFun)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GurReqLtt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PyrDedReqLtt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SendOutLtt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SendIntLtt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RecLtt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PerEntCnfQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PreFailQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReplacemntQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rrfail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RrfacFail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LobFailQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FloFailQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblFailQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StrFailQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MngRfailQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BrkFailQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PntFailQty)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.HrmonthlyreportId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.HrmonthlyreportId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.HrmonthlyreportId">Delete</a>
-            </td>
-        </tr>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Filter</h5>
+                <div class="d-flex justify-content-between align-items-center row py-3 gap-3 gap-md-0">
+                </div>
+            </div>
+            <div class="card-datatable table-responsive">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+                    <div class="card-header d-flex border-top rounded-0 flex-wrap py-md-0">
+                        <div id="DataTables_Table_0_filter" class="dataTables_filter"><label><input type="search" class="form-control" placeholder="Search Product" aria-controls="DataTables_Table_0"></label></div>
+                        <div class="dt-action-buttons d-flex align-items-start align-items-md-center justify-content-sm-center mb-3 mb-sm-0">
+                            <div class="dataTables_length mt-0 mt-md-3 me-3" id="DataTables_Table_0_length">
+                                <label>
+                                    <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select">
+                                        <option value="7">7</option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="70">70</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="dt-buttons">
+                                <button class="dt-button buttons-collection dropdown-toggle btn btn-label-secondary me-3" tabindex="0" aria-controls="DataTables_Table_0" type="button" aria-haspopup="dialog" aria-expanded="false"><span><i class="bx bx-export me-1"></i>Export</span><span class="dt-down-arrow">▼</span></button>
+                                <a asp-action="Create">
+                                    <button class="dt-button add-new btn btn-primary" tabindex="0" aria-controls="DataTables_Table_0" type="button">
+                                        <span>
+                                            <i class="bx bx-plus me-0 me-sm-1"></i>
+                                            <span class="d-none d-sm-inline-block">Add Product</span>
+                                        </span>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <table class="datatables-products table border-top dataTable no-footer dtr-column" aria-describedby="DataTables_Table_0_info" id="myTable">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Year)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Month)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MonthNumber)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.HrpersonnelQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.LeftQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.HrmhiredQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Obqty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Reqqty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SentCvtoDep)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoursQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IntQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RsgReq)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.UsedImp)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Gcissu)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SrvAsgNewPer)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AsuAsgNewPer)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GurReqFun)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GurReqLtt)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PyrDedReqLtt)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SendOutLtt)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SendIntLtt)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RecLtt)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PerEntCnfQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PreFailQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ReplacemntQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Rrfail)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RrfacFail)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.LobFailQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.FloFailQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TblFailQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.StrFailQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MngRfailQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.BrkFailQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PntFailQty)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Year)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Month)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MonthNumber)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.HrpersonnelQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.LeftQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.HrmhiredQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Obqty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Reqqty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SentCvtoDep)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoursQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IntQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RsgReq)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UsedImp)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Gcissu)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SrvAsgNewPer)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AsuAsgNewPer)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.GurReqFun)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.GurReqLtt)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PyrDedReqLtt)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SendOutLtt)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SendIntLtt)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RecLtt)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PerEntCnfQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PreFailQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ReplacemntQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Rrfail)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RrfacFail)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.LobFailQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FloFailQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TblFailQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.StrFailQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MngRfailQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.BrkFailQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PntFailQty)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.HrmonthlyreportId">Edit</a> |
+                                        <a asp-action="Details" asp-route-id="@item.HrmonthlyreportId">Details</a> |
+                                        <a asp-action="Delete" asp-route-id="@item.HrmonthlyreportId">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        let table = new DataTable('#myTable');
+
+    </script>
+
 }
-    </tbody>
-</table>

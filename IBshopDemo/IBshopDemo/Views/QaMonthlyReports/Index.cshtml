@@ -3,327 +3,378 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="content-wrapper">
+    <!-- Content -->
+    <div class="container-xxl flex-grow-1 container-p-y table-responsive">
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Year)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Month)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MonthNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TotalPersonnelIncCallQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TotalChcIncCallQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.WelFailPerIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.WelFailIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SurFailPerIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SurFailIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.KnwFailPerIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.KnwFailIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProFailPerIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProFailIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TicFailPerIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TicFailIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CalMgtPerIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CalMgtIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SysFailPerIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SysFailIncQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TotalPersonnelOutCallQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TotalChcOutCallQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SurFailPerOutQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SurFailOutQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProFailPerOutQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProFailOutQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TicFailPerOutQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TicFailOutQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CalMgtPerOutQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CalMgtOutQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ToalOnlineChat)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TotalCheckedOnlineChat)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SurFailPerChatQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SurFailChatQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProFailPerChatQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProFailChatQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TicFailPerChatQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TicFailChatQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TimFailPerChatQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TimFailChatQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SurveyChatOnline)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.HgradeQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GgradeQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FgradeQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EgradeQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DgradeQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CgradeQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BgradeQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AgradeQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ApgradeQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RepFail)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Month)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MonthNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalPersonnelIncCallQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalChcIncCallQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.WelFailPerIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.WelFailIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurFailPerIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurFailIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.KnwFailPerIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.KnwFailIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProFailPerIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProFailIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicFailPerIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicFailIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CalMgtPerIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CalMgtIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SysFailPerIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SysFailIncQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalPersonnelOutCallQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalChcOutCallQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurFailPerOutQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurFailOutQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProFailPerOutQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProFailOutQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicFailPerOutQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicFailOutQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CalMgtPerOutQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CalMgtOutQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ToalOnlineChat)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalCheckedOnlineChat)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurFailPerChatQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurFailChatQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProFailPerChatQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProFailChatQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicFailPerChatQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TicFailChatQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TimFailPerChatQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TimFailChatQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurveyChatOnline)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HgradeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GgradeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FgradeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EgradeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DgradeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CgradeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BgradeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AgradeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ApgradeQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RepFail)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Qamrid">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Qamrid">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Qamrid">Delete</a>
-            </td>
-        </tr>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Filter</h5>
+                <div class="d-flex justify-content-between align-items-center row py-3 gap-3 gap-md-0">
+                </div>
+            </div>
+            <div class="card-datatable table-responsive">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+                    <div class="card-header d-flex border-top rounded-0 flex-wrap py-md-0">
+                        <div id="DataTables_Table_0_filter" class="dataTables_filter"><label><input type="search" class="form-control" placeholder="Search Product" aria-controls="DataTables_Table_0"></label></div>
+                        <div class="dt-action-buttons d-flex align-items-start align-items-md-center justify-content-sm-center mb-3 mb-sm-0">
+                            <div class="dataTables_length mt-0 mt-md-3 me-3" id="DataTables_Table_0_length">
+                                <label>
+                                    <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select">
+                                        <option value="7">7</option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="70">70</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="dt-buttons">
+                                <button class="dt-button buttons-collection dropdown-toggle btn btn-label-secondary me-3" tabindex="0" aria-controls="DataTables_Table_0" type="button" aria-haspopup="dialog" aria-expanded="false"><span><i class="bx bx-export me-1"></i>Export</span><span class="dt-down-arrow">▼</span></button>
+                                <a asp-action="Create">
+                                    <button class="dt-button add-new btn btn-primary" tabindex="0" aria-controls="DataTables_Table_0" type="button">
+                                        <span>
+                                            <i class="bx bx-plus me-0 me-sm-1"></i>
+                                            <span class="d-none d-sm-inline-block">Add Product</span>
+                                        </span>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <table class="datatables-products table border-top dataTable no-footer dtr-column" aria-describedby="DataTables_Table_0_info" id="myTable">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Year)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Month)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MonthNumber)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TotalPersonnelIncCallQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TotalChcIncCallQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.WelFailPerIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.WelFailIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SurFailPerIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SurFailIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.KnwFailPerIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.KnwFailIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ProFailPerIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ProFailIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TicFailPerIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TicFailIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CalMgtPerIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CalMgtIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SysFailPerIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SysFailIncQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TotalPersonnelOutCallQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TotalChcOutCallQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SurFailPerOutQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SurFailOutQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ProFailPerOutQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ProFailOutQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TicFailPerOutQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TicFailOutQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CalMgtPerOutQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CalMgtOutQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ToalOnlineChat)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TotalCheckedOnlineChat)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SurFailPerChatQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SurFailChatQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ProFailPerChatQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ProFailChatQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TicFailPerChatQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TicFailChatQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TimFailPerChatQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.TimFailChatQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SurveyChatOnline)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.HgradeQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GgradeQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.FgradeQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.EgradeQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.DgradeQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CgradeQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.BgradeQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AgradeQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ApgradeQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RepFail)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Year)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Month)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MonthNumber)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TotalPersonnelIncCallQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TotalChcIncCallQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.WelFailPerIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.WelFailIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SurFailPerIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SurFailIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.KnwFailPerIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.KnwFailIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProFailPerIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProFailIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TicFailPerIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TicFailIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CalMgtPerIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CalMgtIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SysFailPerIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SysFailIncQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TotalPersonnelOutCallQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TotalChcOutCallQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SurFailPerOutQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SurFailOutQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProFailPerOutQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProFailOutQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TicFailPerOutQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TicFailOutQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CalMgtPerOutQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CalMgtOutQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ToalOnlineChat)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TotalCheckedOnlineChat)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SurFailPerChatQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SurFailChatQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProFailPerChatQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProFailChatQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TicFailPerChatQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TicFailChatQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TimFailPerChatQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TimFailChatQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SurveyChatOnline)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.HgradeQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.GgradeQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FgradeQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.EgradeQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.DgradeQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CgradeQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.BgradeQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AgradeQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ApgradeQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RepFail)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.Qamrid">Edit</a> |
+                                        <a asp-action="Details" asp-route-id="@item.Qamrid">Details</a> |
+                                        <a asp-action="Delete" asp-route-id="@item.Qamrid">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        let table = new DataTable('#myTable');
+
+    </script>
+
 }
-    </tbody>
-</table>
+

@@ -4,183 +4,254 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<!-- Content -->
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table" id="myTable">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Year)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Month)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MonthNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MrkReq)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CompStudy)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ArchiveDesignQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MediaFailureQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SiteBannerAvgTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BrochureDesignAvgTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StoryDesignAvgTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GifDesignAvgTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StandDesignAvgTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BannerDesignQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BrochureDesignQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StoryDesignQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GifDesignQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StandDesigQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MotionQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ArchivedmotionQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AppliedMotionAvgTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RecordedvideoQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RecordedQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NarrationEditQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.VideoArchiveQty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.VideoProduceAvgTime)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Month)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MonthNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MrkReq)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CompStudy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ArchiveDesignQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MediaFailureQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SiteBannerAvgTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BrochureDesignAvgTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StoryDesignAvgTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GifDesignAvgTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StandDesignAvgTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BannerDesignQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BrochureDesignQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StoryDesignQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GifDesignQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StandDesigQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MotionQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ArchivedmotionQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AppliedMotionAvgTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RecordedvideoQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RecordedQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NarrationEditQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.VideoArchiveQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.VideoProduceAvgTime)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ArtMonthlyReportId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ArtMonthlyReportId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ArtMonthlyReportId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="content-wrapper">
+    <!-- Content -->
+    <div class="container-xxl flex-grow-1 container-p-y table-responsive">
+
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Filter</h5>
+                <div class="d-flex justify-content-between align-items-center row py-3 gap-3 gap-md-0">
+                </div>
+            </div>
+            <div class="card-datatable table-responsive">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+                    <div class="card-header d-flex border-top rounded-0 flex-wrap py-md-0">
+                        <div id="DataTables_Table_0_filter" class="dataTables_filter"><label><input type="search" class="form-control" placeholder="Search Product" aria-controls="DataTables_Table_0"></label></div>
+                        <div class="dt-action-buttons d-flex align-items-start align-items-md-center justify-content-sm-center mb-3 mb-sm-0">
+                            <div class="dataTables_length mt-0 mt-md-3 me-3" id="DataTables_Table_0_length">
+                                <label>
+                                    <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select">
+                                        <option value="7">7</option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="70">70</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="dt-buttons">
+                                <button class="dt-button buttons-collection dropdown-toggle btn btn-label-secondary me-3" tabindex="0" aria-controls="DataTables_Table_0" type="button" aria-haspopup="dialog" aria-expanded="false"><span><i class="bx bx-export me-1"></i>Export</span><span class="dt-down-arrow">▼</span></button>
+                                <a asp-action="Create">
+                                    <button class="dt-button add-new btn btn-primary" tabindex="0" aria-controls="DataTables_Table_0" type="button">
+                                        <span>
+                                            <i class="bx bx-plus me-0 me-sm-1"></i>
+                                            <span class="d-none d-sm-inline-block">Add Product</span>
+                                        </span>
+                                    </button>
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <table class="datatables-products table border-top dataTable no-footer dtr-column" aria-describedby="DataTables_Table_0_info" id="myTable">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Year)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Month)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MonthNumber)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MrkReq)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CompStudy)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ArchiveDesignQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MediaFailureQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SiteBannerAvgTime)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.BrochureDesignAvgTime)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.StoryDesignAvgTime)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GifDesignAvgTime)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.StandDesignAvgTime)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.BannerDesignQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.BrochureDesignQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.StoryDesignQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GifDesignQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.StandDesigQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MotionQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ArchivedmotionQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AppliedMotionAvgTime)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RecordedvideoQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RecordedQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.NarrationEditQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.VideoArchiveQty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.VideoProduceAvgTime)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Year)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Month)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MonthNumber)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MrkReq)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CompStudy)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ArchiveDesignQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MediaFailureQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SiteBannerAvgTime)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.BrochureDesignAvgTime)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.StoryDesignAvgTime)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.GifDesignAvgTime)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.StandDesignAvgTime)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.BannerDesignQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.BrochureDesignQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.StoryDesignQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.GifDesignQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.StandDesigQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MotionQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ArchivedmotionQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AppliedMotionAvgTime)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RecordedvideoQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RecordedQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.NarrationEditQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.VideoArchiveQty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.VideoProduceAvgTime)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.ArtMonthlyReportId">Edit</a> |
+                                        <a asp-action="Details" asp-route-id="@item.ArtMonthlyReportId">Details</a> |
+                                        <a asp-action="Delete" asp-route-id="@item.ArtMonthlyReportId">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+@*
+        <p>
+        <a asp-action="Create">Create New</a>
+        </p>
+        *@
+
+
 
 @section Scripts{
     <script>
         let table = new DataTable('#myTable');
+
     </script>
-   
+
 }
+

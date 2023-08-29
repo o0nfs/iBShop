@@ -55,7 +55,7 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ArtMonthlyReportId,Year,Month,MonthNumber,MrkReq,CompStudy,ArchiveDesignQty,MediaFailureQty,SiteBannerAvgTime,BrochureDesignAvgTime,StoryDesignAvgTime,GifDesignAvgTime,StandDesignAvgTime,BannerDesignQty,BrochureDesignQty,StoryDesignQty,GifDesignQty,StandDesigQty,MotionQty,ArchivedmotionQty,AppliedMotionAvgTime,RecordedvideoQty,RecordedQty,NarrationEditQty,VideoArchiveQty,VideoProduceAvgTime")] ArtMonthlyReport artMonthlyReport)
+        public async Task<IActionResult> Create(ArtMonthlyReport artMonthlyReport)
         {
             if (ModelState.IsValid)
             {

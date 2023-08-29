@@ -28,13 +28,24 @@
     <link rel="stylesheet" href="/theme/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="/theme/assets/vendor/libs/typeahead-js/typeahead.css" />
     <link rel="stylesheet" href="/theme/assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <link rel="stylesheet" href="/theme/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+    <link rel="stylesheet" href="/theme/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+    <link rel="stylesheet" href="/theme/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
     <link rel="stylesheet" href="/theme/assets/vendor/libs/sweetalert2/sweetalert2.css" />
+
+
     <!-- Page CSS -->
+    <!-- DataTable -->
+    @*<link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />*@
+
+
+
     <!-- Helpers -->
     <script src="/panel/assets2/vendor/js/helpers.js"></script>
     <script src="/panel/assets2/vendor/js/template-customizer.js"></script>
     <script src="/panel/assets2/js/config.js"></script>
-
+    @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
 
@@ -780,6 +791,12 @@
             </div>
         </div>
     </div>
+    <!-- DataTable -->
+   
+    <script src="/theme/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+
+
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
