@@ -45,13 +45,12 @@
                                         </span>
                                     </button>
                                 </a>
-                               
                             </div>
                         </div>
                     </div>
-                    <table class="datatables-products table border-top dataTable no-footer dtr-column" aria-describedby="DataTables_Table_0_info" id="myTable">
+                    <table class="datatables-products table border-top dataTable no-footer dtr-column text-center table-bordered" aria-describedby="DataTables_Table_0_info" id="myTable">
                         <thead>
-                            <tr>
+                            <tr class="text-nowrap">
                                 <th>
                                     @Html.DisplayNameFor(model => model.Year)
                                 </th>
@@ -127,7 +126,7 @@
                                 <th>
                                     @Html.DisplayNameFor(model => model.VideoProduceAvgTime)
                                 </th>
-                                <th></th>
+                                <th class="text-center">action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -209,7 +208,7 @@
                                     <td>
                                         @Html.DisplayFor(modelItem => item.VideoProduceAvgTime)
                                     </td>
-                                    <td>
+                                    <td class="align-items-center d-flex gap-2 justify-content-between">
                                         <a asp-action="Edit" asp-route-id="@item.ArtMonthlyReportId">Edit</a> |
                                         <a asp-action="Details" asp-route-id="@item.ArtMonthlyReportId">Details</a> |
                                         <a asp-action="Delete" asp-route-id="@item.ArtMonthlyReportId">Delete</a>

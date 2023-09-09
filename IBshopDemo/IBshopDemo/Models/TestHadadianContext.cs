@@ -69,11 +69,13 @@ public partial class TestHadadianContext : DbContext
 
     public virtual DbSet<Report> Reports { get; set; }
 
+    public virtual DbSet<Role> Roles { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
 
-//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-//        => optionsBuilder.UseSqlServer("Server=.;Database=Test-hadadian;user id=sa;pwd=sql;Trusted_Connection=True;encrypt=false");
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("data source=192.168.1.15\\developer;database=TestHadadian;uid=sa;pwd=sql;multipleactiveresultsets=true;encrypt=false");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -264,6 +266,10 @@ public partial class TestHadadianContext : DbContext
         modelBuilder.Entity<FixIncomeProperty>(entity =>
         {
             entity.HasKey(e => e.FixIncomeId);
+
+            entity.HasIndex(e => e.BrancheCode, "IX_FixIncomeProperties_BrancheCode");
+
+            entity.HasIndex(e => e.InComeCenterId, "IX_FixIncomeProperties_InComeCenterID");
 
             entity.Property(e => e.FixIncomeId)
                 .ValueGeneratedNever()
@@ -678,6 +684,10 @@ public partial class TestHadadianContext : DbContext
         {
             entity.HasKey(e => e.MixIncomeId);
 
+            entity.HasIndex(e => e.BrancheCode, "IX_MixProperties_BrancheCode");
+
+            entity.HasIndex(e => e.IncomeCenterId, "IX_MixProperties_IncomeCenterId");
+
             entity.Property(e => e.MixIncomeId).ValueGeneratedNever();
             entity.Property(e => e.GoharIssue).HasColumnType("money");
             entity.Property(e => e.GoharRev).HasColumnType("money");
@@ -918,6 +928,10 @@ public partial class TestHadadianContext : DbContext
         {
             entity.HasKey(e => e.ProductsId);
 
+            entity.HasIndex(e => e.BrancheCode, "IX_Products_BrancheCode");
+
+            entity.HasIndex(e => e.IncomeCenterId, "IX_Products_IncomeCenterId");
+
             entity.Property(e => e.ProductsId)
                 .ValueGeneratedNever()
                 .HasColumnName("ProductsID");
@@ -983,6 +997,11 @@ public partial class TestHadadianContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("ReportID");
             entity.Property(e => e.ReportName).HasMaxLength(50);
+        });
+
+        modelBuilder.Entity<Role>(entity =>
+        {
+            entity.Property(e => e.RoleName).HasMaxLength(50);
         });
 
         modelBuilder.Entity<User>(entity =>

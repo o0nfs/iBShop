@@ -5,6 +5,8 @@ namespace IBshopDemo.Models;
 
 public partial class BranchRanking
 {
+    public int Id { get; set; }
+
     public int? BranchRankingId { get; set; }
 
     public int? BranchId { get; set; }
@@ -28,6 +30,4 @@ public partial class BranchRanking
     public int? Servicerank { get; set; }
 
     public int? TotalRank { get; set; }
-
-    public int Id { get; set; }
 }

@@ -55,7 +55,7 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("KpibranchCode,WrsupReq,WrongIssue,BrcCnf,WrongQty,BrnReqQty,BranchCap,PurchaseAvgTime,Kllevel,ConIntMonPercentage,ClienttoIssue,BrcClient,MrkSpv,NewUser")] BranchKpi branchKpi)
+        public async Task<IActionResult> Create(BranchKpi branchKpi)
         {
             if (ModelState.IsValid)
             {

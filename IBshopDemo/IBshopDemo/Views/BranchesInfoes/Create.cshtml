@@ -24,7 +24,7 @@
                                     </button>
                                 </a>
 
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary submitBranchesInfoes">
                                     ثبت
                                 </button>
                             </div>
@@ -33,7 +33,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <form asp-action="Create">
+                                <form asp-action="Create" asp-controller="BranchesInfoes" method="post" id="formBranchesInfoes">
                                     <div asp-validation-summary="ModelOnly" class="text-dangercol-12"></div>
                                     <div class="row">
                                         <div class="form-group col-6 mt-1">
@@ -70,8 +70,30 @@
 
 
 
-@section Scripts {
-    <script src="~/theme/assets/vendor/libs/jquery-sticky/jquery-sticky.js"></script>
-    <script src="~/theme/assets/js/form-layouts.js"></script>
 
-}
+@section Scripts {
+    <script>
+  
+        $(document).ready(function(){
+            $(".submitBranchesInfoes").click(function (ev) {
+                var form = $("#formBranchesInfoes");
+                var url=form.attr('action');
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: form.serialize(),
+                    success: function (data) {
+
+                        // Ajax call completed successfully
+                        alert("Form Submited Successfully");
+                    },
+                    error: function (data) {
+
+                        // Some error in ajax call
+                        alert("some Error");
+                    }
+                })
+            })
+        });
+    </script>
+    }

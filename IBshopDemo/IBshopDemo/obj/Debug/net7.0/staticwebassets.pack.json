@@ -25,6 +25,18 @@
       "PackagePath": "staticwebassets\\fonts\\Sans.woff"
     },
     {
+      "Id": "C:\\Users\\nafisehhadadian\\Desktop\\gitIBshop\\IBshopDemo\\IBshopDemo\\wwwroot\\images\\iBshop.jpg",
+      "PackagePath": "staticwebassets\\images\\iBshop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nafisehhadadian\\Desktop\\gitIBshop\\IBshopDemo\\IBshopDemo\\wwwroot\\images\\iBshopFav.jpg",
+      "PackagePath": "staticwebassets\\images\\iBshopFav.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nafisehhadadian\\Desktop\\gitIBshop\\IBshopDemo\\IBshopDemo\\wwwroot\\images\\ibshop.ico",
+      "PackagePath": "staticwebassets\\images\\ibshop.ico"
+    },
+    {
       "Id": "C:\\Users\\nafisehhadadian\\Desktop\\gitIBshop\\IBshopDemo\\IBshopDemo\\wwwroot\\images\\logo.webp",
       "PackagePath": "staticwebassets\\images\\logo.webp"
     },

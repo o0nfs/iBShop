@@ -55,7 +55,7 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("FinancialMrid,Year,Month,MonthNumber,PersonnelSetQty,CheckedfundQty,ContQty,TreasuryBillsQty,Recivedgaurantee,RestaxinstallmentQty,ResFundInstallmenQty,TaminInstallmentQty,TaminPenaltyVol,TranCommissionQty,TaminInstallmentDelay,TaxInstallmentDelay,PrpReqQty,MtnprpQty,ColPrpQty,LblPrpQty")] FinancialMonthlyReport financialMonthlyReport)
+        public async Task<IActionResult> Create(FinancialMonthlyReport financialMonthlyReport)
         {
             if (ModelState.IsValid)
             {

@@ -56,7 +56,7 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BranchCode,BranchLocation,BranchManager")] BranchesInfo branchesInfo)
+        public async Task<IActionResult> Create(BranchesInfo branchesInfo)
         {
             if (ModelState.IsValid)
             {
