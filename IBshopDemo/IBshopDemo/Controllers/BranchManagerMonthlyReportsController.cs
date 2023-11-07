@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchManagerMonthlyReports
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Index()
         {
               return _context.BranchManagerMonthlyReports != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchManagerMonthlyReports/Details/5
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.BranchManagerMonthlyReports == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchManagerMonthlyReports/Create
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Create([Bind("BranchManagerMonthlyReportIdBranchManagerMonthlyReportId,Year,Month,MonthNumber,BranchCode,BranchLocation,IBcardMrkmtgqty,IBcardSuccessMtgqty,IBcrowdMrkmtgqty,IBcrowdSuccessMtgqty,AssuranceMrkmtgqty,AssuranceSuccessMtgqty,DebtSharesMrkmtgqty,DebtSharesSuccessMtgqty,InvestmentMrkmtgqty,InvesmentSuccessMtgqty,CoursesReq,CoursesMrkmtgqty,CoursesMrkmtgfirstAgreementQty,ComplainantQty,Conciliation")] BranchManagerMonthlyReport branchManagerMonthlyReport)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchManagerMonthlyReports/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.BranchManagerMonthlyReports == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Edit(int id, [Bind("BranchManagerMonthlyReportIdBranchManagerMonthlyReportId,Year,Month,MonthNumber,BranchCode,BranchLocation,IBcardMrkmtgqty,IBcardSuccessMtgqty,IBcrowdMrkmtgqty,IBcrowdSuccessMtgqty,AssuranceMrkmtgqty,AssuranceSuccessMtgqty,DebtSharesMrkmtgqty,DebtSharesSuccessMtgqty,InvestmentMrkmtgqty,InvesmentSuccessMtgqty,CoursesReq,CoursesMrkmtgqty,CoursesMrkmtgfirstAgreementQty,ComplainantQty,Conciliation")] BranchManagerMonthlyReport branchManagerMonthlyReport)
         {
             if (id != branchManagerMonthlyReport.BranchManagerMonthlyReportIdBranchManagerMonthlyReportId)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchManagerMonthlyReports/Delete/5
+     //   [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.BranchManagerMonthlyReports == null)
@@ -136,6 +152,8 @@ namespace IBshopDemo.Controllers
         }
 
         // POST: BranchManagerMonthlyReports/Delete/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

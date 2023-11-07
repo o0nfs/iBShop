@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -18,7 +20,8 @@ namespace IBshopDemo.Controllers
             _context = context;
         }
 
-        // GET: Kpiplannings
+        // GET: Kpiplannings  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Index()
         {
               return _context.Kpiplannings != null ? 
@@ -27,6 +30,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpiplannings/Details/5
+       
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Kpiplannings == null)
@@ -45,6 +50,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpiplannings/Create
+       
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +62,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Create([Bind("Id,KpiplanCode,DelonPrConf,EffImpAct,OtimpPercentage,PrImPercent,KmsavePercent,ArchivePer,Nps")] Kpiplanning kpiplanning)
         {
             if (ModelState.IsValid)
@@ -67,6 +76,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpiplannings/Edit/5
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Kpiplannings == null)
@@ -87,6 +98,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Edit(int id, [Bind("Id,KpiplanCode,DelonPrConf,EffImpAct,OtimpPercentage,PrImPercent,KmsavePercent,ArchivePer,Nps")] Kpiplanning kpiplanning)
         {
             if (id != kpiplanning.Id)
@@ -118,6 +131,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpiplannings/Delete/5
+    
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Kpiplannings == null)
@@ -138,6 +153,8 @@ namespace IBshopDemo.Controllers
         // POST: Kpiplannings/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+    
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Kpiplannings == null)

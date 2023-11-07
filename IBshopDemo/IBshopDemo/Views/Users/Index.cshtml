@@ -1,59 +1,154 @@
 ﻿@model IEnumerable<IBshopDemo.Models.User>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="content-wrapper">
+	<!-- Content -->
+	<div class="container-xxl flex-grow-1 container-p-y table-responsive">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NationalCode)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LastName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PhoneNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NationalCode)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.UserId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.UserId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
-            </td>
-        </tr>
+
+		<div class="card">
+			<div class="card-header">
+				<h5 class="card-title">لیست کاربران</h5>
+				<div class="d-flex justify-content-between align-items-center row py-3 gap-3 gap-md-0">
+				</div>
+			</div>
+			<div class="card-datatable table-responsive">
+				<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+					<div class="card-header d-flex border-top rounded-0 flex-wrap py-md-0">
+						<div id="DataTables_Table_0_filter" class="dataTables_filter"><label><input type="search" class="form-control" placeholder="جستجوی کاربر" aria-controls="DataTables_Table_0"></label></div>
+						<div class="dt-action-buttons d-flex align-items-start align-items-md-center justify-content-sm-center mb-3 mb-sm-0">
+							<div class="dataTables_length mt-0 mt-md-3 me-3" id="DataTables_Table_0_length">
+								<label>
+									<select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select">
+										<option value="7">7</option>
+										<option value="10">10</option>
+										<option value="20">20</option>
+										<option value="50">50</option>
+										<option value="70">70</option>
+										<option value="100">100</option>
+									</select>
+								</label>
+							</div>
+							<div class="dt-buttons">
+
+								<a asp-action="Create">
+									<button class="dt-button add-new btn btn-primary" tabindex="0" aria-controls="DataTables_Table_0" type="button">
+										<span>
+											<i class="bx bx-plus me-0 me-sm-1"></i>
+											<span class="d-none d-sm-inline-block">افزودن کاربر جدید</span>
+										</span>
+									</button>
+								</a>
+
+							</div>
+						</div>
+					</div>
+					<table class="datatables-products table border-top dataTable no-footer dtr-column" aria-describedby="DataTables_Table_0_info" id="myTable">
+						<thead>
+							<tr>
+								<th>
+									@Html.DisplayNameFor(model => model.NationalCode)
+								</th>
+								<th>
+									@Html.DisplayNameFor(model => model.LastName)
+								</th>
+								<th>
+									@Html.DisplayNameFor(model => model.FirstName)
+								</th>
+								<th>
+									@Html.DisplayNameFor(model => model.PhoneNumber)
+								</th>
+
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach (var item in Model)
+							{
+								<tr>
+									<td>
+										@Html.DisplayFor(modelItem => item.NationalCode)
+									</td>
+									<td>
+										@Html.DisplayFor(modelItem => item.LastName)
+									</td>
+									<td>
+										@Html.DisplayFor(modelItem => item.FirstName)
+									</td>
+									<td>
+										@Html.DisplayFor(modelItem => item.PhoneNumber)
+									</td>
+
+									<td>
+										<a asp-action="Edit" asp-route-id="@item.UserId">ویرایش</a> |
+										<a asp-action="Details" asp-route-id="@item.UserId">جزئیات</a> |
+										<a asp-action="Delete" asp-route-id="@item.UserId">حذف</a>
+									</td>
+									<td>
+										<button onclick="getUserRoles(@item.UserId)" data-bs-toggle="modal" data-bs-target="#addRoleModal" class="btn btn-primary mb-3 text-nowrap ">افزودن نقش جدید</button>
+									</td>
+								</tr>
+							}
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<!-- Add Role Modal -->
+	<div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-simple modal-dialog-centered modal-add-new-role">
+			<div class="modal-content p-3 p-md-5">
+				<div class="modal-body">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="text-center mb-4">
+						<h2>افزودن نقش</h2>
+						<p>دسترسی‌های نقش را تعیین کنید</p>
+					</div>
+					<div id="modal-body-data">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ Add Role Modal -->
+
+</div>
+@section Scripts{
+
+	<script>
+		let table = new DataTable('#myTable');
+
+		function getUserRoles(userId) {
+			$.get(`/Users/GetUserRoles/${userId}`, function (data, status) {
+				$('#modal-body-data').html(data);
+				//$('#addRoleModal').modal('show');
+			});
+		}
+		function saveUserRoles() {
+			let inputs = $('#userRoleForm input[type=checkbox]');
+			let data = {};
+			inputs.each(function (index) {
+				if ($(this).prop('checked') == true) {
+					data[$(this).attr('name')] = $(this).val();
+				}
+			});
+			data['userId'] = $('#form-modal-userID').val();
+			console.log(data);
+			$.post("/users/setuserRoles", data, function (data, status) {
+				alert('ok');
+			});
+		}
+	</script>
+
 }
-    </tbody>
-</table>
+

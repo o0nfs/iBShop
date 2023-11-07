@@ -10,6 +10,7 @@ using IBshopDemo.ActionFilters;
 using System.Security.Policy;
 using IBshopDemo.ViewModels.Home;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -20,7 +21,7 @@ namespace IBshopDemo.Controllers
         {
             _context=context;
         }
-        [Authentication]
+        [Authorization((int)Roles.ادمین)]
         public IActionResult Index()
         {
             //var hash = Encoding.UTF8.GetString(MD5.Create().ComputeHash(Encoding.UTF8.GetBytes("0000")));
@@ -36,6 +37,7 @@ namespace IBshopDemo.Controllers
             return View();
         }
 
+       // [Authorization((int)Roles.ادمین)]
         public IActionResult Login()
         {
             return View();
@@ -52,7 +54,13 @@ namespace IBshopDemo.Controllers
             return View();
         }
 
-        [HttpGet]
+        public IActionResult LogOut()
+        {
+			HttpContext.Session.Remove("UserId");
+            return RedirectToAction("Index");
+		}
+
+		[HttpGet]
         public IActionResult Signup()
         {
             return View();
@@ -97,6 +105,10 @@ namespace IBshopDemo.Controllers
 
         }
 
+        public IActionResult NotPermisson()
+        {
+            return View();
+        }
 
     }
 }

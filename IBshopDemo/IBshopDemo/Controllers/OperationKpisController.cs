@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationKpis
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Index()
         {
               return _context.OperationKpis != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationKpis/Details/5
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.OperationKpis == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationKpis/Create
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Create([Bind("Id,OperationKpicode,Piapp,ErrApp,AppDev,Answeringspeed,IbCardAutAvgTime,SejAutAvgTime,PayToCusAvgTime,CusAutAsset,Cus,SucOprRate")] OperationKpi operationKpi)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationKpis/Edit/5
+     //   [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.OperationKpis == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Edit(int id, [Bind("Id,OperationKpicode,Piapp,ErrApp,AppDev,Answeringspeed,IbCardAutAvgTime,SejAutAvgTime,PayToCusAvgTime,CusAutAsset,Cus,SucOprRate")] OperationKpi operationKpi)
         {
             if (id != operationKpi.Id)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationKpis/Delete/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.OperationKpis == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: OperationKpis/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.OperationKpis == null)

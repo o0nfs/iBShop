@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MarketingMonthlyReports
+        ///[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Index()
         {
               return _context.MarketingMonthlyReports != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MarketingMonthlyReports/Details/5
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.MarketingMonthlyReports == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MarketingMonthlyReports/Create
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Create([Bind("Mrkmrid,Year,Month,MonthNumber,SentSmsQty,ReportAdvQty,NotifPushQty,PostMediaQty,StateMedAdvQty,BilboardQty,SrchEntQty,RefEntQty,SmedEntQty,SiteEntMonthlyAvg,InstFlwQty,EngQty,TlgPostContentQty,LinkdinContentQty,DesignQty,VideoQty,HoldQty,HoldComptQty,RecVidPostQty,TrainPostQty,InsFlwQty,NewsQty,TrainingCntrctQty,IbcrowdCalllegalCusQty,PrdSrvAdvCallQty,SucCallQty,ToalInvestVol,ConversationRate,BounceRate,KeywordsRank,GoogleEntTerRate,LinkEntTerRate")] MarketingMonthlyReport marketingMonthlyReport)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MarketingMonthlyReports/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.MarketingMonthlyReports == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Edit(int id, [Bind("Mrkmrid,Year,Month,MonthNumber,SentSmsQty,ReportAdvQty,NotifPushQty,PostMediaQty,StateMedAdvQty,BilboardQty,SrchEntQty,RefEntQty,SmedEntQty,SiteEntMonthlyAvg,InstFlwQty,EngQty,TlgPostContentQty,LinkdinContentQty,DesignQty,VideoQty,HoldQty,HoldComptQty,RecVidPostQty,TrainPostQty,InsFlwQty,NewsQty,TrainingCntrctQty,IbcrowdCalllegalCusQty,PrdSrvAdvCallQty,SucCallQty,ToalInvestVol,ConversationRate,BounceRate,KeywordsRank,GoogleEntTerRate,LinkEntTerRate")] MarketingMonthlyReport marketingMonthlyReport)
         {
             if (id != marketingMonthlyReport.Mrkmrid)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MarketingMonthlyReports/Delete/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.MarketingMonthlyReports == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: MarketingMonthlyReports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.MarketingMonthlyReports == null)

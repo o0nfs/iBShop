@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -18,14 +20,21 @@ namespace IBshopDemo.Controllers
             _context = context;
         }
 
-        // GET: FixIncomeProperties
-        public async Task<IActionResult> Index()
+		// GET: FixIncomeProperties
+
+		[Authorization((int)Roles.مدیر_عملیات)]
+		[Authorization((int)Roles.مدیرعامل)]
+
+		public async Task<IActionResult> Index()
         {
             var testHadadianContext = _context.FixIncomeProperties.Include(f => f.BrancheCodeNavigation).Include(f => f.InComeCenter);
             return View(await testHadadianContext.ToListAsync());
         }
 
         // GET: FixIncomeProperties/Details/5
+     
+        [Authorization((int)Roles.مدیر_عملیات)]
+        [Authorization((int)Roles.مدیرعامل)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.FixIncomeProperties == null)
@@ -46,6 +55,9 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FixIncomeProperties/Create
+      
+        [Authorization((int)Roles.مدیر_عملیات)]
+        [Authorization((int)Roles.مدیرعامل)]
         public IActionResult Create()
         {
             ViewData["BrancheCode"] = new SelectList(_context.BranchesInfos, "BranchCode", "BranchCode");
@@ -58,6 +70,9 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       
+        [Authorization((int)Roles.مدیر_عملیات)]
+        [Authorization((int)Roles.مدیرعامل)]
         public async Task<IActionResult> Create([Bind("FixIncomeId,BrancheCode,InComeCenterId,MonthNumber,MonthName,CustomerQty,GanjinehIssue,GanjinehRev,AndookhtehIssue,AndookhtehRev,VirIssueBillQty,VirIssueBillVol,TotalIssue,TotalRev")] FixIncomeProperty fixIncomeProperty)
         {
             if (ModelState.IsValid)
@@ -72,6 +87,9 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FixIncomeProperties/Edit/5
+       
+        [Authorization((int)Roles.مدیر_عملیات)]
+        [Authorization((int)Roles.مدیرعامل)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.FixIncomeProperties == null)
@@ -94,6 +112,9 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      
+        [Authorization((int)Roles.مدیر_عملیات)]
+        [Authorization((int)Roles.مدیرعامل)]
         public async Task<IActionResult> Edit(int id, [Bind("FixIncomeId,BrancheCode,InComeCenterId,MonthNumber,MonthName,CustomerQty,GanjinehIssue,GanjinehRev,AndookhtehIssue,AndookhtehRev,VirIssueBillQty,VirIssueBillVol,TotalIssue,TotalRev")] FixIncomeProperty fixIncomeProperty)
         {
             if (id != fixIncomeProperty.FixIncomeId)
@@ -127,6 +148,9 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FixIncomeProperties/Delete/5
+       
+        [Authorization((int)Roles.مدیر_عملیات)]
+        [Authorization((int)Roles.مدیرعامل)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.FixIncomeProperties == null)
@@ -147,8 +171,12 @@ namespace IBshopDemo.Controllers
         }
 
         // POST: FixIncomeProperties/Delete/5
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        
+        [Authorization((int)Roles.مدیر_عملیات)]
+        [Authorization((int)Roles.مدیرعامل)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.FixIncomeProperties == null)

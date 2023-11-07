@@ -9,605 +9,633 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IBshopDemo
 build_property.RootNamespace = IBshopDemo
-build_property.ProjectDir = C:\Users\nafisehhadadian\Desktop\gitIBshop\IBshopDemo\IBshopDemo\
+build_property.ProjectDir = C:\WORKSPACE\iBShop\IBshopDemo\IBshopDemo\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\nafisehhadadian\Desktop\gitIBshop\IBshopDemo\IBshopDemo
+build_property.MSBuildProjectDirectory = C:\WORKSPACE\iBShop\IBshopDemo\IBshopDemo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0TW9udGhseVJlcG9ydHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0TW9udGhseVJlcG9ydHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0TW9udGhseVJlcG9ydHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0TW9udGhseVJlcG9ydHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ArtMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0TW9udGhseVJlcG9ydHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNJbmZvZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNJbmZvZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNJbmZvZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNJbmZvZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesInfoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNJbmZvZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNNb250aGx5UmVwb3J0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNNb250aGx5UmVwb3J0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNNb250aGx5UmVwb3J0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNNb250aGx5UmVwb3J0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchesMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNNb250aGx5UmVwb3J0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchKpis/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchKpis/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoS3Bpc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchKpis/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchKpis/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoS3Bpc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchKpis/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchKpis/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoS3Bpc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchKpis/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchKpis/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoS3Bpc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchKpis/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchKpis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoS3Bpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlck1vbnRobHlSZXBvcnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlck1vbnRobHlSZXBvcnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlck1vbnRobHlSZXBvcnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlck1vbnRobHlSZXBvcnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchManagerMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlck1vbnRobHlSZXBvcnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchRankings/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchRankings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoUmFua2luZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchRankings/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchRankings/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoUmFua2luZ3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchRankings/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchRankings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoUmFua2luZ3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchRankings/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchRankings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoUmFua2luZ3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/BranchRankings/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/BranchRankings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoUmFua2luZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JtTW9udGhseVJlcG9ydHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JtTW9udGhseVJlcG9ydHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JtTW9udGhseVJlcG9ydHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JtTW9udGhseVJlcG9ydHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/CrmMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JtTW9udGhseVJlcG9ydHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsTW9udGhseVJlcG9ydHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsTW9udGhseVJlcG9ydHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsTW9udGhseVJlcG9ydHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsTW9udGhseVJlcG9ydHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsTW9udGhseVJlcG9ydHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsU3VwZXJNYXJrZXRNb250aGx5UmVwb3J0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsU3VwZXJNYXJrZXRNb250aGx5UmVwb3J0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsU3VwZXJNYXJrZXRNb250aGx5UmVwb3J0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsU3VwZXJNYXJrZXRNb250aGx5UmVwb3J0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FinancialSuperMarketMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jaWFsU3VwZXJNYXJrZXRNb250aGx5UmVwb3J0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml4SW5jb21lUHJvcGVydGllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml4SW5jb21lUHJvcGVydGllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml4SW5jb21lUHJvcGVydGllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml4SW5jb21lUHJvcGVydGllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/FixIncomeProperties/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml4SW5jb21lUHJvcGVydGllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Home/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Home/Login.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Home/Signup.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Home/NotPermisson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RQZXJtaXNzb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Home/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Home/Signup2.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Home/Signup2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWdudXAyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJNb250aGx5UmVwb3J0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJNb250aGx5UmVwb3J0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJNb250aGx5UmVwb3J0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJNb250aGx5UmVwb3J0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/HrMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJNb250aGx5UmVwb3J0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jb21lQ2VudGVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jb21lQ2VudGVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jb21lQ2VudGVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jb21lQ2VudGVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/IncomeCenters/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jb21lQ2VudGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpicrms/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpicrms/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpY3Jtc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpicrms/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpicrms/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpY3Jtc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpicrms/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpicrms/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpY3Jtc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpicrms/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpicrms/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpY3Jtc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpicrms/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpicrms/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpY3Jtc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZGV2ZWxvcG1lbnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZGV2ZWxvcG1lbnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZGV2ZWxvcG1lbnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZGV2ZWxvcG1lbnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpidevelopments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZGV2ZWxvcG1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZmluYW5jaWFsc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZmluYW5jaWFsc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZmluYW5jaWFsc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZmluYW5jaWFsc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpifinancials/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpZmluYW5jaWFsc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpihrs/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpihrs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpaHJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpihrs/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpihrs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpaHJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpihrs/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpihrs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpaHJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpihrs/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpihrs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpaHJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpihrs/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpihrs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpaHJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpbWFya2V0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpbWFya2V0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpbWFya2V0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpbWFya2V0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpimarkets/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpbWFya2V0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpcGxhbm5pbmdzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpcGxhbm5pbmdzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpcGxhbm5pbmdzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpcGxhbm5pbmdzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Kpiplannings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3BpcGxhbm5pbmdzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0aW5nTW9udGhseVJlcG9ydHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0aW5nTW9udGhseVJlcG9ydHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0aW5nTW9udGhseVJlcG9ydHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0aW5nTW9udGhseVJlcG9ydHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MarketingMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0aW5nTW9udGhseVJlcG9ydHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MixProperties/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MixProperties/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWl4UHJvcGVydGllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MixProperties/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MixProperties/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWl4UHJvcGVydGllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MixProperties/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MixProperties/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWl4UHJvcGVydGllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MixProperties/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MixProperties/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWl4UHJvcGVydGllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/MixProperties/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/MixProperties/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWl4UHJvcGVydGllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationKpis/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationKpis/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uS3Bpc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationKpis/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationKpis/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uS3Bpc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationKpis/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationKpis/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uS3Bpc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationKpis/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationKpis/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uS3Bpc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationKpis/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationKpis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uS3Bpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uTW9udGhseVJlcG9ydHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uTW9udGhseVJlcG9ydHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uTW9udGhseVJlcG9ydHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uTW9udGhseVJlcG9ydHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/OperationMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmF0aW9uTW9udGhseVJlcG9ydHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc0Rlc2lnbk1vbnRobHlSZXBvcnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc0Rlc2lnbk1vbnRobHlSZXBvcnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc0Rlc2lnbk1vbnRobHlSZXBvcnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc0Rlc2lnbk1vbnRobHlSZXBvcnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProcessDesignMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc0Rlc2lnbk1vbnRobHlSZXBvcnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERldmVsb3BtZW50TW9udHlseVJlcG9ydHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERldmVsb3BtZW50TW9udHlseVJlcG9ydHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERldmVsb3BtZW50TW9udHlseVJlcG9ydHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERldmVsb3BtZW50TW9udHlseVJlcG9ydHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/ProductDevelopmentMontylyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERldmVsb3BtZW50TW9udHlseVJlcG9ydHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Products/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Products/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Products/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Products/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Products/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUWFNb250aGx5UmVwb3J0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUWFNb250aGx5UmVwb3J0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUWFNb250aGx5UmVwb3J0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUWFNb250aGx5UmVwb3J0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/QaMonthlyReports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUWFNb250aGx5UmVwb3J0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Reports/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Reports/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Reports/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Reports/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Reports/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Reports/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Reports/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Reports/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Reports/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Reports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Users/Create.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/UserRoles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/UserRoles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/UserRoles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/UserRoles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/UserRoles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Users/Delete.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Users/Details.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Users/Edit.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Users/Index.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/_ViewImports.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Users/UserRolse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlclJvbHNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/_ViewStart.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Shared/_Layout - Copy.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Shared/_Layout - Copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQgLSBDb3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-ek0su12xvy
 
-[C:/Users/nafisehhadadian/Desktop/gitIBshop/IBshopDemo/IBshopDemo/Views/Shared/_Layout.cshtml]
+[C:/WORKSPACE/iBShop/IBshopDemo/IBshopDemo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gmbpiut1xn

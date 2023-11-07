@@ -16,4 +16,6 @@ public partial class User
     public string? PhoneNumber { get; set; }
 
     public string? Password { get; set; }
+
+    public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
 }

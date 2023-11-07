@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpicrms
+      
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Index()
         {
               return _context.Kpicrms != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpicrms/Details/5
+      
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Kpicrms == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpicrms/Create
+    
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Create([Bind("Kpicrmcode,NegFb,HocallQty,Fcsp,CusReqMetPer,CusSat,MissedCallPercent,AutAnsPercent,LeftCallPercent,SrvPrdSatPer,DelAvr,CallAnsSpd,Wtunder3,CallDuration,OutcallCostAvg,CallAnsSat,UsersComImpSer,TicQty,IdeCusNeed,PrdAwaPer,PerImpPrdSur,NewtooldSat,Csat,MrkOutcall,Crmiss")] Kpicrm kpicrm)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpicrms/Edit/5
+        
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Kpicrms == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Edit(int id, [Bind("Kpicrmcode,NegFb,HocallQty,Fcsp,CusReqMetPer,CusSat,MissedCallPercent,AutAnsPercent,LeftCallPercent,SrvPrdSatPer,DelAvr,CallAnsSpd,Wtunder3,CallDuration,OutcallCostAvg,CallAnsSat,UsersComImpSer,TicQty,IdeCusNeed,PrdAwaPer,PerImpPrdSur,NewtooldSat,Csat,MrkOutcall,Crmiss")] Kpicrm kpicrm)
         {
             if (id != kpicrm.Kpicrmcode)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpicrms/Delete/5
+     
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Kpicrms == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: Kpicrms/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+      
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Kpicrms == null)

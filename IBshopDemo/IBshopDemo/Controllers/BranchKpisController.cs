@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchKpis
+        [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Index()
         {
               return _context.BranchKpis != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchKpis/Details/5
+        [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Details(string id)
         {
             if (id == null || _context.BranchKpis == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchKpis/Create
+        [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Create(BranchKpi branchKpi)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchKpis/Edit/5
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null || _context.BranchKpis == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Edit(string id, [Bind("KpibranchCode,WrsupReq,WrongIssue,BrcCnf,WrongQty,BrnReqQty,BranchCap,PurchaseAvgTime,Kllevel,ConIntMonPercentage,ClienttoIssue,BrcClient,MrkSpv,NewUser")] BranchKpi branchKpi)
         {
             if (id != branchKpi.KpibranchCode)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchKpis/Delete/5
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null || _context.BranchKpis == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: BranchKpis/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
             if (_context.BranchKpis == null)

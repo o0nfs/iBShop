@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: ArtMonthlyReports
+        [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_گرافیک)]
         public async Task<IActionResult> Index()
         {
               return _context.ArtMonthlyReports != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: ArtMonthlyReports/Details/5
+        [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_گرافیک)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.ArtMonthlyReports == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: ArtMonthlyReports/Create
+        [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_گرافیک)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_گرافیک)]
         public async Task<IActionResult> Create(ArtMonthlyReport artMonthlyReport)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: ArtMonthlyReports/Edit/5
+       
+        [Authorization((int)Roles.مدیر_گرافیک)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.ArtMonthlyReports == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       
+        [Authorization((int)Roles.مدیر_گرافیک)]
         public async Task<IActionResult> Edit(int id, [Bind("ArtMonthlyReportId,Year,Month,MonthNumber,MrkReq,CompStudy,ArchiveDesignQty,MediaFailureQty,SiteBannerAvgTime,BrochureDesignAvgTime,StoryDesignAvgTime,GifDesignAvgTime,StandDesignAvgTime,BannerDesignQty,BrochureDesignQty,StoryDesignQty,GifDesignQty,StandDesigQty,MotionQty,ArchivedmotionQty,AppliedMotionAvgTime,RecordedvideoQty,RecordedQty,NarrationEditQty,VideoArchiveQty,VideoProduceAvgTime")] ArtMonthlyReport artMonthlyReport)
         {
             if (id != artMonthlyReport.ArtMonthlyReportId)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: ArtMonthlyReports/Delete/5
+       
+        [Authorization((int)Roles.مدیر_گرافیک)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.ArtMonthlyReports == null)
@@ -138,7 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: ArtMonthlyReports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+		[Authorization((int)Roles.مدیر_گرافیک)]
+		public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.ArtMonthlyReports == null)
             {

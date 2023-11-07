@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -18,16 +20,18 @@ namespace IBshopDemo.Controllers
             _context = context;
         }
 
-        // GET: Kpihrs
-        public async Task<IActionResult> Index()
+		// GET: Kpihrs
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Index()
         {
               return _context.Kpihrs != null ? 
                           View(await _context.Kpihrs.ToListAsync()) :
                           Problem("Entity set 'TestHadadianContext.Kpihrs'  is null.");
         }
 
-        // GET: Kpihrs/Details/5
-        public async Task<IActionResult> Details(int? id)
+		// GET: Kpihrs/Details/5
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Kpihrs == null)
             {
@@ -44,8 +48,9 @@ namespace IBshopDemo.Controllers
             return View(kpihr);
         }
 
-        // GET: Kpihrs/Create
-        public IActionResult Create()
+		// GET: Kpihrs/Create
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public IActionResult Create()
         {
             return View();
         }
@@ -55,7 +60,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Kpihrcode,RecEff,EduEfc,SurveyFeedback,TrnColeagPer,MistakeinPersonalInfo,SalMistakePerc,ColLoyPer,EduCap,ProEduCap,MgmEduCap,GenEduCap,PapConCap,IntColCam,ReqToNeed,IctsrvSat,ColSat,OutcallCostAvg,RecDelRat,HrRecDelRat,Sal")] Kpihr kpihr)
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Create([Bind("Id,Kpihrcode,RecEff,EduEfc,SurveyFeedback,TrnColeagPer,MistakeinPersonalInfo,SalMistakePerc,ColLoyPer,EduCap,ProEduCap,MgmEduCap,GenEduCap,PapConCap,IntColCam,ReqToNeed,IctsrvSat,ColSat,OutcallCostAvg,RecDelRat,HrRecDelRat,Sal")] Kpihr kpihr)
         {
             if (ModelState.IsValid)
             {
@@ -66,8 +72,9 @@ namespace IBshopDemo.Controllers
             return View(kpihr);
         }
 
-        // GET: Kpihrs/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+		// GET: Kpihrs/Edit/5
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Kpihrs == null)
             {
@@ -87,7 +94,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Kpihrcode,RecEff,EduEfc,SurveyFeedback,TrnColeagPer,MistakeinPersonalInfo,SalMistakePerc,ColLoyPer,EduCap,ProEduCap,MgmEduCap,GenEduCap,PapConCap,IntColCam,ReqToNeed,IctsrvSat,ColSat,OutcallCostAvg,RecDelRat,HrRecDelRat,Sal")] Kpihr kpihr)
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Edit(int id, [Bind("Id,Kpihrcode,RecEff,EduEfc,SurveyFeedback,TrnColeagPer,MistakeinPersonalInfo,SalMistakePerc,ColLoyPer,EduCap,ProEduCap,MgmEduCap,GenEduCap,PapConCap,IntColCam,ReqToNeed,IctsrvSat,ColSat,OutcallCostAvg,RecDelRat,HrRecDelRat,Sal")] Kpihr kpihr)
         {
             if (id != kpihr.Id)
             {
@@ -117,8 +125,9 @@ namespace IBshopDemo.Controllers
             return View(kpihr);
         }
 
-        // GET: Kpihrs/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+		// GET: Kpihrs/Delete/5
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Kpihrs == null)
             {
@@ -138,7 +147,8 @@ namespace IBshopDemo.Controllers
         // POST: Kpihrs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Kpihrs == null)
             {

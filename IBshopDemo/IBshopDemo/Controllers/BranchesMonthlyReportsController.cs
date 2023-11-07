@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesMonthlyReports
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Index()
         {
               return _context.BranchesMonthlyReports != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesMonthlyReports/Details/5
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.BranchesMonthlyReports == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesMonthlyReports/Create
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Create([Bind("BranchMonthlyReportId,Year,Month,MonthNumber,IbcardConflictBranchQty,IbcrowdConflictBranchQty,IBcrowdKpiconflictQty,CoursesQty,OnlineExamsQty,CoursesNeedQty,ServicesToBranchQty,CandstoDevelopmentQty,ReportsConflictsToBranchQty,InvestmentCapitalConflicts,FacilityReqQty,SwsolvedQty,FundSettlementQty,FundsConflictsQty,SendtoBranch,MrkpacTobranchQty,CrttoCusQty,InpersonBranchQty,BranchTickects,TicketConflictsQty,BranchInfractionQty,BranchReformQty,BranchMonQty,BranchCompCheckedQty,AccBranchQty,BranchCompQty,BranchpersonnelQty,PersonnelAssuranceReqQty,PersonnelAdReqQty")] BranchesMonthlyReport branchesMonthlyReport)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesMonthlyReports/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.BranchesMonthlyReports == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Edit(int id, [Bind("BranchMonthlyReportId,Year,Month,MonthNumber,IbcardConflictBranchQty,IbcrowdConflictBranchQty,IBcrowdKpiconflictQty,CoursesQty,OnlineExamsQty,CoursesNeedQty,ServicesToBranchQty,CandstoDevelopmentQty,ReportsConflictsToBranchQty,InvestmentCapitalConflicts,FacilityReqQty,SwsolvedQty,FundSettlementQty,FundsConflictsQty,SendtoBranch,MrkpacTobranchQty,CrttoCusQty,InpersonBranchQty,BranchTickects,TicketConflictsQty,BranchInfractionQty,BranchReformQty,BranchMonQty,BranchCompCheckedQty,AccBranchQty,BranchCompQty,BranchpersonnelQty,PersonnelAssuranceReqQty,PersonnelAdReqQty")] BranchesMonthlyReport branchesMonthlyReport)
         {
             if (id != branchesMonthlyReport.BranchMonthlyReportId)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesMonthlyReports/Delete/5
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.BranchesMonthlyReports == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: BranchesMonthlyReports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.BranchesMonthlyReports == null)

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MixProperties
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Index()
         {
             var testHadadianContext = _context.MixProperties.Include(m => m.BrancheCodeNavigation).Include(m => m.IncomeCenter);
@@ -26,6 +30,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MixProperties/Details/5
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.MixProperties == null)
@@ -46,6 +52,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MixProperties/Create
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public IActionResult Create()
         {
             ViewData["BrancheCode"] = new SelectList(_context.BranchesInfos, "BranchCode", "BranchCode");
@@ -58,6 +66,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Create([Bind("MixIncomeId,BrancheCode,IncomeCenterId,MonthNumber,MonthName,ServatIssue,ServatRev,GoharIssue,GoharRev,TotalIssue,TotalRev")] MixProperty mixProperty)
         {
             if (ModelState.IsValid)
@@ -72,6 +82,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MixProperties/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.MixProperties == null)
@@ -94,6 +106,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Edit(int id, [Bind("MixIncomeId,BrancheCode,IncomeCenterId,MonthNumber,MonthName,ServatIssue,ServatRev,GoharIssue,GoharRev,TotalIssue,TotalRev")] MixProperty mixProperty)
         {
             if (id != mixProperty.MixIncomeId)
@@ -127,6 +141,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: MixProperties/Delete/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.MixProperties == null)
@@ -149,6 +165,8 @@ namespace IBshopDemo.Controllers
         // POST: MixProperties/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.MixProperties == null)

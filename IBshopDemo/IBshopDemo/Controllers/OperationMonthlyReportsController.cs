@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationMonthlyReports
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Index()
         {
               return _context.OperationMonthlyReports != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationMonthlyReports/Details/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.OperationMonthlyReports == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationMonthlyReports/Create
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Create([Bind("Id,Oprmrid,Year,MonthNumber,Month,BillConflictReqQty,PoseConflictReqQty,SmsinternetConflictReqQty,BranchInternetConflictReqQty,IntternetEntranceConflictReq,FixedConflictQty,TotalConflictsProcess,BkgNewCustomer,BkgReqCnfqty,BkgCrdVol,BkgCrdQty,TotalIbcardIssuesVol,TotalIbcardIssuesQty,TotalTransferVol,TotalmsgQty,RemotChcAut,TotalEditAcc,TotalIdeEdit,TotalLegAut,TotalChcSejam,TotalIssuCrt,AbCganjinehTamaddon,AbCganjinehTamaddonRe,AbCganjinehShahr,AbCganjinehShahrRe,AbCganjinehSandogh,AbCganjinehSandoghRe,AbCganjinehSamaneh,AbCganjinehSamanehRe,AbCganjinehBranches,AbCganjinehBranchesRe,AbCganjinehShahrnet,AbCganjinehShahrnetRe,AbCganjinehTotal,AbCganjinehTotalRe,AbCandookhtehTamaddon,AbCandookhtehTamaddonRe,AbCandookhtehShahr,AbCandookhtehShahrRe,AbCandookhtehOtherBanks,AbCandookhtehOtherBanksRe,AbCandookhtehSandogh,AbCandookhtehSandoghRe,AbCandookhtehSamaneh,AbCandookhtehSamanehRe,AbCandookhtehBranch,AbCandookhtehBranchRe,AbCandookhtehShahrnet,AbCandookhtehShahrnetRe,AbCandookhtehTotal,AbCandookhtehTotalRe,AbCservatTamaddon,AbCservatTamaddonRe,AbCservatSamaneh,AbCservatSamanehRe,AbCservatBranch,AbCservatBranchRe,AbCservatSandogh,AbCservatSandoghRe,AbCservatTotal,AbCservatTotalRe,AbCgoharTamaddon,AbCgoharTamaddonRe,AbCgoharSamaneh,AbCgoharSamanehRe,AbCgoharBranch,AbCgoharBranchRe,AbCgoharSandogh,AbCgoharSandoghRe,AbCgoharTotal,AbCgoharTotalRe")] OperationMonthlyReport operationMonthlyReport)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationMonthlyReports/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.OperationMonthlyReports == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Oprmrid,Year,MonthNumber,Month,BillConflictReqQty,PoseConflictReqQty,SmsinternetConflictReqQty,BranchInternetConflictReqQty,IntternetEntranceConflictReq,FixedConflictQty,TotalConflictsProcess,BkgNewCustomer,BkgReqCnfqty,BkgCrdVol,BkgCrdQty,TotalIbcardIssuesVol,TotalIbcardIssuesQty,TotalTransferVol,TotalmsgQty,RemotChcAut,TotalEditAcc,TotalIdeEdit,TotalLegAut,TotalChcSejam,TotalIssuCrt,AbCganjinehTamaddon,AbCganjinehTamaddonRe,AbCganjinehShahr,AbCganjinehShahrRe,AbCganjinehSandogh,AbCganjinehSandoghRe,AbCganjinehSamaneh,AbCganjinehSamanehRe,AbCganjinehBranches,AbCganjinehBranchesRe,AbCganjinehShahrnet,AbCganjinehShahrnetRe,AbCganjinehTotal,AbCganjinehTotalRe,AbCandookhtehTamaddon,AbCandookhtehTamaddonRe,AbCandookhtehShahr,AbCandookhtehShahrRe,AbCandookhtehOtherBanks,AbCandookhtehOtherBanksRe,AbCandookhtehSandogh,AbCandookhtehSandoghRe,AbCandookhtehSamaneh,AbCandookhtehSamanehRe,AbCandookhtehBranch,AbCandookhtehBranchRe,AbCandookhtehShahrnet,AbCandookhtehShahrnetRe,AbCandookhtehTotal,AbCandookhtehTotalRe,AbCservatTamaddon,AbCservatTamaddonRe,AbCservatSamaneh,AbCservatSamanehRe,AbCservatBranch,AbCservatBranchRe,AbCservatSandogh,AbCservatSandoghRe,AbCservatTotal,AbCservatTotalRe,AbCgoharTamaddon,AbCgoharTamaddonRe,AbCgoharSamaneh,AbCgoharSamanehRe,AbCgoharBranch,AbCgoharBranchRe,AbCgoharSandogh,AbCgoharSandoghRe,AbCgoharTotal,AbCgoharTotalRe")] OperationMonthlyReport operationMonthlyReport)
         {
             if (id != operationMonthlyReport.Id)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: OperationMonthlyReports/Delete/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.OperationMonthlyReports == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: OperationMonthlyReports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_عملیات)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.OperationMonthlyReports == null)

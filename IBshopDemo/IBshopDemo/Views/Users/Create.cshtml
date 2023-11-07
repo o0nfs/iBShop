@@ -4,50 +4,113 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>User</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="NationalCode" class="control-label"></label>
-                <input asp-for="NationalCode" class="form-control" />
-                <span asp-validation-for="NationalCode" class="text-danger"></span>
+<div class="content-wrapper">
+    <!-- Content -->
+
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">کاربران/</span>
+           اضافه کردن
+        </h4>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div id="sticky-wrapper" class="sticky-wrapper" style="height: 86.9375px;">
+                        <div class="card-header sticky-element bg-label-secondary d-flex justify-content-sm-between align-items-sm-center flex-column flex-sm-row" style="">
+                            <h5 class="card-title mb-sm-0 me-2">افزودن کاربر جدید</h5>
+                            <div class="action-btns">
+                                <a asp-action="Index">
+                                    <button class="btn btn-label-primary me-3">
+                                        <span class="align-middle">بازگشت به لیست</span>
+                                    </button>
+                                </a>
+
+                                <button type="submit" class="btn btn-primary submit">
+                                    ثبت
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <form asp-action="Create" asp-controller="Users" method="post" id="form">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
+
+                                    <div class="row">
+                                        <div class="form-group  col-6 mt-1">
+                                            <label asp-for="NationalCode" class="form-label mt-3"></label>
+                                            <input asp-for="NationalCode" class="form-control  mt-1 shadow-sm" />
+                                            <span asp-validation-for="NationalCode" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="LastName" class="form-label mt-3"></label>
+                                            <input asp-for="LastName" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="LastName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="FirstName" class=" form-label mt-3"></label>
+                                            <input asp-for="FirstName" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="PhoneNumber" class=" form-label mt-3"></label>
+                                            <input asp-for="PhoneNumber" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mt-1">
+                                            <label asp-for="Password" class=" form-label mt-3"></label>
+                                            <input asp-for="Password" class="form-control mt-1 shadow-sm" />
+                                            <span asp-validation-for="Password" class="text-danger"></span>
+                                        </div>
+                                       
+                                    </div>
+                                 
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
+
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+
+        $(document).ready(function () {
+            $(".submit").click(function (ev) {
+                var form = $("#form");
+                var url = form.attr('action');
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: form.serialize(),
+                    success: function (data) {
+
+                        // Ajax call completed successfully
+                        alert("Form Submited Successfully");
+                    },
+                    error: function (data) {
+
+                        // Some error in ajax call
+                        alert("some Error");
+                    }
+                })
+            })
+        });
+    </script>
 }

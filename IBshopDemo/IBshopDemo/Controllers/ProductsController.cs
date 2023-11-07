@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Products
+        [Authorization((int)Roles.ادمین)]
+      
         public async Task<IActionResult> Index()
         {
             var testHadadianContext = _context.Products.Include(p => p.BrancheCodeNavigation).Include(p => p.IncomeCenter);
@@ -26,6 +30,7 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Products/Details/5
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Products == null)
@@ -46,6 +51,7 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Products/Create
+        [Authorization((int)Roles.ادمین)]
         public IActionResult Create()
         {
             ViewData["BrancheCode"] = new SelectList(_context.BranchesInfos, "BranchCode", "BranchCode");
@@ -58,6 +64,7 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Create([Bind("ProductsId,BrancheCode,IncomeCenterId,MonthNumber,MonthName,IbcrowdVol,IbcardIssueQty,CardQty,KargozariBoursCode,DealValue,Income")] Product product)
         {
             if (ModelState.IsValid)
@@ -72,6 +79,7 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Products/Edit/5
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Products == null)
@@ -94,6 +102,7 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Edit(int id, [Bind("ProductsId,BrancheCode,IncomeCenterId,MonthNumber,MonthName,IbcrowdVol,IbcardIssueQty,CardQty,KargozariBoursCode,DealValue,Income")] Product product)
         {
             if (id != product.ProductsId)
@@ -127,6 +136,7 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Products/Delete/5
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Products == null)
@@ -149,6 +159,7 @@ namespace IBshopDemo.Controllers
         // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Products == null)

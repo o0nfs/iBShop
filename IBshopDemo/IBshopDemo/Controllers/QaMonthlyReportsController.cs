@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: QaMonthlyReports
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Index()
         {
               return _context.QaMonthlyReports != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: QaMonthlyReports/Details/5
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.QaMonthlyReports == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: QaMonthlyReports/Create
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Create([Bind("Qamrid,Year,Month,MonthNumber,TotalPersonnelIncCallQty,TotalChcIncCallQty,WelFailPerIncQty,WelFailIncQty,SurFailPerIncQty,SurFailIncQty,KnwFailPerIncQty,KnwFailIncQty,ProFailPerIncQty,ProFailIncQty,TicFailPerIncQty,TicFailIncQty,CalMgtPerIncQty,CalMgtIncQty,SysFailPerIncQty,SysFailIncQty,TotalPersonnelOutCallQty,TotalChcOutCallQty,SurFailPerOutQty,SurFailOutQty,ProFailPerOutQty,ProFailOutQty,TicFailPerOutQty,TicFailOutQty,CalMgtPerOutQty,CalMgtOutQty,ToalOnlineChat,TotalCheckedOnlineChat,SurFailPerChatQty,SurFailChatQty,ProFailPerChatQty,ProFailChatQty,TicFailPerChatQty,TicFailChatQty,TimFailPerChatQty,TimFailChatQty,SurveyChatOnline,HgradeQty,GgradeQty,FgradeQty,EgradeQty,DgradeQty,CgradeQty,BgradeQty,AgradeQty,ApgradeQty,RepFail")] QaMonthlyReport qaMonthlyReport)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: QaMonthlyReports/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.QaMonthlyReports == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+     //   [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Edit(int id, [Bind("Qamrid,Year,Month,MonthNumber,TotalPersonnelIncCallQty,TotalChcIncCallQty,WelFailPerIncQty,WelFailIncQty,SurFailPerIncQty,SurFailIncQty,KnwFailPerIncQty,KnwFailIncQty,ProFailPerIncQty,ProFailIncQty,TicFailPerIncQty,TicFailIncQty,CalMgtPerIncQty,CalMgtIncQty,SysFailPerIncQty,SysFailIncQty,TotalPersonnelOutCallQty,TotalChcOutCallQty,SurFailPerOutQty,SurFailOutQty,ProFailPerOutQty,ProFailOutQty,TicFailPerOutQty,TicFailOutQty,CalMgtPerOutQty,CalMgtOutQty,ToalOnlineChat,TotalCheckedOnlineChat,SurFailPerChatQty,SurFailChatQty,ProFailPerChatQty,ProFailChatQty,TicFailPerChatQty,TicFailChatQty,TimFailPerChatQty,TimFailChatQty,SurveyChatOnline,HgradeQty,GgradeQty,FgradeQty,EgradeQty,DgradeQty,CgradeQty,BgradeQty,AgradeQty,ApgradeQty,RepFail")] QaMonthlyReport qaMonthlyReport)
         {
             if (id != qaMonthlyReport.Qamrid)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: QaMonthlyReports/Delete/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.QaMonthlyReports == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: QaMonthlyReports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.QaMonthlyReports == null)

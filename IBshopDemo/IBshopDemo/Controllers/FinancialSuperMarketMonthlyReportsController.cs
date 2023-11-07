@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialSuperMarketMonthlyReports
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Index()
         {
               return _context.FinancialSuperMarketMonthlyReports != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialSuperMarketMonthlyReports/Details/5
+    //    [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.FinancialSuperMarketMonthlyReports == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialSuperMarketMonthlyReports/Create
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Create([Bind("SuperMrid,Year,Month,MonthNumber,CustomersReplyQty,IbshoppRegisterQty,AuthenticationQty,ActivationQty,ReportForCustomerC,ReportForCustomerF,GanjinehIssueReqQty,GanjinehIssuesVol,AndookhtehIssueReqQty,AndookhtehIssuesVol,GoharandServatIssueReqQty,GohrandServatIssuesVol,GanjinehRevokeReqQty,GanjinehRevokeVol,AndookhtehRevokeReqQty,AndookhtehRevokeVol,GoharandServatRevokeReqQty,GohrandServatRevokeVol,TotIsuuVol,TotRevVol,EditQty,LegalServQty,CardIssuanceQty,TotalIbcardVol,InvestorsQty,TotalIbcrowdVol,InsuranceIssued,CreaditQty,CreaditVol,OnlineCodeQty")] FinancialSuperMarketMonthlyReport financialSuperMarketMonthlyReport)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialSuperMarketMonthlyReports/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.FinancialSuperMarketMonthlyReports == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Edit(int id, [Bind("SuperMrid,Year,Month,MonthNumber,CustomersReplyQty,IbshoppRegisterQty,AuthenticationQty,ActivationQty,ReportForCustomerC,ReportForCustomerF,GanjinehIssueReqQty,GanjinehIssuesVol,AndookhtehIssueReqQty,AndookhtehIssuesVol,GoharandServatIssueReqQty,GohrandServatIssuesVol,GanjinehRevokeReqQty,GanjinehRevokeVol,AndookhtehRevokeReqQty,AndookhtehRevokeVol,GoharandServatRevokeReqQty,GohrandServatRevokeVol,TotIsuuVol,TotRevVol,EditQty,LegalServQty,CardIssuanceQty,TotalIbcardVol,InvestorsQty,TotalIbcrowdVol,InsuranceIssued,CreaditQty,CreaditVol,OnlineCodeQty")] FinancialSuperMarketMonthlyReport financialSuperMarketMonthlyReport)
         {
             if (id != financialSuperMarketMonthlyReport.SuperMrid)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialSuperMarketMonthlyReports/Delete/5
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.FinancialSuperMarketMonthlyReports == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: FinancialSuperMarketMonthlyReports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.FinancialSuperMarketMonthlyReports == null)

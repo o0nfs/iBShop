@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpidevelopments
+      
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Index()
         {
               return _context.Kpidevelopments != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpidevelopments/Details/5
+      
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Details(string id)
         {
             if (id == null || _context.Kpidevelopments == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpidevelopments/Create
+      
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Create([Bind("KpidevelomentCode,RdinPrdImp,IdeCusNeed,NewTooldsat,PerImpPrdSur,PrdAwaPer,NewCusinSrvPrd,SugCap,SugInc,InvSugAvgTime,SolutionAvgTime,ColRate,AccsugRate")] Kpidevelopment kpidevelopment)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpidevelopments/Edit/5
+      
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null || _context.Kpidevelopments == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Edit(string id, [Bind("KpidevelomentCode,RdinPrdImp,IdeCusNeed,NewTooldsat,PerImpPrdSur,PrdAwaPer,NewCusinSrvPrd,SugCap,SugInc,InvSugAvgTime,SolutionAvgTime,ColRate,AccsugRate")] Kpidevelopment kpidevelopment)
         {
             if (id != kpidevelopment.KpidevelomentCode)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpidevelopments/Delete/5
+      
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null || _context.Kpidevelopments == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: Kpidevelopments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+      
+        [Authorization((int)Roles.مدیر_برنامه_ریزی)]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
             if (_context.Kpidevelopments == null)

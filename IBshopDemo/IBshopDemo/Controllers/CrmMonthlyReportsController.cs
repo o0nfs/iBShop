@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: CrmMonthlyReports
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Index()
         {
               return _context.CrmMonthlyReports != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: CrmMonthlyReports/Details/5
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.CrmMonthlyReports == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: CrmMonthlyReports/Create
+        // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Create([Bind("Crmmrid,Year,Month,MonthNumber,InChatQty,InCompCallQty,InVmQty,InCallQty,OutAccNumEditQty,OutsurveyQty,OutComTrtQty,OutVmQty,SejamQty,AvgCallDuration,AvgCallWaitingDuration,ToalCallDuration,GanjinehIssuesQty,GanjinehIssuesVol,AndookhtehIssuesQty,AndookhtehIssuesVol,GoharandServatIssuesQty,GoharandServatIssuesVol,TotalIssuesQty,TotalIssuesVol,CrmcoursesQty,TicketOnlineQty,Inticket,ComplaintTicketQty,SurveyTicketQty,InSurveyCallQty,OutSurveyCallQty,OnlineChatsurveyQty,GanjinehTicketQty,AndookhtehicketQty,ServatafarinanTicketQty,GoharTicketQty,IbCardTicketQty,IbCrowdTicketQty,BranchComplTicketQty")] CrmMonthlyReport crmMonthlyReport)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: CrmMonthlyReports/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.CrmMonthlyReports == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Edit(int id, [Bind("Crmmrid,Year,Month,MonthNumber,InChatQty,InCompCallQty,InVmQty,InCallQty,OutAccNumEditQty,OutsurveyQty,OutComTrtQty,OutVmQty,SejamQty,AvgCallDuration,AvgCallWaitingDuration,ToalCallDuration,GanjinehIssuesQty,GanjinehIssuesVol,AndookhtehIssuesQty,AndookhtehIssuesVol,GoharandServatIssuesQty,GoharandServatIssuesVol,TotalIssuesQty,TotalIssuesVol,CrmcoursesQty,TicketOnlineQty,Inticket,ComplaintTicketQty,SurveyTicketQty,InSurveyCallQty,OutSurveyCallQty,OnlineChatsurveyQty,GanjinehTicketQty,AndookhtehicketQty,ServatafarinanTicketQty,GoharTicketQty,IbCardTicketQty,IbCrowdTicketQty,BranchComplTicketQty")] CrmMonthlyReport crmMonthlyReport)
         {
             if (id != crmMonthlyReport.Crmmrid)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: CrmMonthlyReports/Delete/5
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.CrmMonthlyReports == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: CrmMonthlyReports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مشتریان_و_کنترل_کیفی)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.CrmMonthlyReports == null)

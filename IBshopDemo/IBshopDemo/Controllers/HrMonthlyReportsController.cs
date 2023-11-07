@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: HrMonthlyReports
+        [Authorization((int)Roles.مدیر_منابع_انسانی)]
+      
         public async Task<IActionResult> Index()
         {
               return _context.HrMonthlyReports != null ? 
@@ -26,8 +30,9 @@ namespace IBshopDemo.Controllers
                           Problem("Entity set 'TestHadadianContext.HrMonthlyReports'  is null.");
         }
 
-        // GET: HrMonthlyReports/Details/5
-        public async Task<IActionResult> Details(int? id)
+		// GET: HrMonthlyReports/Details/5
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.HrMonthlyReports == null)
             {
@@ -44,8 +49,9 @@ namespace IBshopDemo.Controllers
             return View(hrMonthlyReport);
         }
 
-        // GET: HrMonthlyReports/Create
-        public IActionResult Create()
+		// GET: HrMonthlyReports/Create
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public IActionResult Create()
         {
             return View();
         }
@@ -55,7 +61,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("HrmonthlyreportId,Year,Month,MonthNumber,HrpersonnelQty,LeftQty,HrmhiredQty,Obqty,Reqqty,SentCvtoDep,CoursQty,IntQty,RsgReq,UsedImp,Gcissu,SrvAsgNewPer,AsuAsgNewPer,GurReqFun,GurReqLtt,PyrDedReqLtt,SendOutLtt,SendIntLtt,RecLtt,PerEntCnfQty,PreFailQty,ReplacemntQty,Rrfail,RrfacFail,LobFailQty,FloFailQty,TblFailQty,StrFailQty,MngRfailQty,BrkFailQty,PntFailQty")] HrMonthlyReport hrMonthlyReport)
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Create([Bind("HrmonthlyreportId,Year,Month,MonthNumber,HrpersonnelQty,LeftQty,HrmhiredQty,Obqty,Reqqty,SentCvtoDep,CoursQty,IntQty,RsgReq,UsedImp,Gcissu,SrvAsgNewPer,AsuAsgNewPer,GurReqFun,GurReqLtt,PyrDedReqLtt,SendOutLtt,SendIntLtt,RecLtt,PerEntCnfQty,PreFailQty,ReplacemntQty,Rrfail,RrfacFail,LobFailQty,FloFailQty,TblFailQty,StrFailQty,MngRfailQty,BrkFailQty,PntFailQty")] HrMonthlyReport hrMonthlyReport)
         {
             if (ModelState.IsValid)
             {
@@ -66,8 +73,9 @@ namespace IBshopDemo.Controllers
             return View(hrMonthlyReport);
         }
 
-        // GET: HrMonthlyReports/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+		// GET: HrMonthlyReports/Edit/5
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.HrMonthlyReports == null)
             {
@@ -87,7 +95,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("HrmonthlyreportId,Year,Month,MonthNumber,HrpersonnelQty,LeftQty,HrmhiredQty,Obqty,Reqqty,SentCvtoDep,CoursQty,IntQty,RsgReq,UsedImp,Gcissu,SrvAsgNewPer,AsuAsgNewPer,GurReqFun,GurReqLtt,PyrDedReqLtt,SendOutLtt,SendIntLtt,RecLtt,PerEntCnfQty,PreFailQty,ReplacemntQty,Rrfail,RrfacFail,LobFailQty,FloFailQty,TblFailQty,StrFailQty,MngRfailQty,BrkFailQty,PntFailQty")] HrMonthlyReport hrMonthlyReport)
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Edit(int id, [Bind("HrmonthlyreportId,Year,Month,MonthNumber,HrpersonnelQty,LeftQty,HrmhiredQty,Obqty,Reqqty,SentCvtoDep,CoursQty,IntQty,RsgReq,UsedImp,Gcissu,SrvAsgNewPer,AsuAsgNewPer,GurReqFun,GurReqLtt,PyrDedReqLtt,SendOutLtt,SendIntLtt,RecLtt,PerEntCnfQty,PreFailQty,ReplacemntQty,Rrfail,RrfacFail,LobFailQty,FloFailQty,TblFailQty,StrFailQty,MngRfailQty,BrkFailQty,PntFailQty")] HrMonthlyReport hrMonthlyReport)
         {
             if (id != hrMonthlyReport.HrmonthlyreportId)
             {
@@ -117,8 +126,9 @@ namespace IBshopDemo.Controllers
             return View(hrMonthlyReport);
         }
 
-        // GET: HrMonthlyReports/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+		// GET: HrMonthlyReports/Delete/5
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.HrMonthlyReports == null)
             {
@@ -138,7 +148,8 @@ namespace IBshopDemo.Controllers
         // POST: HrMonthlyReports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+		[Authorization((int)Roles.مدیر_منابع_انسانی)]
+		public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.HrMonthlyReports == null)
             {

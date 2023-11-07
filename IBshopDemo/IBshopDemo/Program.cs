@@ -2,6 +2,8 @@ using IBshopDemo.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.AspNetCore.Identity;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Initializer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,12 @@ builder.Services.AddDbContext<IBshopDemo.Models.TestHadadianContext>(options => 
 
 var app = builder.Build();
 
+//Initializers
+using (var scope = app.Services.CreateScope())
+{
+    TestHadadianContext init = scope.ServiceProvider.GetRequiredService<TestHadadianContext>();
+    IBshopInitializer.Initialize(init);
+}
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

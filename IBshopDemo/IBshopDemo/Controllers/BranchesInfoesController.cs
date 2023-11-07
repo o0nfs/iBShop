@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesInfoes
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Index()
         {
 
@@ -28,6 +32,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesInfoes/Details/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.BranchesInfos == null)
@@ -46,6 +52,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesInfoes/Create
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +64,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //[Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Create(BranchesInfo branchesInfo)
         {
             if (ModelState.IsValid)
@@ -68,6 +78,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesInfoes/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.BranchesInfos == null)
@@ -88,6 +100,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Edit(int id, [Bind("BranchCode,BranchLocation,BranchManager")] BranchesInfo branchesInfo)
         {
             if (id != branchesInfo.BranchCode)
@@ -119,6 +133,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: BranchesInfoes/Delete/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.BranchesInfos == null)
@@ -139,6 +155,8 @@ namespace IBshopDemo.Controllers
         // POST: BranchesInfoes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_شعب)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.BranchesInfos == null)

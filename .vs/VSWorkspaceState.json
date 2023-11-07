@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\IBshopDemo",
+    "\\IBshopDemo\\IBshopDemo",
+    "\\IBshopDemo\\IBshopDemo\\Controllers"
   ],
-  "SelectedNode": "\\IBshopDemo.sln",
   "PreviewInSolutionExplorer": false
 }

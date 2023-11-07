@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialMonthlyReports
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Index()
         {
               return _context.FinancialMonthlyReports != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialMonthlyReports/Details/5
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.FinancialMonthlyReports == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialMonthlyReports/Create
+      //  [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Create(FinancialMonthlyReport financialMonthlyReport)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialMonthlyReports/Edit/5
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.FinancialMonthlyReports == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       // [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Edit(int id, [Bind("FinancialMrid,Year,Month,MonthNumber,PersonnelSetQty,CheckedfundQty,ContQty,TreasuryBillsQty,Recivedgaurantee,RestaxinstallmentQty,ResFundInstallmenQty,TaminInstallmentQty,TaminPenaltyVol,TranCommissionQty,TaminInstallmentDelay,TaxInstallmentDelay,PrpReqQty,MtnprpQty,ColPrpQty,LblPrpQty")] FinancialMonthlyReport financialMonthlyReport)
         {
             if (id != financialMonthlyReport.FinancialMrid)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: FinancialMonthlyReports/Delete/5
+     //   [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.FinancialMonthlyReports == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: FinancialMonthlyReports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+     //   [Authorization((int)Roles.ادمین)]
+        [Authorization((int)Roles.مدیر_امور_مالی)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.FinancialMonthlyReports == null)

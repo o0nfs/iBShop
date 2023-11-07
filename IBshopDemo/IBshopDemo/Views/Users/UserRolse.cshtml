@@ -1,0 +1,36 @@
+﻿@model List<Role>
+@{
+	List<int?> userRoles = new List<int?>();
+	if (ViewBag.UserRoles != null)
+	{
+		userRoles = ViewBag.UserRoles;
+	}
+	int index = 0;
+}
+<form id="userRoleForm" method="post" action="/Users/SetUserRoles">
+	<input type="hidden" id="form-modal-userID" name="userId" value="@ViewBag.UserID" />
+	@foreach (var item in Model)
+	{
+		<div class="form-check">
+
+			<label class="form-check-label" for="selectAll">
+				@item.RoleName
+				<i class="bx bx-info-circle bx-xs" data-bs-toggle="tooltip" data-bs-placement="top" title="@item.RoleName"></i>
+			</label>
+			@if (userRoles.Contains(item.RoleId))
+			{
+				<input class="form-check-input" checked type="checkbox" value="@item.RoleId" name="roleId" />
+			}
+			else
+			{
+				<input class="form-check-input" type="checkbox" value="@item.RoleId" name="roleId" />
+			}
+		</div>
+
+		index++;
+
+	}
+
+	<button  class="btn btn-primary">ذخیره</button>
+</form>
+	@*<button  onclick="saveUserRoles()" class="btn btn-primary">ذخیره</button>*@

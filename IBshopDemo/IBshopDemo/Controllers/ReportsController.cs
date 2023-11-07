@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Reports
+        [Authorization((int)Roles.ادمین)]
+        
         public async Task<IActionResult> Index()
         {
               return _context.Reports != null ? 
@@ -27,6 +31,7 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Reports/Details/5
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Reports == null)
@@ -45,6 +50,7 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Reports/Create
+        [Authorization((int)Roles.ادمین)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +61,7 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Create([Bind("ReportId,ReportName")] Report report)
         {
             if (ModelState.IsValid)
@@ -67,6 +74,7 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Reports/Edit/5
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Reports == null)
@@ -87,6 +95,7 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Edit(int id, [Bind("ReportId,ReportName")] Report report)
         {
             if (id != report.ReportId)
@@ -118,6 +127,7 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Reports/Delete/5
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Reports == null)
@@ -138,6 +148,7 @@ namespace IBshopDemo.Controllers
         // POST: Reports/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorization((int)Roles.ادمین)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Reports == null)

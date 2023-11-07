@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IBshopDemo.Models;
+using IBshopDemo.ActionFilters;
+using IBshopDemo.Enums;
 
 namespace IBshopDemo.Controllers
 {
@@ -19,6 +21,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpimarkets
+       
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Index()
         {
               return _context.Kpimarkets != null ? 
@@ -27,6 +31,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpimarkets/Details/5
+    
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Kpimarkets == null)
@@ -45,6 +51,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpimarkets/Create
+       
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +63,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Create([Bind("Id,KpimarketingCode,NewUser,RegistertoIssue,NewCusAsset,LegMrk,BrcMrkRti,SalePlanDsg,MrkStgDsg")] Kpimarket kpimarket)
         {
             if (ModelState.IsValid)
@@ -67,6 +77,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpimarkets/Edit/5
+       
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Kpimarkets == null)
@@ -87,6 +99,8 @@ namespace IBshopDemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+       
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Edit(int id, [Bind("Id,KpimarketingCode,NewUser,RegistertoIssue,NewCusAsset,LegMrk,BrcMrkRti,SalePlanDsg,MrkStgDsg")] Kpimarket kpimarket)
         {
             if (id != kpimarket.Id)
@@ -118,6 +132,8 @@ namespace IBshopDemo.Controllers
         }
 
         // GET: Kpimarkets/Delete/5
+       
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Kpimarkets == null)
@@ -138,6 +154,8 @@ namespace IBshopDemo.Controllers
         // POST: Kpimarkets/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+       
+        [Authorization((int)Roles.مدیر_بازاریابی)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Kpimarkets == null)
